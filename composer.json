@@ -1,0 +1,12 @@
+{
+    "name": "capimichi/magento2-rest-docs",
+    "authors": [
+        {
+            "name": "michele",
+            "email": "capimichi@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpword": "^0.17.0"
+    }
+}
