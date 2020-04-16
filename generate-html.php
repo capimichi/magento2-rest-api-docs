@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $data = json_decode(file_get_contents(__DIR__ . '/admin-schema.json'), true);
 
-printf("| Endpoint        | Method           | Link  | %s | ------------- |:-------------:| -----:| %s", PHP_EOL, PHP_EOL);
+printf("| Endpoint        | Method             | %s | ------------- | -----:| %s", PHP_EOL, PHP_EOL);
 
 foreach ($data['paths'] as $endpoint => $path) {
 
@@ -102,7 +102,7 @@ foreach ($data['paths'] as $endpoint => $path) {
         ], "_", $endpoint);
 
         $docUrl = sprintf("http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html%s/%s.html", $endpoint, $method);
-        $docUrl = sprintf("| %s | %s | [Apri](%s) |", $endpoint, strtoupper($method), $docUrl);
+        $docUrl = sprintf("| [%s](%s) | %s |", $endpoint, $docUrl, strtoupper($method));
 
         printf("%s %s", $docUrl, PHP_EOL);
 

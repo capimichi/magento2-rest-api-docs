@@ -1,521 +1,520 @@
 # Magento 2 rest api docs
 
 ## Html
-
-| Endpoint        | Method           | Link  | 
- | ------------- |:-------------:| -----:| 
-| /V1/addresses/{addressId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/addresses/{addressId}/delete.html) | 
-| /V1/adobestock/asset/list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/list/get.html) | 
-| /V1/adobestock/asset/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/search/get.html) | 
-| /V1/adobestock/asset/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/delete.html) | 
-| /V1/adobestock/asset/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/get.html) | 
-| /V1/adobestock/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/search/get.html) | 
-| /V1/amazon-billing-address/{amazonOrderReferenceId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-billing-address/{amazonOrderReferenceId}/put.html) | 
-| /V1/amazon-shipping-address/{amazonOrderReferenceId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-shipping-address/{amazonOrderReferenceId}/put.html) | 
-| /V1/amazon/order-ref | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon/order-ref/delete.html) | 
-| /V1/analytics/link | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/analytics/link/get.html) | 
-| /V1/attribute/product | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/get.html) | 
-| /V1/attribute/product/delete/{nodePathId} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/delete/{nodePathId}/post.html) | 
-| /V1/attribute/product/shipping | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/shipping/get.html) | 
-| /V1/attributeMetadata/customer | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/get.html) | 
-| /V1/attributeMetadata/customer/attribute/{attributeCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/attribute/{attributeCode}/get.html) | 
-| /V1/attributeMetadata/customer/custom | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/custom/get.html) | 
-| /V1/attributeMetadata/customer/form/{formCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/form/{formCode}/get.html) | 
-| /V1/attributeMetadata/customerAddress | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/get.html) | 
-| /V1/attributeMetadata/customerAddress/attribute/{attributeCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/attribute/{attributeCode}/get.html) | 
-| /V1/attributeMetadata/customerAddress/custom | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/custom/get.html) | 
-| /V1/attributeMetadata/customerAddress/form/{formCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/form/{formCode}/get.html) | 
-| /V1/bulk | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/get.html) | 
-| /V1/bulk/{bulkUuid}/detailed-status | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/detailed-status/get.html) | 
-| /V1/bulk/{bulkUuid}/operation-status/{status} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/operation-status/{status}/get.html) | 
-| /V1/bulk/{bulkUuid}/status | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/status/get.html) | 
-| /V1/bundle-products/options/add | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/add/post.html) | 
-| /V1/bundle-products/options/types | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/types/get.html) | 
-| /V1/bundle-products/options/{optionId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/{optionId}/put.html) | 
-| /V1/bundle-products/{productSku}/children | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{productSku}/children/get.html) | 
-| /V1/bundle-products/{sku}/links/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{id}/put.html) | 
-| /V1/bundle-products/{sku}/links/{optionId} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{optionId}/post.html) | 
-| /V1/bundle-products/{sku}/options/all | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/all/get.html) | 
-| /V1/bundle-products/{sku}/options/{optionId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/get.html) | 
-| /V1/bundle-products/{sku}/options/{optionId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/delete.html) | 
-| /V1/bundle-products/{sku}/options/{optionId}/children/{childSku} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}/delete.html) | 
-| /V1/carts/ | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts//post.html) | 
-| /V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}/get.html) | 
-| /V1/carts/guest-carts/{cartId}/giftCards | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/post.html) | 
-| /V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}/delete.html) | 
-| /V1/carts/licence | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/get.html) | 
-| /V1/carts/licence/list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/list/get.html) | 
-| /V1/carts/mine | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/put.html) | 
-| /V1/carts/mine | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/post.html) | 
-| /V1/carts/mine | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/get.html) | 
-| /V1/carts/mine/balance/apply | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/balance/apply/post.html) | 
-| /V1/carts/mine/billing-address | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/get.html) | 
-| /V1/carts/mine/billing-address | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/post.html) | 
-| /V1/carts/mine/checkGiftCard/{giftCardCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkGiftCard/{giftCardCode}/get.html) | 
-| /V1/carts/mine/checkout-collection-point/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-collection-point/select/post.html) | 
-| /V1/carts/mine/checkout-fields | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-fields/post.html) | 
-| /V1/carts/mine/checkout-pickup-location/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-pickup-location/select/post.html) | 
-| /V1/carts/mine/collect-totals | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collect-totals/put.html) | 
-| /V1/carts/mine/collection-point/search-request | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/put.html) | 
-| /V1/carts/mine/collection-point/search-request | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/delete.html) | 
-| /V1/carts/mine/collection-point/search-result | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-result/get.html) | 
-| /V1/carts/mine/collection-point/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/select/post.html) | 
-| /V1/carts/mine/coupons | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/get.html) | 
-| /V1/carts/mine/coupons | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/delete.html) | 
-| /V1/carts/mine/coupons/{couponCode} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/{couponCode}/put.html) | 
-| /V1/carts/mine/delivery-option | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/delivery-option/post.html) | 
-| /V1/carts/mine/estimate-shipping-methods | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods/post.html) | 
-| /V1/carts/mine/estimate-shipping-methods-by-address-id | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods-by-address-id/post.html) | 
-| /V1/carts/mine/gift-message | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/get.html) | 
-| /V1/carts/mine/gift-message | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/post.html) | 
-| /V1/carts/mine/gift-message/{itemId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/get.html) | 
-| /V1/carts/mine/gift-message/{itemId} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/post.html) | 
-| /V1/carts/mine/giftCards | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/post.html) | 
-| /V1/carts/mine/giftCards/{giftCardCode} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/{giftCardCode}/delete.html) | 
-| /V1/carts/mine/items | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/get.html) | 
-| /V1/carts/mine/items | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/post.html) | 
-| /V1/carts/mine/items/{itemId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/put.html) | 
-| /V1/carts/mine/items/{itemId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/delete.html) | 
-| /V1/carts/mine/order | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/order/put.html) | 
-| /V1/carts/mine/payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/post.html) | 
-| /V1/carts/mine/payment-information | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/get.html) | 
-| /V1/carts/mine/payment-methods | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-methods/get.html) | 
-| /V1/carts/mine/pickup-location/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/pickup-location/select/post.html) | 
-| /V1/carts/mine/selected-payment-method | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/get.html) | 
-| /V1/carts/mine/selected-payment-method | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/put.html) | 
-| /V1/carts/mine/set-payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/set-payment-information/post.html) | 
-| /V1/carts/mine/shipping-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-information/post.html) | 
-| /V1/carts/mine/shipping-methods | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-methods/get.html) | 
-| /V1/carts/mine/totals | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals/get.html) | 
-| /V1/carts/mine/totals-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals-information/post.html) | 
-| /V1/carts/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/search/get.html) | 
-| /V1/carts/{cartId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/get.html) | 
-| /V1/carts/{cartId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/put.html) | 
-| /V1/carts/{cartId}/billing-address | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/get.html) | 
-| /V1/carts/{cartId}/billing-address | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/post.html) | 
-| /V1/carts/{cartId}/coupons | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/get.html) | 
-| /V1/carts/{cartId}/coupons | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/delete.html) | 
-| /V1/carts/{cartId}/coupons/{couponCode} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/{couponCode}/put.html) | 
-| /V1/carts/{cartId}/estimate-shipping-methods | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods/post.html) | 
-| /V1/carts/{cartId}/estimate-shipping-methods-by-address-id | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods-by-address-id/post.html) | 
-| /V1/carts/{cartId}/gift-message | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/get.html) | 
-| /V1/carts/{cartId}/gift-message | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/post.html) | 
-| /V1/carts/{cartId}/gift-message/{itemId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/get.html) | 
-| /V1/carts/{cartId}/gift-message/{itemId} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/post.html) | 
-| /V1/carts/{cartId}/giftCards | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/put.html) | 
-| /V1/carts/{cartId}/giftCards/{giftCardCode} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/{giftCardCode}/delete.html) | 
-| /V1/carts/{cartId}/items | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/get.html) | 
-| /V1/carts/{cartId}/items/{itemId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/put.html) | 
-| /V1/carts/{cartId}/items/{itemId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/delete.html) | 
-| /V1/carts/{cartId}/order | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/order/put.html) | 
-| /V1/carts/{cartId}/payment-methods | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/payment-methods/get.html) | 
-| /V1/carts/{cartId}/selected-payment-method | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/get.html) | 
-| /V1/carts/{cartId}/selected-payment-method | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/put.html) | 
-| /V1/carts/{cartId}/shipping-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-information/post.html) | 
-| /V1/carts/{cartId}/shipping-methods | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-methods/get.html) | 
-| /V1/carts/{cartId}/totals | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals/get.html) | 
-| /V1/carts/{cartId}/totals-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals-information/post.html) | 
-| /V1/carts/{quoteId}/giftCards | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/giftCards/get.html) | 
-| /V1/carts/{quoteId}/items | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/items/post.html) | 
-| /V1/categories | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/post.html) | 
-| /V1/categories | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/get.html) | 
-| /V1/categories/attributes | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/get.html) | 
-| /V1/categories/attributes/{attributeCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/get.html) | 
-| /V1/categories/attributes/{attributeCode}/options | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/options/get.html) | 
-| /V1/categories/list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/list/get.html) | 
-| /V1/categories/{categoryId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/delete.html) | 
-| /V1/categories/{categoryId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/get.html) | 
-| /V1/categories/{categoryId}/move | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/move/put.html) | 
-| /V1/categories/{categoryId}/products | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/get.html) | 
-| /V1/categories/{categoryId}/products | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/post.html) | 
-| /V1/categories/{categoryId}/products | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/put.html) | 
-| /V1/categories/{categoryId}/products/{sku} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/{sku}/delete.html) | 
-| /V1/categories/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{id}/put.html) | 
-| /V1/cmsBlock | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/post.html) | 
-| /V1/cmsBlock/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/search/get.html) | 
-| /V1/cmsBlock/{blockId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/get.html) | 
-| /V1/cmsBlock/{blockId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/delete.html) | 
-| /V1/cmsBlock/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{id}/put.html) | 
-| /V1/cmsPage | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/post.html) | 
-| /V1/cmsPage/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/search/get.html) | 
-| /V1/cmsPage/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{id}/put.html) | 
-| /V1/cmsPage/{pageId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/get.html) | 
-| /V1/cmsPage/{pageId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/delete.html) | 
-| /V1/company/ | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//get.html) | 
-| /V1/company/ | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//post.html) | 
-| /V1/company/assignRoles | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/assignRoles/put.html) | 
-| /V1/company/role/ | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//get.html) | 
-| /V1/company/role/ | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//post.html) | 
-| /V1/company/role/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{id}/put.html) | 
-| /V1/company/role/{roleId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/get.html) | 
-| /V1/company/role/{roleId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/delete.html) | 
-| /V1/company/role/{roleId}/users | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/users/get.html) | 
-| /V1/company/{companyId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/get.html) | 
-| /V1/company/{companyId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/delete.html) | 
-| /V1/company/{companyId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/put.html) | 
-| /V1/companyCredits/ | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits//get.html) | 
-| /V1/companyCredits/company/{companyId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/company/{companyId}/get.html) | 
-| /V1/companyCredits/history | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/get.html) | 
-| /V1/companyCredits/history/{historyId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/{historyId}/put.html) | 
-| /V1/companyCredits/{creditId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/get.html) | 
-| /V1/companyCredits/{creditId}/decreaseBalance | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/decreaseBalance/post.html) | 
-| /V1/companyCredits/{creditId}/increaseBalance | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/increaseBalance/post.html) | 
-| /V1/companyCredits/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{id}/put.html) | 
-| /V1/configurable-products/variation | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/variation/put.html) | 
-| /V1/configurable-products/{sku}/child | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/child/post.html) | 
-| /V1/configurable-products/{sku}/children | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/get.html) | 
-| /V1/configurable-products/{sku}/children/{childSku} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/{childSku}/delete.html) | 
-| /V1/configurable-products/{sku}/options | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/post.html) | 
-| /V1/configurable-products/{sku}/options/all | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/all/get.html) | 
-| /V1/configurable-products/{sku}/options/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/get.html) | 
-| /V1/configurable-products/{sku}/options/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/put.html) | 
-| /V1/configurable-products/{sku}/options/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/delete.html) | 
-| /V1/coupons | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/post.html) | 
-| /V1/coupons/deleteByCodes | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByCodes/post.html) | 
-| /V1/coupons/deleteByIds | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByIds/post.html) | 
-| /V1/coupons/generate | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/generate/post.html) | 
-| /V1/coupons/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/search/get.html) | 
-| /V1/coupons/{couponId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/get.html) | 
-| /V1/coupons/{couponId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/put.html) | 
-| /V1/coupons/{couponId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/delete.html) | 
-| /V1/creditmemo | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/post.html) | 
-| /V1/creditmemo/refund | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/refund/post.html) | 
-| /V1/creditmemo/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/put.html) | 
-| /V1/creditmemo/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/get.html) | 
-| /V1/creditmemo/{id}/comments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/get.html) | 
-| /V1/creditmemo/{id}/comments | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/post.html) | 
-| /V1/creditmemo/{id}/emails | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/emails/post.html) | 
-| /V1/creditmemos | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemos/get.html) | 
-| /V1/customerGroups | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/post.html) | 
-| /V1/customerGroups/default | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/get.html) | 
-| /V1/customerGroups/default/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{id}/put.html) | 
-| /V1/customerGroups/default/{storeId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{storeId}/get.html) | 
-| /V1/customerGroups/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/search/get.html) | 
-| /V1/customerGroups/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/get.html) | 
-| /V1/customerGroups/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/put.html) | 
-| /V1/customerGroups/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/delete.html) | 
-| /V1/customerGroups/{id}/permissions | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/permissions/get.html) | 
-| /V1/customers | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/post.html) | 
-| /V1/customers/addresses/{addressId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/addresses/{addressId}/get.html) | 
-| /V1/customers/confirm | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/confirm/post.html) | 
-| /V1/customers/isEmailAvailable | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/isEmailAvailable/post.html) | 
-| /V1/customers/me | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/put.html) | 
-| /V1/customers/me | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/get.html) | 
-| /V1/customers/me/activate | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/activate/put.html) | 
-| /V1/customers/me/billingAddress | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/billingAddress/get.html) | 
-| /V1/customers/me/password | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/password/put.html) | 
-| /V1/customers/me/shippingAddress | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/shippingAddress/get.html) | 
-| /V1/customers/password | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/password/put.html) | 
-| /V1/customers/resetPassword | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/resetPassword/post.html) | 
-| /V1/customers/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/search/get.html) | 
-| /V1/customers/validate | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/validate/put.html) | 
-| /V1/customers/{customerId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/get.html) | 
-| /V1/customers/{customerId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/put.html) | 
-| /V1/customers/{customerId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/delete.html) | 
-| /V1/customers/{customerId}/billingAddress | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/billingAddress/get.html) | 
-| /V1/customers/{customerId}/carts | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/carts/post.html) | 
-| /V1/customers/{customerId}/confirm | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/confirm/get.html) | 
-| /V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}/get.html) | 
-| /V1/customers/{customerId}/permissions/readonly | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/permissions/readonly/get.html) | 
-| /V1/customers/{customerId}/shippingAddress | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/shippingAddress/get.html) | 
-| /V1/customers/{email}/activate | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{email}/activate/put.html) | 
-| /V1/directory/countries | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/get.html) | 
-| /V1/directory/countries/{countryId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/{countryId}/get.html) | 
-| /V1/directory/currency | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/currency/get.html) | 
-| /V1/eav/attribute-sets | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/post.html) | 
-| /V1/eav/attribute-sets/list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/list/get.html) | 
-| /V1/eav/attribute-sets/{attributeSetId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/get.html) | 
-| /V1/eav/attribute-sets/{attributeSetId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/delete.html) | 
-| /V1/eav/attribute-sets/{attributeSetId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/put.html) | 
-| /V1/gift-wrappings | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/post.html) | 
-| /V1/gift-wrappings | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/get.html) | 
-| /V1/gift-wrappings/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/get.html) | 
-| /V1/gift-wrappings/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/delete.html) | 
-| /V1/gift-wrappings/{wrappingId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{wrappingId}/put.html) | 
-| /V1/giftregistry/mine/estimate-shipping-methods | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/giftregistry/mine/estimate-shipping-methods/post.html) | 
-| /V1/guest-carts | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/post.html) | 
-| /V1/guest-carts/{cartId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/get.html) | 
-| /V1/guest-carts/{cartId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/put.html) | 
-| /V1/guest-carts/{cartId}/billing-address | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/get.html) | 
-| /V1/guest-carts/{cartId}/billing-address | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/post.html) | 
-| /V1/guest-carts/{cartId}/checkout-collection-point/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-collection-point/select/post.html) | 
-| /V1/guest-carts/{cartId}/checkout-fields | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-fields/post.html) | 
-| /V1/guest-carts/{cartId}/checkout-pickup-location/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-pickup-location/select/post.html) | 
-| /V1/guest-carts/{cartId}/collect-totals | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collect-totals/put.html) | 
-| /V1/guest-carts/{cartId}/collection-point/search-request | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/put.html) | 
-| /V1/guest-carts/{cartId}/collection-point/search-request | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/delete.html) | 
-| /V1/guest-carts/{cartId}/collection-point/search-result | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-result/get.html) | 
-| /V1/guest-carts/{cartId}/collection-point/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/select/post.html) | 
-| /V1/guest-carts/{cartId}/coupons | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/get.html) | 
-| /V1/guest-carts/{cartId}/coupons | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/delete.html) | 
-| /V1/guest-carts/{cartId}/coupons/{couponCode} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/{couponCode}/put.html) | 
-| /V1/guest-carts/{cartId}/delivery-option | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/delivery-option/post.html) | 
-| /V1/guest-carts/{cartId}/estimate-shipping-methods | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/estimate-shipping-methods/post.html) | 
-| /V1/guest-carts/{cartId}/gift-message | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/get.html) | 
-| /V1/guest-carts/{cartId}/gift-message | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/post.html) | 
-| /V1/guest-carts/{cartId}/gift-message/{itemId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/get.html) | 
-| /V1/guest-carts/{cartId}/gift-message/{itemId} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/post.html) | 
-| /V1/guest-carts/{cartId}/items | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/get.html) | 
-| /V1/guest-carts/{cartId}/items | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/post.html) | 
-| /V1/guest-carts/{cartId}/items/{itemId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/put.html) | 
-| /V1/guest-carts/{cartId}/items/{itemId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/delete.html) | 
-| /V1/guest-carts/{cartId}/order | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/order/put.html) | 
-| /V1/guest-carts/{cartId}/payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/post.html) | 
-| /V1/guest-carts/{cartId}/payment-information | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/get.html) | 
-| /V1/guest-carts/{cartId}/payment-methods | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-methods/get.html) | 
-| /V1/guest-carts/{cartId}/pickup-location/select | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/pickup-location/select/post.html) | 
-| /V1/guest-carts/{cartId}/selected-payment-method | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/get.html) | 
-| /V1/guest-carts/{cartId}/selected-payment-method | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/put.html) | 
-| /V1/guest-carts/{cartId}/set-payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/set-payment-information/post.html) | 
-| /V1/guest-carts/{cartId}/shipping-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-information/post.html) | 
-| /V1/guest-carts/{cartId}/shipping-methods | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-methods/get.html) | 
-| /V1/guest-carts/{cartId}/totals | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals/get.html) | 
-| /V1/guest-carts/{cartId}/totals-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals-information/post.html) | 
-| /V1/guest-giftregistry/{cartId}/estimate-shipping-methods | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-giftregistry/{cartId}/estimate-shipping-methods/post.html) | 
-| /V1/hierarchy/move/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/move/{id}/put.html) | 
-| /V1/hierarchy/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/{id}/get.html) | 
-| /V1/integration/admin/token | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/admin/token/post.html) | 
-| /V1/integration/customer/token | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/customer/token/post.html) | 
-| /V1/inventory/bulk-partial-source-transfer | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-partial-source-transfer/post.html) | 
-| /V1/inventory/bulk-product-source-assign | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-assign/post.html) | 
-| /V1/inventory/bulk-product-source-transfer | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-transfer/post.html) | 
-| /V1/inventory/bulk-product-source-unassign | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-unassign/post.html) | 
-| /V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode}/get.html) | 
-| /V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode}/get.html) | 
-| /V1/inventory/get-distance | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance/get.html) | 
-| /V1/inventory/get-distance-provider-code | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance-provider-code/get.html) | 
-| /V1/inventory/get-latlng-from-address | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-latlng-from-address/get.html) | 
-| /V1/inventory/get-product-salable-quantity/{sku}/{stockId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-product-salable-quantity/{sku}/{stockId}/get.html) | 
-| /V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId}/get.html) | 
-| /V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty}/get.html) | 
-| /V1/inventory/is-product-salable/{sku}/{stockId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable/{sku}/{stockId}/get.html) | 
-| /V1/inventory/low-quantity-notification | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/post.html) | 
-| /V1/inventory/low-quantity-notification/{sourceCode}/{sku} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/{sourceCode}/{sku}/get.html) | 
-| /V1/inventory/low-quantity-notifications-delete | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notifications-delete/post.html) | 
-| /V1/inventory/source-items | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/get.html) | 
-| /V1/inventory/source-items | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/post.html) | 
-| /V1/inventory/source-items-delete | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items-delete/post.html) | 
-| /V1/inventory/source-selection-algorithm-list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-list/get.html) | 
-| /V1/inventory/source-selection-algorithm-result | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-result/post.html) | 
-| /V1/inventory/sources | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/get.html) | 
-| /V1/inventory/sources | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/post.html) | 
-| /V1/inventory/sources/{sourceCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/get.html) | 
-| /V1/inventory/sources/{sourceCode} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/put.html) | 
-| /V1/inventory/stock-resolver/{type}/{code} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-resolver/{type}/{code}/get.html) | 
-| /V1/inventory/stock-source-links | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/get.html) | 
-| /V1/inventory/stock-source-links | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/post.html) | 
-| /V1/inventory/stock-source-links-delete | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links-delete/post.html) | 
-| /V1/inventory/stocks | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/get.html) | 
-| /V1/inventory/stocks | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/post.html) | 
-| /V1/inventory/stocks/{stockId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/get.html) | 
-| /V1/inventory/stocks/{stockId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/delete.html) | 
-| /V1/inventory/stocks/{stockId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/put.html) | 
-| /V1/invoice/{invoiceId}/refund | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoice/{invoiceId}/refund/post.html) | 
-| /V1/invoices | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/get.html) | 
-| /V1/invoices/ | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices//post.html) | 
-| /V1/invoices/comments | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/comments/post.html) | 
-| /V1/invoices/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/get.html) | 
-| /V1/invoices/{id}/capture | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/capture/post.html) | 
-| /V1/invoices/{id}/comments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/comments/get.html) | 
-| /V1/invoices/{id}/emails | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/emails/post.html) | 
-| /V1/invoices/{id}/void | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/void/post.html) | 
-| /V1/modules | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/modules/get.html) | 
-| /V1/msp-2fa/default-provider-code/{userId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/put.html) | 
-| /V1/msp-2fa/default-provider-code/{userId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/get.html) | 
-| /V1/msp-2fa/forced-providers | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/forced-providers/get.html) | 
-| /V1/msp-2fa/installed-providers | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/installed-providers/get.html) | 
-| /V1/msp-2fa/providers-to-activate/{userId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/providers-to-activate/{userId}/get.html) | 
-| /V1/msp-2fa/reset-provider/{userId}/{providerCode} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/reset-provider/{userId}/{providerCode}/post.html) | 
-| /V1/msp-2fa/trusted-devices/{tokenId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{tokenId}/delete.html) | 
-| /V1/msp-2fa/trusted-devices/{userId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{userId}/get.html) | 
-| /V1/msp-2fa/user-providers/{userId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/get.html) | 
-| /V1/msp-2fa/user-providers/{userId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/put.html) | 
-| /V1/negotiable-carts/{cartId}/billing-address | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/get.html) | 
-| /V1/negotiable-carts/{cartId}/billing-address | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/post.html) | 
-| /V1/negotiable-carts/{cartId}/coupons | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/delete.html) | 
-| /V1/negotiable-carts/{cartId}/coupons/{couponCode} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/{couponCode}/put.html) | 
-| /V1/negotiable-carts/{cartId}/estimate-shipping-methods | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods/post.html) | 
-| /V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id/post.html) | 
-| /V1/negotiable-carts/{cartId}/giftCards | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/post.html) | 
-| /V1/negotiable-carts/{cartId}/giftCards/{giftCardCode} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}/delete.html) | 
-| /V1/negotiable-carts/{cartId}/payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/post.html) | 
-| /V1/negotiable-carts/{cartId}/payment-information | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/get.html) | 
-| /V1/negotiable-carts/{cartId}/set-payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/set-payment-information/post.html) | 
-| /V1/negotiable-carts/{cartId}/shipping-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/shipping-information/post.html) | 
-| /V1/negotiable-carts/{cartId}/totals | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/totals/get.html) | 
-| /V1/negotiableQuote/attachmentContent | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/attachmentContent/get.html) | 
-| /V1/negotiableQuote/decline | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/decline/post.html) | 
-| /V1/negotiableQuote/pricesUpdated | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/pricesUpdated/post.html) | 
-| /V1/negotiableQuote/request | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/request/post.html) | 
-| /V1/negotiableQuote/submitToCustomer | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/submitToCustomer/post.html) | 
-| /V1/negotiableQuote/{quoteId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/put.html) | 
-| /V1/negotiableQuote/{quoteId}/comments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/comments/get.html) | 
-| /V1/negotiableQuote/{quoteId}/shippingMethod | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/shippingMethod/put.html) | 
-| /V1/order/{orderId}/invoice | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/invoice/post.html) | 
-| /V1/order/{orderId}/refund | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/refund/post.html) | 
-| /V1/order/{orderId}/ship | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/ship/post.html) | 
-| /V1/orders | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/get.html) | 
-| /V1/orders/ | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders//post.html) | 
-| /V1/orders/create | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/create/put.html) | 
-| /V1/orders/items | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/get.html) | 
-| /V1/orders/items/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/{id}/get.html) | 
-| /V1/orders/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/get.html) | 
-| /V1/orders/{id}/cancel | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/cancel/post.html) | 
-| /V1/orders/{id}/comments | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/post.html) | 
-| /V1/orders/{id}/comments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/get.html) | 
-| /V1/orders/{id}/emails | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/emails/post.html) | 
-| /V1/orders/{id}/hold | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/hold/post.html) | 
-| /V1/orders/{id}/statuses | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/statuses/get.html) | 
-| /V1/orders/{id}/unhold | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/unhold/post.html) | 
-| /V1/orders/{parent_id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{parent_id}/put.html) | 
-| /V1/products | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/post.html) | 
-| /V1/products | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/get.html) | 
-| /V1/products-render-info | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products-render-info/get.html) | 
-| /V1/products/attribute-sets | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/post.html) | 
-| /V1/products/attribute-sets/attributes | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/attributes/post.html) | 
-| /V1/products/attribute-sets/groups | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/post.html) | 
-| /V1/products/attribute-sets/groups/list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/list/get.html) | 
-| /V1/products/attribute-sets/groups/{groupId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/{groupId}/delete.html) | 
-| /V1/products/attribute-sets/sets/list | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/sets/list/get.html) | 
-| /V1/products/attribute-sets/{attributeSetId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/get.html) | 
-| /V1/products/attribute-sets/{attributeSetId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/delete.html) | 
-| /V1/products/attribute-sets/{attributeSetId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/put.html) | 
-| /V1/products/attribute-sets/{attributeSetId}/attributes | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/get.html) | 
-| /V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode}/delete.html) | 
-| /V1/products/attribute-sets/{attributeSetId}/groups | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/groups/put.html) | 
-| /V1/products/attributes | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/get.html) | 
-| /V1/products/attributes | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/post.html) | 
-| /V1/products/attributes/types | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/types/get.html) | 
-| /V1/products/attributes/{attributeCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/get.html) | 
-| /V1/products/attributes/{attributeCode} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/put.html) | 
-| /V1/products/attributes/{attributeCode} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/delete.html) | 
-| /V1/products/attributes/{attributeCode}/options | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/get.html) | 
-| /V1/products/attributes/{attributeCode}/options | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/post.html) | 
-| /V1/products/attributes/{attributeCode}/options/{optionId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/{optionId}/delete.html) | 
-| /V1/products/base-prices | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices/post.html) | 
-| /V1/products/base-prices-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices-information/post.html) | 
-| /V1/products/cost | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost/post.html) | 
-| /V1/products/cost-delete | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-delete/post.html) | 
-| /V1/products/cost-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-information/post.html) | 
-| /V1/products/downloadable-links/samples/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/samples/{id}/delete.html) | 
-| /V1/products/downloadable-links/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/{id}/delete.html) | 
-| /V1/products/links/types | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/types/get.html) | 
-| /V1/products/links/{type}/attributes | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/{type}/attributes/get.html) | 
-| /V1/products/media/types/{attributeSetName} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/media/types/{attributeSetName}/get.html) | 
-| /V1/products/options | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/post.html) | 
-| /V1/products/options/types | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/types/get.html) | 
-| /V1/products/options/{optionId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/{optionId}/put.html) | 
-| /V1/products/special-price | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price/post.html) | 
-| /V1/products/special-price-delete | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-delete/post.html) | 
-| /V1/products/special-price-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-information/post.html) | 
-| /V1/products/tier-prices | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/post.html) | 
-| /V1/products/tier-prices | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/put.html) | 
-| /V1/products/tier-prices-delete | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-delete/post.html) | 
-| /V1/products/tier-prices-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-information/post.html) | 
-| /V1/products/types | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/types/get.html) | 
-| /V1/products/{productSku}/stockItems/{itemId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{productSku}/stockItems/{itemId}/put.html) | 
-| /V1/products/{sku} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/put.html) | 
-| /V1/products/{sku} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/delete.html) | 
-| /V1/products/{sku} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/get.html) | 
-| /V1/products/{sku}/downloadable-links | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/get.html) | 
-| /V1/products/{sku}/downloadable-links | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/post.html) | 
-| /V1/products/{sku}/downloadable-links/samples | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/get.html) | 
-| /V1/products/{sku}/downloadable-links/samples | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/post.html) | 
-| /V1/products/{sku}/downloadable-links/samples/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/{id}/put.html) | 
-| /V1/products/{sku}/downloadable-links/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/{id}/put.html) | 
-| /V1/products/{sku}/group-prices/{customerGroupId}/tiers | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/get.html) | 
-| /V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/delete.html) | 
-| /V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price}/post.html) | 
-| /V1/products/{sku}/links | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/post.html) | 
-| /V1/products/{sku}/links | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/put.html) | 
-| /V1/products/{sku}/links/{type} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/get.html) | 
-| /V1/products/{sku}/links/{type}/{linkedProductSku} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/{linkedProductSku}/delete.html) | 
-| /V1/products/{sku}/media | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/post.html) | 
-| /V1/products/{sku}/media | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/get.html) | 
-| /V1/products/{sku}/media/{entryId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/get.html) | 
-| /V1/products/{sku}/media/{entryId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/put.html) | 
-| /V1/products/{sku}/media/{entryId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/delete.html) | 
-| /V1/products/{sku}/options | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/get.html) | 
-| /V1/products/{sku}/options/{optionId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/get.html) | 
-| /V1/products/{sku}/options/{optionId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/delete.html) | 
-| /V1/products/{sku}/websites | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/post.html) | 
-| /V1/products/{sku}/websites | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/put.html) | 
-| /V1/products/{sku}/websites/{websiteId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/{websiteId}/delete.html) | 
-| /V1/requisition_lists | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/requisition_lists/post.html) | 
-| /V1/returns | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/post.html) | 
-| /V1/returns | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/get.html) | 
-| /V1/returns/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/get.html) | 
-| /V1/returns/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/delete.html) | 
-| /V1/returns/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/put.html) | 
-| /V1/returns/{id}/comments | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/post.html) | 
-| /V1/returns/{id}/comments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/get.html) | 
-| /V1/returns/{id}/labels | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/labels/get.html) | 
-| /V1/returns/{id}/tracking-numbers | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/post.html) | 
-| /V1/returns/{id}/tracking-numbers | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/get.html) | 
-| /V1/returns/{id}/tracking-numbers/{trackId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/{trackId}/delete.html) | 
-| /V1/returnsAttributeMetadata | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/get.html) | 
-| /V1/returnsAttributeMetadata/custom | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/custom/get.html) | 
-| /V1/returnsAttributeMetadata/form/{formCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/form/{formCode}/get.html) | 
-| /V1/returnsAttributeMetadata/{attributeCode} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/{attributeCode}/get.html) | 
-| /V1/reward/mine/use-reward | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/reward/mine/use-reward/post.html) | 
-| /V1/salesRules | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/post.html) | 
-| /V1/salesRules/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/search/get.html) | 
-| /V1/salesRules/{ruleId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/get.html) | 
-| /V1/salesRules/{ruleId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/put.html) | 
-| /V1/salesRules/{ruleId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/delete.html) | 
-| /V1/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/search/get.html) | 
-| /V1/sharedCatalog | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/post.html) | 
-| /V1/sharedCatalog/ | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog//get.html) | 
-| /V1/sharedCatalog/{id} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/put.html) | 
-| /V1/sharedCatalog/{id}/assignCategories | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignCategories/post.html) | 
-| /V1/sharedCatalog/{id}/assignProducts | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignProducts/post.html) | 
-| /V1/sharedCatalog/{id}/categories | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/categories/get.html) | 
-| /V1/sharedCatalog/{id}/products | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/products/get.html) | 
-| /V1/sharedCatalog/{id}/unassignCategories | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignCategories/post.html) | 
-| /V1/sharedCatalog/{id}/unassignProducts | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignProducts/post.html) | 
-| /V1/sharedCatalog/{sharedCatalogId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/get.html) | 
-| /V1/sharedCatalog/{sharedCatalogId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/delete.html) | 
-| /V1/sharedCatalog/{sharedCatalogId}/assignCompanies | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/assignCompanies/post.html) | 
-| /V1/sharedCatalog/{sharedCatalogId}/companies | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/companies/get.html) | 
-| /V1/sharedCatalog/{sharedCatalogId}/unassignCompanies | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/unassignCompanies/post.html) | 
-| /V1/shipment/ | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment//post.html) | 
-| /V1/shipment/track | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/post.html) | 
-| /V1/shipment/track/{id} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/{id}/delete.html) | 
-| /V1/shipment/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/get.html) | 
-| /V1/shipment/{id}/comments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/get.html) | 
-| /V1/shipment/{id}/comments | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/post.html) | 
-| /V1/shipment/{id}/emails | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/emails/post.html) | 
-| /V1/shipment/{id}/label | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/label/get.html) | 
-| /V1/shipments | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipments/get.html) | 
-| /V1/stockItems/lowStock/ | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/lowStock//get.html) | 
-| /V1/stockItems/{productSku} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/{productSku}/get.html) | 
-| /V1/stockStatuses/{productSku} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockStatuses/{productSku}/get.html) | 
-| /V1/store/storeConfigs | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeConfigs/get.html) | 
-| /V1/store/storeGroups | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeGroups/get.html) | 
-| /V1/store/storeViews | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeViews/get.html) | 
-| /V1/store/websites | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/websites/get.html) | 
-| /V1/taxClasses | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/post.html) | 
-| /V1/taxClasses/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/search/get.html) | 
-| /V1/taxClasses/{classId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{classId}/put.html) | 
-| /V1/taxClasses/{taxClassId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/get.html) | 
-| /V1/taxClasses/{taxClassId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/delete.html) | 
-| /V1/taxRates | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/post.html) | 
-| /V1/taxRates | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/put.html) | 
-| /V1/taxRates/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/search/get.html) | 
-| /V1/taxRates/{rateId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/get.html) | 
-| /V1/taxRates/{rateId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/delete.html) | 
-| /V1/taxRules | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/post.html) | 
-| /V1/taxRules | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/put.html) | 
-| /V1/taxRules/search | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/search/get.html) | 
-| /V1/taxRules/{ruleId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/delete.html) | 
-| /V1/taxRules/{ruleId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/get.html) | 
-| /V1/team/ | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team//get.html) | 
-| /V1/team/{companyId} | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{companyId}/post.html) | 
-| /V1/team/{teamId} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/get.html) | 
-| /V1/team/{teamId} | DELETE | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/delete.html) | 
-| /V1/team/{teamId} | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/put.html) | 
-| /V1/temando/rma/{rmaId}/shipments | PUT | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/temando/rma/{rmaId}/shipments/put.html) | 
-| /V1/transactions | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/get.html) | 
-| /V1/transactions/{id} | GET | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/{id}/get.html) | 
-| /V1/vertex-address-validation/vertex-address | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/vertex-address-validation/vertex-address/post.html) | 
-| /V1/worldpay-guest-carts/{cartId}/payment-information | POST | [Apri](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/worldpay-guest-carts/{cartId}/payment-information/post.html) | 
+| Endpoint        | Method             | 
+ | ------------- | -----:| 
+| [/V1/addresses/{addressId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/addresses/{addressId}/delete.html) | DELETE | 
+| [/V1/adobestock/asset/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/list/get.html) | GET | 
+| [/V1/adobestock/asset/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/search/get.html) | GET | 
+| [/V1/adobestock/asset/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/delete.html) | DELETE | 
+| [/V1/adobestock/asset/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/get.html) | GET | 
+| [/V1/adobestock/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/search/get.html) | GET | 
+| [/V1/amazon-billing-address/{amazonOrderReferenceId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-billing-address/{amazonOrderReferenceId}/put.html) | PUT | 
+| [/V1/amazon-shipping-address/{amazonOrderReferenceId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-shipping-address/{amazonOrderReferenceId}/put.html) | PUT | 
+| [/V1/amazon/order-ref](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon/order-ref/delete.html) | DELETE | 
+| [/V1/analytics/link](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/analytics/link/get.html) | GET | 
+| [/V1/attribute/product](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/get.html) | GET | 
+| [/V1/attribute/product/delete/{nodePathId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/delete/{nodePathId}/post.html) | POST | 
+| [/V1/attribute/product/shipping](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/shipping/get.html) | GET | 
+| [/V1/attributeMetadata/customer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/get.html) | GET | 
+| [/V1/attributeMetadata/customer/attribute/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/attribute/{attributeCode}/get.html) | GET | 
+| [/V1/attributeMetadata/customer/custom](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/custom/get.html) | GET | 
+| [/V1/attributeMetadata/customer/form/{formCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/form/{formCode}/get.html) | GET | 
+| [/V1/attributeMetadata/customerAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/get.html) | GET | 
+| [/V1/attributeMetadata/customerAddress/attribute/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/attribute/{attributeCode}/get.html) | GET | 
+| [/V1/attributeMetadata/customerAddress/custom](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/custom/get.html) | GET | 
+| [/V1/attributeMetadata/customerAddress/form/{formCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/form/{formCode}/get.html) | GET | 
+| [/V1/bulk](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/get.html) | GET | 
+| [/V1/bulk/{bulkUuid}/detailed-status](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/detailed-status/get.html) | GET | 
+| [/V1/bulk/{bulkUuid}/operation-status/{status}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/operation-status/{status}/get.html) | GET | 
+| [/V1/bulk/{bulkUuid}/status](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/status/get.html) | GET | 
+| [/V1/bundle-products/options/add](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/add/post.html) | POST | 
+| [/V1/bundle-products/options/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/types/get.html) | GET | 
+| [/V1/bundle-products/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/{optionId}/put.html) | PUT | 
+| [/V1/bundle-products/{productSku}/children](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{productSku}/children/get.html) | GET | 
+| [/V1/bundle-products/{sku}/links/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{id}/put.html) | PUT | 
+| [/V1/bundle-products/{sku}/links/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{optionId}/post.html) | POST | 
+| [/V1/bundle-products/{sku}/options/all](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/all/get.html) | GET | 
+| [/V1/bundle-products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/get.html) | GET | 
+| [/V1/bundle-products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/delete.html) | DELETE | 
+| [/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}/delete.html) | DELETE | 
+| [/V1/carts/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts//post.html) | POST | 
+| [/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}/get.html) | GET | 
+| [/V1/carts/guest-carts/{cartId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/post.html) | POST | 
+| [/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}/delete.html) | DELETE | 
+| [/V1/carts/licence](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/get.html) | GET | 
+| [/V1/carts/licence/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/list/get.html) | GET | 
+| [/V1/carts/mine](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/put.html) | PUT | 
+| [/V1/carts/mine](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/post.html) | POST | 
+| [/V1/carts/mine](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/get.html) | GET | 
+| [/V1/carts/mine/balance/apply](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/balance/apply/post.html) | POST | 
+| [/V1/carts/mine/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/get.html) | GET | 
+| [/V1/carts/mine/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/post.html) | POST | 
+| [/V1/carts/mine/checkGiftCard/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkGiftCard/{giftCardCode}/get.html) | GET | 
+| [/V1/carts/mine/checkout-collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-collection-point/select/post.html) | POST | 
+| [/V1/carts/mine/checkout-fields](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-fields/post.html) | POST | 
+| [/V1/carts/mine/checkout-pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-pickup-location/select/post.html) | POST | 
+| [/V1/carts/mine/collect-totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collect-totals/put.html) | PUT | 
+| [/V1/carts/mine/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/put.html) | PUT | 
+| [/V1/carts/mine/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/delete.html) | DELETE | 
+| [/V1/carts/mine/collection-point/search-result](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-result/get.html) | GET | 
+| [/V1/carts/mine/collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/select/post.html) | POST | 
+| [/V1/carts/mine/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/get.html) | GET | 
+| [/V1/carts/mine/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/delete.html) | DELETE | 
+| [/V1/carts/mine/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/{couponCode}/put.html) | PUT | 
+| [/V1/carts/mine/delivery-option](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/delivery-option/post.html) | POST | 
+| [/V1/carts/mine/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods/post.html) | POST | 
+| [/V1/carts/mine/estimate-shipping-methods-by-address-id](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods-by-address-id/post.html) | POST | 
+| [/V1/carts/mine/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/get.html) | GET | 
+| [/V1/carts/mine/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/post.html) | POST | 
+| [/V1/carts/mine/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/get.html) | GET | 
+| [/V1/carts/mine/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/post.html) | POST | 
+| [/V1/carts/mine/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/post.html) | POST | 
+| [/V1/carts/mine/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/{giftCardCode}/delete.html) | DELETE | 
+| [/V1/carts/mine/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/get.html) | GET | 
+| [/V1/carts/mine/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/post.html) | POST | 
+| [/V1/carts/mine/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/put.html) | PUT | 
+| [/V1/carts/mine/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/delete.html) | DELETE | 
+| [/V1/carts/mine/order](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/order/put.html) | PUT | 
+| [/V1/carts/mine/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/post.html) | POST | 
+| [/V1/carts/mine/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/get.html) | GET | 
+| [/V1/carts/mine/payment-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-methods/get.html) | GET | 
+| [/V1/carts/mine/pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/pickup-location/select/post.html) | POST | 
+| [/V1/carts/mine/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/get.html) | GET | 
+| [/V1/carts/mine/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/put.html) | PUT | 
+| [/V1/carts/mine/set-payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/set-payment-information/post.html) | POST | 
+| [/V1/carts/mine/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-information/post.html) | POST | 
+| [/V1/carts/mine/shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-methods/get.html) | GET | 
+| [/V1/carts/mine/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals/get.html) | GET | 
+| [/V1/carts/mine/totals-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals-information/post.html) | POST | 
+| [/V1/carts/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/search/get.html) | GET | 
+| [/V1/carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/get.html) | GET | 
+| [/V1/carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/put.html) | PUT | 
+| [/V1/carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/get.html) | GET | 
+| [/V1/carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/post.html) | POST | 
+| [/V1/carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/get.html) | GET | 
+| [/V1/carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/delete.html) | DELETE | 
+| [/V1/carts/{cartId}/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/{couponCode}/put.html) | PUT | 
+| [/V1/carts/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods/post.html) | POST | 
+| [/V1/carts/{cartId}/estimate-shipping-methods-by-address-id](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods-by-address-id/post.html) | POST | 
+| [/V1/carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/get.html) | GET | 
+| [/V1/carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/post.html) | POST | 
+| [/V1/carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/get.html) | GET | 
+| [/V1/carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/post.html) | POST | 
+| [/V1/carts/{cartId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/put.html) | PUT | 
+| [/V1/carts/{cartId}/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/{giftCardCode}/delete.html) | DELETE | 
+| [/V1/carts/{cartId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/get.html) | GET | 
+| [/V1/carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/put.html) | PUT | 
+| [/V1/carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/delete.html) | DELETE | 
+| [/V1/carts/{cartId}/order](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/order/put.html) | PUT | 
+| [/V1/carts/{cartId}/payment-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/payment-methods/get.html) | GET | 
+| [/V1/carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/get.html) | GET | 
+| [/V1/carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/put.html) | PUT | 
+| [/V1/carts/{cartId}/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-information/post.html) | POST | 
+| [/V1/carts/{cartId}/shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-methods/get.html) | GET | 
+| [/V1/carts/{cartId}/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals/get.html) | GET | 
+| [/V1/carts/{cartId}/totals-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals-information/post.html) | POST | 
+| [/V1/carts/{quoteId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/giftCards/get.html) | GET | 
+| [/V1/carts/{quoteId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/items/post.html) | POST | 
+| [/V1/categories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/post.html) | POST | 
+| [/V1/categories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/get.html) | GET | 
+| [/V1/categories/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/get.html) | GET | 
+| [/V1/categories/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/get.html) | GET | 
+| [/V1/categories/attributes/{attributeCode}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/options/get.html) | GET | 
+| [/V1/categories/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/list/get.html) | GET | 
+| [/V1/categories/{categoryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/delete.html) | DELETE | 
+| [/V1/categories/{categoryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/get.html) | GET | 
+| [/V1/categories/{categoryId}/move](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/move/put.html) | PUT | 
+| [/V1/categories/{categoryId}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/get.html) | GET | 
+| [/V1/categories/{categoryId}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/post.html) | POST | 
+| [/V1/categories/{categoryId}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/put.html) | PUT | 
+| [/V1/categories/{categoryId}/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/{sku}/delete.html) | DELETE | 
+| [/V1/categories/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{id}/put.html) | PUT | 
+| [/V1/cmsBlock](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/post.html) | POST | 
+| [/V1/cmsBlock/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/search/get.html) | GET | 
+| [/V1/cmsBlock/{blockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/get.html) | GET | 
+| [/V1/cmsBlock/{blockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/delete.html) | DELETE | 
+| [/V1/cmsBlock/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{id}/put.html) | PUT | 
+| [/V1/cmsPage](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/post.html) | POST | 
+| [/V1/cmsPage/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/search/get.html) | GET | 
+| [/V1/cmsPage/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{id}/put.html) | PUT | 
+| [/V1/cmsPage/{pageId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/get.html) | GET | 
+| [/V1/cmsPage/{pageId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/delete.html) | DELETE | 
+| [/V1/company/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//get.html) | GET | 
+| [/V1/company/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//post.html) | POST | 
+| [/V1/company/assignRoles](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/assignRoles/put.html) | PUT | 
+| [/V1/company/role/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//get.html) | GET | 
+| [/V1/company/role/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//post.html) | POST | 
+| [/V1/company/role/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{id}/put.html) | PUT | 
+| [/V1/company/role/{roleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/get.html) | GET | 
+| [/V1/company/role/{roleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/delete.html) | DELETE | 
+| [/V1/company/role/{roleId}/users](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/users/get.html) | GET | 
+| [/V1/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/get.html) | GET | 
+| [/V1/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/delete.html) | DELETE | 
+| [/V1/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/put.html) | PUT | 
+| [/V1/companyCredits/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits//get.html) | GET | 
+| [/V1/companyCredits/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/company/{companyId}/get.html) | GET | 
+| [/V1/companyCredits/history](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/get.html) | GET | 
+| [/V1/companyCredits/history/{historyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/{historyId}/put.html) | PUT | 
+| [/V1/companyCredits/{creditId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/get.html) | GET | 
+| [/V1/companyCredits/{creditId}/decreaseBalance](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/decreaseBalance/post.html) | POST | 
+| [/V1/companyCredits/{creditId}/increaseBalance](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/increaseBalance/post.html) | POST | 
+| [/V1/companyCredits/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{id}/put.html) | PUT | 
+| [/V1/configurable-products/variation](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/variation/put.html) | PUT | 
+| [/V1/configurable-products/{sku}/child](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/child/post.html) | POST | 
+| [/V1/configurable-products/{sku}/children](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/get.html) | GET | 
+| [/V1/configurable-products/{sku}/children/{childSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/{childSku}/delete.html) | DELETE | 
+| [/V1/configurable-products/{sku}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/post.html) | POST | 
+| [/V1/configurable-products/{sku}/options/all](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/all/get.html) | GET | 
+| [/V1/configurable-products/{sku}/options/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/get.html) | GET | 
+| [/V1/configurable-products/{sku}/options/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/put.html) | PUT | 
+| [/V1/configurable-products/{sku}/options/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/delete.html) | DELETE | 
+| [/V1/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/post.html) | POST | 
+| [/V1/coupons/deleteByCodes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByCodes/post.html) | POST | 
+| [/V1/coupons/deleteByIds](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByIds/post.html) | POST | 
+| [/V1/coupons/generate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/generate/post.html) | POST | 
+| [/V1/coupons/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/search/get.html) | GET | 
+| [/V1/coupons/{couponId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/get.html) | GET | 
+| [/V1/coupons/{couponId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/put.html) | PUT | 
+| [/V1/coupons/{couponId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/delete.html) | DELETE | 
+| [/V1/creditmemo](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/post.html) | POST | 
+| [/V1/creditmemo/refund](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/refund/post.html) | POST | 
+| [/V1/creditmemo/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/put.html) | PUT | 
+| [/V1/creditmemo/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/get.html) | GET | 
+| [/V1/creditmemo/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/get.html) | GET | 
+| [/V1/creditmemo/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/post.html) | POST | 
+| [/V1/creditmemo/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/emails/post.html) | POST | 
+| [/V1/creditmemos](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemos/get.html) | GET | 
+| [/V1/customerGroups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/post.html) | POST | 
+| [/V1/customerGroups/default](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/get.html) | GET | 
+| [/V1/customerGroups/default/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{id}/put.html) | PUT | 
+| [/V1/customerGroups/default/{storeId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{storeId}/get.html) | GET | 
+| [/V1/customerGroups/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/search/get.html) | GET | 
+| [/V1/customerGroups/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/get.html) | GET | 
+| [/V1/customerGroups/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/put.html) | PUT | 
+| [/V1/customerGroups/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/delete.html) | DELETE | 
+| [/V1/customerGroups/{id}/permissions](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/permissions/get.html) | GET | 
+| [/V1/customers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/post.html) | POST | 
+| [/V1/customers/addresses/{addressId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/addresses/{addressId}/get.html) | GET | 
+| [/V1/customers/confirm](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/confirm/post.html) | POST | 
+| [/V1/customers/isEmailAvailable](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/isEmailAvailable/post.html) | POST | 
+| [/V1/customers/me](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/put.html) | PUT | 
+| [/V1/customers/me](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/get.html) | GET | 
+| [/V1/customers/me/activate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/activate/put.html) | PUT | 
+| [/V1/customers/me/billingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/billingAddress/get.html) | GET | 
+| [/V1/customers/me/password](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/password/put.html) | PUT | 
+| [/V1/customers/me/shippingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/shippingAddress/get.html) | GET | 
+| [/V1/customers/password](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/password/put.html) | PUT | 
+| [/V1/customers/resetPassword](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/resetPassword/post.html) | POST | 
+| [/V1/customers/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/search/get.html) | GET | 
+| [/V1/customers/validate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/validate/put.html) | PUT | 
+| [/V1/customers/{customerId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/get.html) | GET | 
+| [/V1/customers/{customerId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/put.html) | PUT | 
+| [/V1/customers/{customerId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/delete.html) | DELETE | 
+| [/V1/customers/{customerId}/billingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/billingAddress/get.html) | GET | 
+| [/V1/customers/{customerId}/carts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/carts/post.html) | POST | 
+| [/V1/customers/{customerId}/confirm](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/confirm/get.html) | GET | 
+| [/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}/get.html) | GET | 
+| [/V1/customers/{customerId}/permissions/readonly](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/permissions/readonly/get.html) | GET | 
+| [/V1/customers/{customerId}/shippingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/shippingAddress/get.html) | GET | 
+| [/V1/customers/{email}/activate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{email}/activate/put.html) | PUT | 
+| [/V1/directory/countries](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/get.html) | GET | 
+| [/V1/directory/countries/{countryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/{countryId}/get.html) | GET | 
+| [/V1/directory/currency](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/currency/get.html) | GET | 
+| [/V1/eav/attribute-sets](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/post.html) | POST | 
+| [/V1/eav/attribute-sets/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/list/get.html) | GET | 
+| [/V1/eav/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/get.html) | GET | 
+| [/V1/eav/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/delete.html) | DELETE | 
+| [/V1/eav/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/put.html) | PUT | 
+| [/V1/gift-wrappings](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/post.html) | POST | 
+| [/V1/gift-wrappings](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/get.html) | GET | 
+| [/V1/gift-wrappings/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/get.html) | GET | 
+| [/V1/gift-wrappings/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/delete.html) | DELETE | 
+| [/V1/gift-wrappings/{wrappingId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{wrappingId}/put.html) | PUT | 
+| [/V1/giftregistry/mine/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/giftregistry/mine/estimate-shipping-methods/post.html) | POST | 
+| [/V1/guest-carts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/post.html) | POST | 
+| [/V1/guest-carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/get.html) | GET | 
+| [/V1/guest-carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/checkout-collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-collection-point/select/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/checkout-fields](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-fields/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/checkout-pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-pickup-location/select/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/collect-totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collect-totals/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/delete.html) | DELETE | 
+| [/V1/guest-carts/{cartId}/collection-point/search-result](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-result/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/select/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/delete.html) | DELETE | 
+| [/V1/guest-carts/{cartId}/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/{couponCode}/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/delivery-option](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/delivery-option/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/estimate-shipping-methods/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/delete.html) | DELETE | 
+| [/V1/guest-carts/{cartId}/order](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/order/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/payment-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-methods/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/pickup-location/select/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/put.html) | PUT | 
+| [/V1/guest-carts/{cartId}/set-payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/set-payment-information/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-information/post.html) | POST | 
+| [/V1/guest-carts/{cartId}/shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-methods/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals/get.html) | GET | 
+| [/V1/guest-carts/{cartId}/totals-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals-information/post.html) | POST | 
+| [/V1/guest-giftregistry/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-giftregistry/{cartId}/estimate-shipping-methods/post.html) | POST | 
+| [/V1/hierarchy/move/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/move/{id}/put.html) | PUT | 
+| [/V1/hierarchy/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/{id}/get.html) | GET | 
+| [/V1/integration/admin/token](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/admin/token/post.html) | POST | 
+| [/V1/integration/customer/token](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/customer/token/post.html) | POST | 
+| [/V1/inventory/bulk-partial-source-transfer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-partial-source-transfer/post.html) | POST | 
+| [/V1/inventory/bulk-product-source-assign](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-assign/post.html) | POST | 
+| [/V1/inventory/bulk-product-source-transfer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-transfer/post.html) | POST | 
+| [/V1/inventory/bulk-product-source-unassign](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-unassign/post.html) | POST | 
+| [/V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode}/get.html) | GET | 
+| [/V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode}/get.html) | GET | 
+| [/V1/inventory/get-distance](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance/get.html) | GET | 
+| [/V1/inventory/get-distance-provider-code](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance-provider-code/get.html) | GET | 
+| [/V1/inventory/get-latlng-from-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-latlng-from-address/get.html) | GET | 
+| [/V1/inventory/get-product-salable-quantity/{sku}/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-product-salable-quantity/{sku}/{stockId}/get.html) | GET | 
+| [/V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId}/get.html) | GET | 
+| [/V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty}/get.html) | GET | 
+| [/V1/inventory/is-product-salable/{sku}/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable/{sku}/{stockId}/get.html) | GET | 
+| [/V1/inventory/low-quantity-notification](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/post.html) | POST | 
+| [/V1/inventory/low-quantity-notification/{sourceCode}/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/{sourceCode}/{sku}/get.html) | GET | 
+| [/V1/inventory/low-quantity-notifications-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notifications-delete/post.html) | POST | 
+| [/V1/inventory/source-items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/get.html) | GET | 
+| [/V1/inventory/source-items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/post.html) | POST | 
+| [/V1/inventory/source-items-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items-delete/post.html) | POST | 
+| [/V1/inventory/source-selection-algorithm-list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-list/get.html) | GET | 
+| [/V1/inventory/source-selection-algorithm-result](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-result/post.html) | POST | 
+| [/V1/inventory/sources](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/get.html) | GET | 
+| [/V1/inventory/sources](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/post.html) | POST | 
+| [/V1/inventory/sources/{sourceCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/get.html) | GET | 
+| [/V1/inventory/sources/{sourceCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/put.html) | PUT | 
+| [/V1/inventory/stock-resolver/{type}/{code}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-resolver/{type}/{code}/get.html) | GET | 
+| [/V1/inventory/stock-source-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/get.html) | GET | 
+| [/V1/inventory/stock-source-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/post.html) | POST | 
+| [/V1/inventory/stock-source-links-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links-delete/post.html) | POST | 
+| [/V1/inventory/stocks](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/get.html) | GET | 
+| [/V1/inventory/stocks](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/post.html) | POST | 
+| [/V1/inventory/stocks/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/get.html) | GET | 
+| [/V1/inventory/stocks/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/delete.html) | DELETE | 
+| [/V1/inventory/stocks/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/put.html) | PUT | 
+| [/V1/invoice/{invoiceId}/refund](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoice/{invoiceId}/refund/post.html) | POST | 
+| [/V1/invoices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/get.html) | GET | 
+| [/V1/invoices/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices//post.html) | POST | 
+| [/V1/invoices/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/comments/post.html) | POST | 
+| [/V1/invoices/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/get.html) | GET | 
+| [/V1/invoices/{id}/capture](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/capture/post.html) | POST | 
+| [/V1/invoices/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/comments/get.html) | GET | 
+| [/V1/invoices/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/emails/post.html) | POST | 
+| [/V1/invoices/{id}/void](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/void/post.html) | POST | 
+| [/V1/modules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/modules/get.html) | GET | 
+| [/V1/msp-2fa/default-provider-code/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/put.html) | PUT | 
+| [/V1/msp-2fa/default-provider-code/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/get.html) | GET | 
+| [/V1/msp-2fa/forced-providers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/forced-providers/get.html) | GET | 
+| [/V1/msp-2fa/installed-providers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/installed-providers/get.html) | GET | 
+| [/V1/msp-2fa/providers-to-activate/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/providers-to-activate/{userId}/get.html) | GET | 
+| [/V1/msp-2fa/reset-provider/{userId}/{providerCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/reset-provider/{userId}/{providerCode}/post.html) | POST | 
+| [/V1/msp-2fa/trusted-devices/{tokenId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{tokenId}/delete.html) | DELETE | 
+| [/V1/msp-2fa/trusted-devices/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{userId}/get.html) | GET | 
+| [/V1/msp-2fa/user-providers/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/get.html) | GET | 
+| [/V1/msp-2fa/user-providers/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/put.html) | PUT | 
+| [/V1/negotiable-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/get.html) | GET | 
+| [/V1/negotiable-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/delete.html) | DELETE | 
+| [/V1/negotiable-carts/{cartId}/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/{couponCode}/put.html) | PUT | 
+| [/V1/negotiable-carts/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}/delete.html) | DELETE | 
+| [/V1/negotiable-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/get.html) | GET | 
+| [/V1/negotiable-carts/{cartId}/set-payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/set-payment-information/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/shipping-information/post.html) | POST | 
+| [/V1/negotiable-carts/{cartId}/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/totals/get.html) | GET | 
+| [/V1/negotiableQuote/attachmentContent](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/attachmentContent/get.html) | GET | 
+| [/V1/negotiableQuote/decline](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/decline/post.html) | POST | 
+| [/V1/negotiableQuote/pricesUpdated](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/pricesUpdated/post.html) | POST | 
+| [/V1/negotiableQuote/request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/request/post.html) | POST | 
+| [/V1/negotiableQuote/submitToCustomer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/submitToCustomer/post.html) | POST | 
+| [/V1/negotiableQuote/{quoteId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/put.html) | PUT | 
+| [/V1/negotiableQuote/{quoteId}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/comments/get.html) | GET | 
+| [/V1/negotiableQuote/{quoteId}/shippingMethod](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/shippingMethod/put.html) | PUT | 
+| [/V1/order/{orderId}/invoice](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/invoice/post.html) | POST | 
+| [/V1/order/{orderId}/refund](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/refund/post.html) | POST | 
+| [/V1/order/{orderId}/ship](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/ship/post.html) | POST | 
+| [/V1/orders](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/get.html) | GET | 
+| [/V1/orders/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders//post.html) | POST | 
+| [/V1/orders/create](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/create/put.html) | PUT | 
+| [/V1/orders/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/get.html) | GET | 
+| [/V1/orders/items/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/{id}/get.html) | GET | 
+| [/V1/orders/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/get.html) | GET | 
+| [/V1/orders/{id}/cancel](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/cancel/post.html) | POST | 
+| [/V1/orders/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/post.html) | POST | 
+| [/V1/orders/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/get.html) | GET | 
+| [/V1/orders/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/emails/post.html) | POST | 
+| [/V1/orders/{id}/hold](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/hold/post.html) | POST | 
+| [/V1/orders/{id}/statuses](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/statuses/get.html) | GET | 
+| [/V1/orders/{id}/unhold](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/unhold/post.html) | POST | 
+| [/V1/orders/{parent_id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{parent_id}/put.html) | PUT | 
+| [/V1/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/post.html) | POST | 
+| [/V1/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/get.html) | GET | 
+| [/V1/products-render-info](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products-render-info/get.html) | GET | 
+| [/V1/products/attribute-sets](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/post.html) | POST | 
+| [/V1/products/attribute-sets/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/attributes/post.html) | POST | 
+| [/V1/products/attribute-sets/groups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/post.html) | POST | 
+| [/V1/products/attribute-sets/groups/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/list/get.html) | GET | 
+| [/V1/products/attribute-sets/groups/{groupId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/{groupId}/delete.html) | DELETE | 
+| [/V1/products/attribute-sets/sets/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/sets/list/get.html) | GET | 
+| [/V1/products/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/get.html) | GET | 
+| [/V1/products/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/delete.html) | DELETE | 
+| [/V1/products/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/put.html) | PUT | 
+| [/V1/products/attribute-sets/{attributeSetId}/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/get.html) | GET | 
+| [/V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode}/delete.html) | DELETE | 
+| [/V1/products/attribute-sets/{attributeSetId}/groups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/groups/put.html) | PUT | 
+| [/V1/products/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/get.html) | GET | 
+| [/V1/products/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/post.html) | POST | 
+| [/V1/products/attributes/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/types/get.html) | GET | 
+| [/V1/products/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/get.html) | GET | 
+| [/V1/products/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/put.html) | PUT | 
+| [/V1/products/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/delete.html) | DELETE | 
+| [/V1/products/attributes/{attributeCode}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/get.html) | GET | 
+| [/V1/products/attributes/{attributeCode}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/post.html) | POST | 
+| [/V1/products/attributes/{attributeCode}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/{optionId}/delete.html) | DELETE | 
+| [/V1/products/base-prices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices/post.html) | POST | 
+| [/V1/products/base-prices-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices-information/post.html) | POST | 
+| [/V1/products/cost](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost/post.html) | POST | 
+| [/V1/products/cost-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-delete/post.html) | POST | 
+| [/V1/products/cost-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-information/post.html) | POST | 
+| [/V1/products/downloadable-links/samples/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/samples/{id}/delete.html) | DELETE | 
+| [/V1/products/downloadable-links/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/{id}/delete.html) | DELETE | 
+| [/V1/products/links/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/types/get.html) | GET | 
+| [/V1/products/links/{type}/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/{type}/attributes/get.html) | GET | 
+| [/V1/products/media/types/{attributeSetName}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/media/types/{attributeSetName}/get.html) | GET | 
+| [/V1/products/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/post.html) | POST | 
+| [/V1/products/options/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/types/get.html) | GET | 
+| [/V1/products/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/{optionId}/put.html) | PUT | 
+| [/V1/products/special-price](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price/post.html) | POST | 
+| [/V1/products/special-price-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-delete/post.html) | POST | 
+| [/V1/products/special-price-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-information/post.html) | POST | 
+| [/V1/products/tier-prices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/post.html) | POST | 
+| [/V1/products/tier-prices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/put.html) | PUT | 
+| [/V1/products/tier-prices-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-delete/post.html) | POST | 
+| [/V1/products/tier-prices-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-information/post.html) | POST | 
+| [/V1/products/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/types/get.html) | GET | 
+| [/V1/products/{productSku}/stockItems/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{productSku}/stockItems/{itemId}/put.html) | PUT | 
+| [/V1/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/put.html) | PUT | 
+| [/V1/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/delete.html) | DELETE | 
+| [/V1/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/get.html) | GET | 
+| [/V1/products/{sku}/downloadable-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/get.html) | GET | 
+| [/V1/products/{sku}/downloadable-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/post.html) | POST | 
+| [/V1/products/{sku}/downloadable-links/samples](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/get.html) | GET | 
+| [/V1/products/{sku}/downloadable-links/samples](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/post.html) | POST | 
+| [/V1/products/{sku}/downloadable-links/samples/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/{id}/put.html) | PUT | 
+| [/V1/products/{sku}/downloadable-links/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/{id}/put.html) | PUT | 
+| [/V1/products/{sku}/group-prices/{customerGroupId}/tiers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/get.html) | GET | 
+| [/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/delete.html) | DELETE | 
+| [/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price}/post.html) | POST | 
+| [/V1/products/{sku}/links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/post.html) | POST | 
+| [/V1/products/{sku}/links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/put.html) | PUT | 
+| [/V1/products/{sku}/links/{type}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/get.html) | GET | 
+| [/V1/products/{sku}/links/{type}/{linkedProductSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/{linkedProductSku}/delete.html) | DELETE | 
+| [/V1/products/{sku}/media](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/post.html) | POST | 
+| [/V1/products/{sku}/media](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/get.html) | GET | 
+| [/V1/products/{sku}/media/{entryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/get.html) | GET | 
+| [/V1/products/{sku}/media/{entryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/put.html) | PUT | 
+| [/V1/products/{sku}/media/{entryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/delete.html) | DELETE | 
+| [/V1/products/{sku}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/get.html) | GET | 
+| [/V1/products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/get.html) | GET | 
+| [/V1/products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/delete.html) | DELETE | 
+| [/V1/products/{sku}/websites](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/post.html) | POST | 
+| [/V1/products/{sku}/websites](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/put.html) | PUT | 
+| [/V1/products/{sku}/websites/{websiteId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/{websiteId}/delete.html) | DELETE | 
+| [/V1/requisition_lists](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/requisition_lists/post.html) | POST | 
+| [/V1/returns](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/post.html) | POST | 
+| [/V1/returns](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/get.html) | GET | 
+| [/V1/returns/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/get.html) | GET | 
+| [/V1/returns/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/delete.html) | DELETE | 
+| [/V1/returns/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/put.html) | PUT | 
+| [/V1/returns/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/post.html) | POST | 
+| [/V1/returns/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/get.html) | GET | 
+| [/V1/returns/{id}/labels](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/labels/get.html) | GET | 
+| [/V1/returns/{id}/tracking-numbers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/post.html) | POST | 
+| [/V1/returns/{id}/tracking-numbers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/get.html) | GET | 
+| [/V1/returns/{id}/tracking-numbers/{trackId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/{trackId}/delete.html) | DELETE | 
+| [/V1/returnsAttributeMetadata](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/get.html) | GET | 
+| [/V1/returnsAttributeMetadata/custom](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/custom/get.html) | GET | 
+| [/V1/returnsAttributeMetadata/form/{formCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/form/{formCode}/get.html) | GET | 
+| [/V1/returnsAttributeMetadata/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/{attributeCode}/get.html) | GET | 
+| [/V1/reward/mine/use-reward](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/reward/mine/use-reward/post.html) | POST | 
+| [/V1/salesRules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/post.html) | POST | 
+| [/V1/salesRules/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/search/get.html) | GET | 
+| [/V1/salesRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/get.html) | GET | 
+| [/V1/salesRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/put.html) | PUT | 
+| [/V1/salesRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/delete.html) | DELETE | 
+| [/V1/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/search/get.html) | GET | 
+| [/V1/sharedCatalog](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/post.html) | POST | 
+| [/V1/sharedCatalog/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog//get.html) | GET | 
+| [/V1/sharedCatalog/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/put.html) | PUT | 
+| [/V1/sharedCatalog/{id}/assignCategories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignCategories/post.html) | POST | 
+| [/V1/sharedCatalog/{id}/assignProducts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignProducts/post.html) | POST | 
+| [/V1/sharedCatalog/{id}/categories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/categories/get.html) | GET | 
+| [/V1/sharedCatalog/{id}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/products/get.html) | GET | 
+| [/V1/sharedCatalog/{id}/unassignCategories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignCategories/post.html) | POST | 
+| [/V1/sharedCatalog/{id}/unassignProducts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignProducts/post.html) | POST | 
+| [/V1/sharedCatalog/{sharedCatalogId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/get.html) | GET | 
+| [/V1/sharedCatalog/{sharedCatalogId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/delete.html) | DELETE | 
+| [/V1/sharedCatalog/{sharedCatalogId}/assignCompanies](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/assignCompanies/post.html) | POST | 
+| [/V1/sharedCatalog/{sharedCatalogId}/companies](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/companies/get.html) | GET | 
+| [/V1/sharedCatalog/{sharedCatalogId}/unassignCompanies](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/unassignCompanies/post.html) | POST | 
+| [/V1/shipment/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment//post.html) | POST | 
+| [/V1/shipment/track](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/post.html) | POST | 
+| [/V1/shipment/track/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/{id}/delete.html) | DELETE | 
+| [/V1/shipment/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/get.html) | GET | 
+| [/V1/shipment/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/get.html) | GET | 
+| [/V1/shipment/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/post.html) | POST | 
+| [/V1/shipment/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/emails/post.html) | POST | 
+| [/V1/shipment/{id}/label](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/label/get.html) | GET | 
+| [/V1/shipments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipments/get.html) | GET | 
+| [/V1/stockItems/lowStock/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/lowStock//get.html) | GET | 
+| [/V1/stockItems/{productSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/{productSku}/get.html) | GET | 
+| [/V1/stockStatuses/{productSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockStatuses/{productSku}/get.html) | GET | 
+| [/V1/store/storeConfigs](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeConfigs/get.html) | GET | 
+| [/V1/store/storeGroups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeGroups/get.html) | GET | 
+| [/V1/store/storeViews](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeViews/get.html) | GET | 
+| [/V1/store/websites](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/websites/get.html) | GET | 
+| [/V1/taxClasses](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/post.html) | POST | 
+| [/V1/taxClasses/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/search/get.html) | GET | 
+| [/V1/taxClasses/{classId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{classId}/put.html) | PUT | 
+| [/V1/taxClasses/{taxClassId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/get.html) | GET | 
+| [/V1/taxClasses/{taxClassId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/delete.html) | DELETE | 
+| [/V1/taxRates](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/post.html) | POST | 
+| [/V1/taxRates](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/put.html) | PUT | 
+| [/V1/taxRates/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/search/get.html) | GET | 
+| [/V1/taxRates/{rateId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/get.html) | GET | 
+| [/V1/taxRates/{rateId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/delete.html) | DELETE | 
+| [/V1/taxRules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/post.html) | POST | 
+| [/V1/taxRules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/put.html) | PUT | 
+| [/V1/taxRules/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/search/get.html) | GET | 
+| [/V1/taxRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/delete.html) | DELETE | 
+| [/V1/taxRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/get.html) | GET | 
+| [/V1/team/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team//get.html) | GET | 
+| [/V1/team/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{companyId}/post.html) | POST | 
+| [/V1/team/{teamId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/get.html) | GET | 
+| [/V1/team/{teamId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/delete.html) | DELETE | 
+| [/V1/team/{teamId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/put.html) | PUT | 
+| [/V1/temando/rma/{rmaId}/shipments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/temando/rma/{rmaId}/shipments/put.html) | PUT | 
+| [/V1/transactions](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/get.html) | GET | 
+| [/V1/transactions/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/{id}/get.html) | GET | 
+| [/V1/vertex-address-validation/vertex-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/vertex-address-validation/vertex-address/post.html) | POST | 
+| [/V1/worldpay-guest-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/worldpay-guest-carts/{cartId}/payment-information/post.html) | POST | 
