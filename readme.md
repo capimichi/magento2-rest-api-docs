@@ -2,1033 +2,520 @@
 
 ## Html
 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/addresses/{addressId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-billing-address/{amazonOrderReferenceId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-shipping-address/{amazonOrderReferenceId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon/order-ref/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/analytics/link/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/delete/{nodePathId}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/shipping/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/attribute/{attributeCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/custom/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/form/{formCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/attribute/{attributeCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/custom/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/form/{formCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/detailed-status/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/operation-status/{status}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/status/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/add/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/types/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/{optionId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{productSku}/children/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{optionId}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/all/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts//post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/balance/apply/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkGiftCard/{giftCardCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-collection-point/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-fields/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-pickup-location/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collect-totals/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-result/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/{couponCode}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/delivery-option/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods-by-address-id/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/{giftCardCode}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/order/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-methods/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/pickup-location/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/set-payment-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-methods/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/{couponCode}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods-by-address-id/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/{giftCardCode}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/order/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/payment-methods/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-methods/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/giftCards/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/items/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/options/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/move/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/{sku}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/assignRoles/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/users/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits//get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/company/{companyId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/{historyId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/decreaseBalance/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/increaseBalance/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/variation/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/child/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/{childSku}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/all/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByCodes/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByIds/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/generate/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/refund/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/emails/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemos/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{storeId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/permissions/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/addresses/{addressId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/confirm/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/isEmailAvailable/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/activate/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/billingAddress/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/password/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/shippingAddress/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/password/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/resetPassword/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/validate/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/billingAddress/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/carts/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/confirm/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/permissions/readonly/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/shippingAddress/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{email}/activate/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/{countryId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/currency/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{wrappingId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/giftregistry/mine/estimate-shipping-methods/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-collection-point/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-fields/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-pickup-location/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collect-totals/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-result/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/{couponCode}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/delivery-option/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/estimate-shipping-methods/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/order/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-methods/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/pickup-location/select/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/set-payment-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-methods/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-giftregistry/{cartId}/estimate-shipping-methods/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/move/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/admin/token/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/customer/token/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-partial-source-transfer/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-assign/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-transfer/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-unassign/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance-provider-code/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-latlng-from-address/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-product-salable-quantity/{sku}/{stockId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable/{sku}/{stockId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/{sourceCode}/{sku}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notifications-delete/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items-delete/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-result/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-resolver/{type}/{code}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links-delete/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoice/{invoiceId}/refund/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices//post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/comments/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/capture/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/comments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/emails/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/void/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/modules/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/forced-providers/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/installed-providers/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/providers-to-activate/{userId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/reset-provider/{userId}/{providerCode}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{tokenId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{userId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/{couponCode}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/set-payment-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/shipping-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/totals/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/attachmentContent/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/decline/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/pricesUpdated/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/request/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/submitToCustomer/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/comments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/shippingMethod/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/invoice/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/refund/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/ship/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders//post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/create/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/cancel/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/emails/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/hold/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/statuses/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/unhold/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{parent_id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products-render-info/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/attributes/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/{groupId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/sets/list/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/groups/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/types/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/{optionId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-delete/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/samples/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/types/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/{type}/attributes/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/media/types/{attributeSetName}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/types/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/{optionId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-delete/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-delete/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-information/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/types/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{productSku}/stockItems/{itemId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/{linkedProductSku}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/{websiteId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/requisition_lists/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/labels/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/{trackId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/custom/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/form/{formCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/{attributeCode}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/reward/mine/use-reward/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog//get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignCategories/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignProducts/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/categories/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/products/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignCategories/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignProducts/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/assignCompanies/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/companies/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/unassignCompanies/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment//post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/{id}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/emails/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/label/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipments/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/lowStock//get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/{productSku}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockStatuses/{productSku}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeConfigs/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeGroups/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeViews/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/websites/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{classId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/search/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team//get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{companyId}/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/delete.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/temando/rma/{rmaId}/shipments/put.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/{id}/get.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/vertex-address-validation/vertex-address/post.html 
- 
-http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/worldpay-guest-carts/{cartId}/payment-information/post.html 
- 
+| Tables        | Are           | Cool  | 
+ | ------------- |:-------------:| -----:| 
+| col 3 is      | [/V1/addresses/{addressId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/addresses/{addressId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/adobestock/asset/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/list/get.html) | $1600 | 
+| col 3 is      | [/V1/adobestock/asset/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/search/get.html) | $1600 | 
+| col 3 is      | [/V1/adobestock/asset/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/adobestock/asset/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/asset/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/adobestock/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/adobestock/search/get.html) | $1600 | 
+| col 3 is      | [/V1/amazon-billing-address/{amazonOrderReferenceId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-billing-address/{amazonOrderReferenceId}/put.html) | $1600 | 
+| col 3 is      | [/V1/amazon-shipping-address/{amazonOrderReferenceId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon-shipping-address/{amazonOrderReferenceId}/put.html) | $1600 | 
+| col 3 is      | [/V1/amazon/order-ref](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/amazon/order-ref/delete.html) | $1600 | 
+| col 3 is      | [/V1/analytics/link](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/analytics/link/get.html) | $1600 | 
+| col 3 is      | [/V1/attribute/product](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/get.html) | $1600 | 
+| col 3 is      | [/V1/attribute/product/delete/{nodePathId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/delete/{nodePathId}/post.html) | $1600 | 
+| col 3 is      | [/V1/attribute/product/shipping](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attribute/product/shipping/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customer/attribute/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/attribute/{attributeCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customer/custom](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/custom/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customer/form/{formCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customer/form/{formCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customerAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customerAddress/attribute/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/attribute/{attributeCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customerAddress/custom](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/custom/get.html) | $1600 | 
+| col 3 is      | [/V1/attributeMetadata/customerAddress/form/{formCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/attributeMetadata/customerAddress/form/{formCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/bulk](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/get.html) | $1600 | 
+| col 3 is      | [/V1/bulk/{bulkUuid}/detailed-status](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/detailed-status/get.html) | $1600 | 
+| col 3 is      | [/V1/bulk/{bulkUuid}/operation-status/{status}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/operation-status/{status}/get.html) | $1600 | 
+| col 3 is      | [/V1/bulk/{bulkUuid}/status](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bulk/{bulkUuid}/status/get.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/options/add](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/add/post.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/options/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/types/get.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/options/{optionId}/put.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{productSku}/children](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{productSku}/children/get.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{sku}/links/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{sku}/links/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/links/{optionId}/post.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{sku}/options/all](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/all/get.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/get.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts//post.html) | $1600 | 
+| col 3 is      | [/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/guest-carts/{cartId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/licence](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/licence/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/licence/list/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/balance/apply](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/balance/apply/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/billing-address/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/checkGiftCard/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkGiftCard/{giftCardCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/checkout-collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-collection-point/select/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/checkout-fields](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-fields/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/checkout-pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/checkout-pickup-location/select/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/collect-totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collect-totals/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-request/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/collection-point/search-result](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/search-result/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/collection-point/select/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/coupons/{couponCode}/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/delivery-option](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/delivery-option/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/estimate-shipping-methods-by-address-id](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/estimate-shipping-methods-by-address-id/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/gift-message/{itemId}/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/giftCards/{giftCardCode}/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/items/{itemId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/order](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/order/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-information/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/payment-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/payment-methods/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/pickup-location/select/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/selected-payment-method/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/set-payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/set-payment-information/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-information/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/shipping-methods/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/mine/totals-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/mine/totals-information/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/search/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/billing-address/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/coupons/{couponCode}/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/estimate-shipping-methods-by-address-id](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/estimate-shipping-methods-by-address-id/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/gift-message/{itemId}/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/giftCards/{giftCardCode}/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/items/{itemId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/order](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/order/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/payment-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/payment-methods/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/selected-payment-method/put.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-information/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/shipping-methods/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{cartId}/totals-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{cartId}/totals-information/post.html) | $1600 | 
+| col 3 is      | [/V1/carts/{quoteId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/giftCards/get.html) | $1600 | 
+| col 3 is      | [/V1/carts/{quoteId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/carts/{quoteId}/items/post.html) | $1600 | 
+| col 3 is      | [/V1/categories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/post.html) | $1600 | 
+| col 3 is      | [/V1/categories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/attributes/{attributeCode}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/attributes/{attributeCode}/options/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/list/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}/move](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/move/put.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/get.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/post.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/put.html) | $1600 | 
+| col 3 is      | [/V1/categories/{categoryId}/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{categoryId}/products/{sku}/delete.html) | $1600 | 
+| col 3 is      | [/V1/categories/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/categories/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/cmsBlock](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/post.html) | $1600 | 
+| col 3 is      | [/V1/cmsBlock/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/search/get.html) | $1600 | 
+| col 3 is      | [/V1/cmsBlock/{blockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/get.html) | $1600 | 
+| col 3 is      | [/V1/cmsBlock/{blockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{blockId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/cmsBlock/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsBlock/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/cmsPage](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/post.html) | $1600 | 
+| col 3 is      | [/V1/cmsPage/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/search/get.html) | $1600 | 
+| col 3 is      | [/V1/cmsPage/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/cmsPage/{pageId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/get.html) | $1600 | 
+| col 3 is      | [/V1/cmsPage/{pageId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/cmsPage/{pageId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/company/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//get.html) | $1600 | 
+| col 3 is      | [/V1/company/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company//post.html) | $1600 | 
+| col 3 is      | [/V1/company/assignRoles](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/assignRoles/put.html) | $1600 | 
+| col 3 is      | [/V1/company/role/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//get.html) | $1600 | 
+| col 3 is      | [/V1/company/role/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role//post.html) | $1600 | 
+| col 3 is      | [/V1/company/role/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/company/role/{roleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/get.html) | $1600 | 
+| col 3 is      | [/V1/company/role/{roleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/company/role/{roleId}/users](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/role/{roleId}/users/get.html) | $1600 | 
+| col 3 is      | [/V1/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/get.html) | $1600 | 
+| col 3 is      | [/V1/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/company/{companyId}/put.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits//get.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/company/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/company/{companyId}/get.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/history](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/get.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/history/{historyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/history/{historyId}/put.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/{creditId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/get.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/{creditId}/decreaseBalance](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/decreaseBalance/post.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/{creditId}/increaseBalance](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{creditId}/increaseBalance/post.html) | $1600 | 
+| col 3 is      | [/V1/companyCredits/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/companyCredits/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/variation](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/variation/put.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/child](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/child/post.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/children](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/get.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/children/{childSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/children/{childSku}/delete.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/post.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/options/all](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/all/get.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/options/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/options/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/configurable-products/{sku}/options/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/configurable-products/{sku}/options/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/post.html) | $1600 | 
+| col 3 is      | [/V1/coupons/deleteByCodes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByCodes/post.html) | $1600 | 
+| col 3 is      | [/V1/coupons/deleteByIds](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/deleteByIds/post.html) | $1600 | 
+| col 3 is      | [/V1/coupons/generate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/generate/post.html) | $1600 | 
+| col 3 is      | [/V1/coupons/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/search/get.html) | $1600 | 
+| col 3 is      | [/V1/coupons/{couponId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/get.html) | $1600 | 
+| col 3 is      | [/V1/coupons/{couponId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/put.html) | $1600 | 
+| col 3 is      | [/V1/coupons/{couponId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/coupons/{couponId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/post.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo/refund](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/refund/post.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/get.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/comments/post.html) | $1600 | 
+| col 3 is      | [/V1/creditmemo/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemo/{id}/emails/post.html) | $1600 | 
+| col 3 is      | [/V1/creditmemos](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/creditmemos/get.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/post.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/default](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/get.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/default/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/default/{storeId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/default/{storeId}/get.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/search/get.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/customerGroups/{id}/permissions](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customerGroups/{id}/permissions/get.html) | $1600 | 
+| col 3 is      | [/V1/customers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/post.html) | $1600 | 
+| col 3 is      | [/V1/customers/addresses/{addressId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/addresses/{addressId}/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/confirm](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/confirm/post.html) | $1600 | 
+| col 3 is      | [/V1/customers/isEmailAvailable](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/isEmailAvailable/post.html) | $1600 | 
+| col 3 is      | [/V1/customers/me](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/put.html) | $1600 | 
+| col 3 is      | [/V1/customers/me](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/me/activate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/activate/put.html) | $1600 | 
+| col 3 is      | [/V1/customers/me/billingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/billingAddress/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/me/password](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/password/put.html) | $1600 | 
+| col 3 is      | [/V1/customers/me/shippingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/me/shippingAddress/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/password](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/password/put.html) | $1600 | 
+| col 3 is      | [/V1/customers/resetPassword](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/resetPassword/post.html) | $1600 | 
+| col 3 is      | [/V1/customers/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/search/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/validate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/validate/put.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/put.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}/billingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/billingAddress/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}/carts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/carts/post.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}/confirm](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/confirm/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}/permissions/readonly](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/permissions/readonly/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/{customerId}/shippingAddress](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{customerId}/shippingAddress/get.html) | $1600 | 
+| col 3 is      | [/V1/customers/{email}/activate](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/customers/{email}/activate/put.html) | $1600 | 
+| col 3 is      | [/V1/directory/countries](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/get.html) | $1600 | 
+| col 3 is      | [/V1/directory/countries/{countryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/countries/{countryId}/get.html) | $1600 | 
+| col 3 is      | [/V1/directory/currency](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/directory/currency/get.html) | $1600 | 
+| col 3 is      | [/V1/eav/attribute-sets](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/post.html) | $1600 | 
+| col 3 is      | [/V1/eav/attribute-sets/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/list/get.html) | $1600 | 
+| col 3 is      | [/V1/eav/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/get.html) | $1600 | 
+| col 3 is      | [/V1/eav/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/eav/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/eav/attribute-sets/{attributeSetId}/put.html) | $1600 | 
+| col 3 is      | [/V1/gift-wrappings](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/post.html) | $1600 | 
+| col 3 is      | [/V1/gift-wrappings](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/get.html) | $1600 | 
+| col 3 is      | [/V1/gift-wrappings/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/gift-wrappings/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/gift-wrappings/{wrappingId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/gift-wrappings/{wrappingId}/put.html) | $1600 | 
+| col 3 is      | [/V1/giftregistry/mine/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/giftregistry/mine/estimate-shipping-methods/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/billing-address/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/checkout-collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-collection-point/select/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/checkout-fields](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-fields/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/checkout-pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/checkout-pickup-location/select/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/collect-totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collect-totals/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/collection-point/search-request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-request/delete.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/collection-point/search-result](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/search-result/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/collection-point/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/collection-point/select/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/delete.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/coupons/{couponCode}/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/delivery-option](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/delivery-option/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/estimate-shipping-methods/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/gift-message](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/gift-message/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/gift-message/{itemId}/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/items/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/items/{itemId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/order](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/order/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-information/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/payment-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/payment-methods/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/pickup-location/select](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/pickup-location/select/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/selected-payment-method](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/selected-payment-method/put.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/set-payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/set-payment-information/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-information/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/shipping-methods/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals/get.html) | $1600 | 
+| col 3 is      | [/V1/guest-carts/{cartId}/totals-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-carts/{cartId}/totals-information/post.html) | $1600 | 
+| col 3 is      | [/V1/guest-giftregistry/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/guest-giftregistry/{cartId}/estimate-shipping-methods/post.html) | $1600 | 
+| col 3 is      | [/V1/hierarchy/move/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/move/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/hierarchy/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/hierarchy/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/integration/admin/token](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/admin/token/post.html) | $1600 | 
+| col 3 is      | [/V1/integration/customer/token](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/integration/customer/token/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/bulk-partial-source-transfer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-partial-source-transfer/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/bulk-product-source-assign](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-assign/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/bulk-product-source-transfer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-transfer/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/bulk-product-source-unassign](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/bulk-product-source-unassign/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/dump-stock-index-data/{salesChannelType}/{salesChannelCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/export-stock-salable-qty/{salesChannelType}/{salesChannelCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/get-distance](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/get-distance-provider-code](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-distance-provider-code/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/get-latlng-from-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-latlng-from-address/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/get-product-salable-quantity/{sku}/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-product-salable-quantity/{sku}/{stockId}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/get-sources-assigned-to-stock-ordered-by-priority/{stockId}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable-for-requested-qty/{sku}/{stockId}/{requestedQty}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/is-product-salable/{sku}/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/is-product-salable/{sku}/{stockId}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/low-quantity-notification](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/low-quantity-notification/{sourceCode}/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notification/{sourceCode}/{sku}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/low-quantity-notifications-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/low-quantity-notifications-delete/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/source-items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/source-items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/source-items-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-items-delete/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/source-selection-algorithm-list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-list/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/source-selection-algorithm-result](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/source-selection-algorithm-result/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/sources](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/sources](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/sources/{sourceCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/sources/{sourceCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/sources/{sourceCode}/put.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stock-resolver/{type}/{code}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-resolver/{type}/{code}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stock-source-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stock-source-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stock-source-links-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stock-source-links-delete/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stocks](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stocks](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/post.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stocks/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/get.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stocks/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/inventory/stocks/{stockId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/inventory/stocks/{stockId}/put.html) | $1600 | 
+| col 3 is      | [/V1/invoice/{invoiceId}/refund](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoice/{invoiceId}/refund/post.html) | $1600 | 
+| col 3 is      | [/V1/invoices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/get.html) | $1600 | 
+| col 3 is      | [/V1/invoices/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices//post.html) | $1600 | 
+| col 3 is      | [/V1/invoices/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/comments/post.html) | $1600 | 
+| col 3 is      | [/V1/invoices/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/invoices/{id}/capture](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/capture/post.html) | $1600 | 
+| col 3 is      | [/V1/invoices/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/comments/get.html) | $1600 | 
+| col 3 is      | [/V1/invoices/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/emails/post.html) | $1600 | 
+| col 3 is      | [/V1/invoices/{id}/void](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/invoices/{id}/void/post.html) | $1600 | 
+| col 3 is      | [/V1/modules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/modules/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/default-provider-code/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/put.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/default-provider-code/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/default-provider-code/{userId}/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/forced-providers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/forced-providers/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/installed-providers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/installed-providers/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/providers-to-activate/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/providers-to-activate/{userId}/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/reset-provider/{userId}/{providerCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/reset-provider/{userId}/{providerCode}/post.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/trusted-devices/{tokenId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{tokenId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/trusted-devices/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/trusted-devices/{userId}/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/user-providers/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/get.html) | $1600 | 
+| col 3 is      | [/V1/msp-2fa/user-providers/{userId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/msp-2fa/user-providers/{userId}/put.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/get.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/billing-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/billing-address/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/coupons](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/delete.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/coupons/{couponCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/coupons/{couponCode}/put.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/estimate-shipping-methods](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/giftCards](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}/delete.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/payment-information/get.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/set-payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/set-payment-information/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/shipping-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/shipping-information/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiable-carts/{cartId}/totals](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiable-carts/{cartId}/totals/get.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/attachmentContent](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/attachmentContent/get.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/decline](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/decline/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/pricesUpdated](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/pricesUpdated/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/request](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/request/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/submitToCustomer](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/submitToCustomer/post.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/{quoteId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/put.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/{quoteId}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/comments/get.html) | $1600 | 
+| col 3 is      | [/V1/negotiableQuote/{quoteId}/shippingMethod](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/negotiableQuote/{quoteId}/shippingMethod/put.html) | $1600 | 
+| col 3 is      | [/V1/order/{orderId}/invoice](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/invoice/post.html) | $1600 | 
+| col 3 is      | [/V1/order/{orderId}/refund](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/refund/post.html) | $1600 | 
+| col 3 is      | [/V1/order/{orderId}/ship](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/order/{orderId}/ship/post.html) | $1600 | 
+| col 3 is      | [/V1/orders](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/get.html) | $1600 | 
+| col 3 is      | [/V1/orders/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders//post.html) | $1600 | 
+| col 3 is      | [/V1/orders/create](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/create/put.html) | $1600 | 
+| col 3 is      | [/V1/orders/items](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/get.html) | $1600 | 
+| col 3 is      | [/V1/orders/items/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/items/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/cancel](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/cancel/post.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/post.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/comments/get.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/emails/post.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/hold](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/hold/post.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/statuses](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/statuses/get.html) | $1600 | 
+| col 3 is      | [/V1/orders/{id}/unhold](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{id}/unhold/post.html) | $1600 | 
+| col 3 is      | [/V1/orders/{parent_id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/orders/{parent_id}/put.html) | $1600 | 
+| col 3 is      | [/V1/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/post.html) | $1600 | 
+| col 3 is      | [/V1/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/get.html) | $1600 | 
+| col 3 is      | [/V1/products-render-info](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products-render-info/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/post.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/attributes/post.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/groups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/post.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/groups/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/list/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/groups/{groupId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/groups/{groupId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/sets/list](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/sets/list/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/{attributeSetId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/{attributeSetId}/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/attributes/{attributeCode}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/attribute-sets/{attributeSetId}/groups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attribute-sets/{attributeSetId}/groups/put.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/post.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/types/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/{attributeCode}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/get.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/{attributeCode}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/post.html) | $1600 | 
+| col 3 is      | [/V1/products/attributes/{attributeCode}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/attributes/{attributeCode}/options/{optionId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/base-prices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices/post.html) | $1600 | 
+| col 3 is      | [/V1/products/base-prices-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/base-prices-information/post.html) | $1600 | 
+| col 3 is      | [/V1/products/cost](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost/post.html) | $1600 | 
+| col 3 is      | [/V1/products/cost-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-delete/post.html) | $1600 | 
+| col 3 is      | [/V1/products/cost-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/cost-information/post.html) | $1600 | 
+| col 3 is      | [/V1/products/downloadable-links/samples/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/samples/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/downloadable-links/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/downloadable-links/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/links/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/types/get.html) | $1600 | 
+| col 3 is      | [/V1/products/links/{type}/attributes](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/links/{type}/attributes/get.html) | $1600 | 
+| col 3 is      | [/V1/products/media/types/{attributeSetName}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/media/types/{attributeSetName}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/post.html) | $1600 | 
+| col 3 is      | [/V1/products/options/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/types/get.html) | $1600 | 
+| col 3 is      | [/V1/products/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/options/{optionId}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/special-price](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price/post.html) | $1600 | 
+| col 3 is      | [/V1/products/special-price-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-delete/post.html) | $1600 | 
+| col 3 is      | [/V1/products/special-price-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/special-price-information/post.html) | $1600 | 
+| col 3 is      | [/V1/products/tier-prices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/post.html) | $1600 | 
+| col 3 is      | [/V1/products/tier-prices](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices/put.html) | $1600 | 
+| col 3 is      | [/V1/products/tier-prices-delete](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-delete/post.html) | $1600 | 
+| col 3 is      | [/V1/products/tier-prices-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/tier-prices-information/post.html) | $1600 | 
+| col 3 is      | [/V1/products/types](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/types/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{productSku}/stockItems/{itemId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{productSku}/stockItems/{itemId}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/downloadable-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/downloadable-links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/post.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/downloadable-links/samples](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/downloadable-links/samples](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/post.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/downloadable-links/samples/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/samples/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/downloadable-links/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/downloadable-links/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/group-prices/{customerGroupId}/tiers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/group-prices/{customerGroupId}/tiers/{qty}/price/{price}/post.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/post.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/links](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/links/{type}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/links/{type}/{linkedProductSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/links/{type}/{linkedProductSku}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/media](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/post.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/media](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/media/{entryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/media/{entryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/media/{entryId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/media/{entryId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/options](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/get.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/options/{optionId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/options/{optionId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/websites](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/post.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/websites](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/put.html) | $1600 | 
+| col 3 is      | [/V1/products/{sku}/websites/{websiteId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/products/{sku}/websites/{websiteId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/requisition_lists](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/requisition_lists/post.html) | $1600 | 
+| col 3 is      | [/V1/returns](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/post.html) | $1600 | 
+| col 3 is      | [/V1/returns](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/get.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/post.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/comments/get.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}/labels](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/labels/get.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}/tracking-numbers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/post.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}/tracking-numbers](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/get.html) | $1600 | 
+| col 3 is      | [/V1/returns/{id}/tracking-numbers/{trackId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returns/{id}/tracking-numbers/{trackId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/returnsAttributeMetadata](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/get.html) | $1600 | 
+| col 3 is      | [/V1/returnsAttributeMetadata/custom](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/custom/get.html) | $1600 | 
+| col 3 is      | [/V1/returnsAttributeMetadata/form/{formCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/form/{formCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/returnsAttributeMetadata/{attributeCode}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/returnsAttributeMetadata/{attributeCode}/get.html) | $1600 | 
+| col 3 is      | [/V1/reward/mine/use-reward](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/reward/mine/use-reward/post.html) | $1600 | 
+| col 3 is      | [/V1/salesRules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/post.html) | $1600 | 
+| col 3 is      | [/V1/salesRules/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/search/get.html) | $1600 | 
+| col 3 is      | [/V1/salesRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/get.html) | $1600 | 
+| col 3 is      | [/V1/salesRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/put.html) | $1600 | 
+| col 3 is      | [/V1/salesRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/salesRules/{ruleId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/search/get.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/post.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog//get.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/put.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}/assignCategories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignCategories/post.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}/assignProducts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/assignProducts/post.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}/categories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/categories/get.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}/products](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/products/get.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}/unassignCategories](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignCategories/post.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{id}/unassignProducts](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{id}/unassignProducts/post.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{sharedCatalogId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/get.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{sharedCatalogId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{sharedCatalogId}/assignCompanies](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/assignCompanies/post.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{sharedCatalogId}/companies](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/companies/get.html) | $1600 | 
+| col 3 is      | [/V1/sharedCatalog/{sharedCatalogId}/unassignCompanies](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/sharedCatalog/{sharedCatalogId}/unassignCompanies/post.html) | $1600 | 
+| col 3 is      | [/V1/shipment/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment//post.html) | $1600 | 
+| col 3 is      | [/V1/shipment/track](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/post.html) | $1600 | 
+| col 3 is      | [/V1/shipment/track/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/track/{id}/delete.html) | $1600 | 
+| col 3 is      | [/V1/shipment/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/shipment/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/get.html) | $1600 | 
+| col 3 is      | [/V1/shipment/{id}/comments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/comments/post.html) | $1600 | 
+| col 3 is      | [/V1/shipment/{id}/emails](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/emails/post.html) | $1600 | 
+| col 3 is      | [/V1/shipment/{id}/label](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipment/{id}/label/get.html) | $1600 | 
+| col 3 is      | [/V1/shipments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/shipments/get.html) | $1600 | 
+| col 3 is      | [/V1/stockItems/lowStock/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/lowStock//get.html) | $1600 | 
+| col 3 is      | [/V1/stockItems/{productSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockItems/{productSku}/get.html) | $1600 | 
+| col 3 is      | [/V1/stockStatuses/{productSku}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/stockStatuses/{productSku}/get.html) | $1600 | 
+| col 3 is      | [/V1/store/storeConfigs](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeConfigs/get.html) | $1600 | 
+| col 3 is      | [/V1/store/storeGroups](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeGroups/get.html) | $1600 | 
+| col 3 is      | [/V1/store/storeViews](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/storeViews/get.html) | $1600 | 
+| col 3 is      | [/V1/store/websites](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/store/websites/get.html) | $1600 | 
+| col 3 is      | [/V1/taxClasses](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/post.html) | $1600 | 
+| col 3 is      | [/V1/taxClasses/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/search/get.html) | $1600 | 
+| col 3 is      | [/V1/taxClasses/{classId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{classId}/put.html) | $1600 | 
+| col 3 is      | [/V1/taxClasses/{taxClassId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/get.html) | $1600 | 
+| col 3 is      | [/V1/taxClasses/{taxClassId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxClasses/{taxClassId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/taxRates](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/post.html) | $1600 | 
+| col 3 is      | [/V1/taxRates](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/put.html) | $1600 | 
+| col 3 is      | [/V1/taxRates/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/search/get.html) | $1600 | 
+| col 3 is      | [/V1/taxRates/{rateId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/get.html) | $1600 | 
+| col 3 is      | [/V1/taxRates/{rateId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRates/{rateId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/taxRules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/post.html) | $1600 | 
+| col 3 is      | [/V1/taxRules](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/put.html) | $1600 | 
+| col 3 is      | [/V1/taxRules/search](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/search/get.html) | $1600 | 
+| col 3 is      | [/V1/taxRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/taxRules/{ruleId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/taxRules/{ruleId}/get.html) | $1600 | 
+| col 3 is      | [/V1/team/](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team//get.html) | $1600 | 
+| col 3 is      | [/V1/team/{companyId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{companyId}/post.html) | $1600 | 
+| col 3 is      | [/V1/team/{teamId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/get.html) | $1600 | 
+| col 3 is      | [/V1/team/{teamId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/delete.html) | $1600 | 
+| col 3 is      | [/V1/team/{teamId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/team/{teamId}/put.html) | $1600 | 
+| col 3 is      | [/V1/temando/rma/{rmaId}/shipments](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/temando/rma/{rmaId}/shipments/put.html) | $1600 | 
+| col 3 is      | [/V1/transactions](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/get.html) | $1600 | 
+| col 3 is      | [/V1/transactions/{id}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/transactions/{id}/get.html) | $1600 | 
+| col 3 is      | [/V1/vertex-address-validation/vertex-address](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/vertex-address-validation/vertex-address/post.html) | $1600 | 
+| col 3 is      | [/V1/worldpay-guest-carts/{cartId}/payment-information](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/worldpay-guest-carts/{cartId}/payment-information/post.html) | $1600 | 
