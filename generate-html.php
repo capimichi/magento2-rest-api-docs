@@ -101,7 +101,8 @@ foreach ($data['paths'] as $endpoint => $path) {
 //            "{", "}",
         ], "_", $endpoint);
 
-        $docUrl = sprintf("| %s | %s | [%s](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html%s/%s.html) |", $endpoint, $method, $endpoint, $endpoint, $method);
+        $docUrl = sprintf("http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html%s/%s.html", $endpoint, $method);
+        $docUrl = sprintf("| %s | %s | [Apri](%s) |", $endpoint, strtoupper($method), $docUrl);
 
         printf("%s %s", $docUrl, PHP_EOL);
 
