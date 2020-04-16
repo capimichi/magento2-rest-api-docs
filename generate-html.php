@@ -95,7 +95,19 @@ foreach ($data['paths'] as $endpoint => $path) {
             }
         }
 
-        $docPath = __DIR__ . '/html/' . str_replace("/", "_", $endpoint) . "_" . $method . '.html';
+        $dirEndpoint = str_replace([
+//            "{", "}",
+        ], "_", $endpoint);
+
+        $docUrl = 'http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/raw/master/html' . $dirEndpoint . "/" . $method . '.html';
+
+        printf("%s %s %s", $docUrl, PHP_EOL, PHP_EOL);
+
+        $docPath = __DIR__ . '/html' . $dirEndpoint . "/" . $method . '.html';
+        $docDir = dirname($docPath);
+        if (!file_exists($docDir)) {
+            mkdir($docDir, 0777, true);
+        }
 
         $html = "<html><head><style>
 
