@@ -99,7 +99,7 @@ foreach ($data['paths'] as $endpoint => $path) {
 //            "{", "}",
         ], "_", $endpoint);
 
-        $docUrl = 'http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/raw/master/html' . $dirEndpoint . "/" . $method . '.html';
+        $docUrl = 'http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html' . $dirEndpoint . "/" . $method . '.html';
 
         printf("%s %s %s", $docUrl, PHP_EOL, PHP_EOL);
 
