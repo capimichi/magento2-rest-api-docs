@@ -98,7 +98,32 @@ padding: 10px;
             "description": "Company admin customer id."
         },
         "extension_attributes": {
-            "$ref": "#/definitions/company-data-company-extension-interface"
+            "$ref": {
+                "applicable_payment_method": {
+                    "type": "integer"
+                },
+                "available_payment_methods": {
+                    "type": "string"
+                },
+                "use_config_settings": {
+                    "type": "integer"
+                },
+                "quote_config": {
+                    "$ref": {
+                        "company_id": {
+                            "type": "string",
+                            "description": "Company id"
+                        },
+                        "is_quote_enabled": {
+                            "type": "boolean",
+                            "description": "Quote enabled for company"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/negotiable-quote-data-company-quote-config-extension-interface"
+                        }
+                    }
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
@@ -186,7 +211,32 @@ padding: 10px;
         "description": "Company admin customer id."
     },
     "extension_attributes": {
-        "$ref": "#/definitions/company-data-company-extension-interface"
+        "$ref": {
+            "applicable_payment_method": {
+                "type": "integer"
+            },
+            "available_payment_methods": {
+                "type": "string"
+            },
+            "use_config_settings": {
+                "type": "integer"
+            },
+            "quote_config": {
+                "$ref": {
+                    "company_id": {
+                        "type": "string",
+                        "description": "Company id"
+                    },
+                    "is_quote_enabled": {
+                        "type": "boolean",
+                        "description": "Quote enabled for company"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/negotiable-quote-data-company-quote-config-extension-interface"
+                    }
+                }
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

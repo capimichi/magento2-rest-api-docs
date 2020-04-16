@@ -30,7 +30,14 @@ padding: 10px;
             }
         },
         "extension_attributes": {
-            "$ref": "#/definitions/quote-data-payment-extension-interface"
+            "$ref": {
+                "agreement_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
         }
     },
     "billingAddress": {
@@ -126,13 +133,59 @@ padding: 10px;
             "description": "Save in address book flag"
         },
         "extension_attributes": {
-            "$ref": "#/definitions/quote-data-address-extension-interface"
+            "$ref": {
+                "discounts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "discount_data": {
+                                "$ref": "#/definitions/sales-rule-data-discount-data-interface"
+                            },
+                            "rule_label": {
+                                "type": "string",
+                                "description": "Rule Label"
+                            },
+                            "rule_id": {
+                                "type": "integer",
+                                "description": "Rule ID"
+                            }
+                        }
+                    }
+                },
+                "gift_registry_id": {
+                    "type": "integer"
+                },
+                "checkout_fields": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         },
         "custom_attributes": {
             "type": "array",
             "description": "Custom attributes values.",
             "items": {
-                "$ref": "#/definitions/framework-attribute-interface"
+                "$ref": {
+                    "attribute_code": {
+                        "type": "string",
+                        "description": "Attribute code"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Attribute value"
+                    }
+                }
             }
         }
     }

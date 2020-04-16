@@ -15,7 +15,11 @@ padding: 10px;
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/products/attributes/{attributeCode}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/products/attributes/{attributeCode}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save attribute data</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>attributeCode</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>catalogProductAttributeRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>attribute</p><pre style='font-family: Arial; font-size: 10px;'>{
     "attribute": {
         "extension_attributes": {
-            "$ref": "#/definitions/eav-data-attribute-extension-interface"
+            "$ref": {
+                "is_pagebuilder_enabled": {
+                    "type": "boolean"
+                }
+            }
         },
         "is_wysiwyg_enabled": {
             "type": "boolean",
@@ -116,7 +120,40 @@ padding: 10px;
             "type": "array",
             "description": "Options of the attribute (key => value pairs for select)",
             "items": {
-                "$ref": "#/definitions/eav-data-attribute-option-interface"
+                "$ref": {
+                    "label": {
+                        "type": "string",
+                        "description": "Option label"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Option value"
+                    },
+                    "sort_order": {
+                        "type": "integer",
+                        "description": "Option order"
+                    },
+                    "is_default": {
+                        "type": "boolean",
+                        "description": "Default"
+                    },
+                    "store_labels": {
+                        "type": "array",
+                        "description": "Option label for store scopes",
+                        "items": {
+                            "$ref": {
+                                "store_id": {
+                                    "type": "integer",
+                                    "description": "Store id"
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "description": "Option label"
+                                }
+                            }
+                        }
+                    }
+                }
             }
         },
         "is_user_defined": {
@@ -131,7 +168,16 @@ padding: 10px;
             "type": "array",
             "description": "Frontend label for each store",
             "items": {
-                "$ref": "#/definitions/eav-data-attribute-frontend-label-interface"
+                "$ref": {
+                    "store_id": {
+                        "type": "integer",
+                        "description": "Store id"
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "Option label"
+                    }
+                }
             }
         },
         "note": {
@@ -166,20 +212,42 @@ padding: 10px;
             "type": "array",
             "description": "Validation rules.",
             "items": {
-                "$ref": "#/definitions/eav-data-attribute-validation-rule-interface"
+                "$ref": {
+                    "key": {
+                        "type": "string",
+                        "description": "Object key"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Object value"
+                    }
+                }
             }
         },
         "custom_attributes": {
             "type": "array",
             "description": "Custom attributes values.",
             "items": {
-                "$ref": "#/definitions/framework-attribute-interface"
+                "$ref": {
+                    "attribute_code": {
+                        "type": "string",
+                        "description": "Attribute code"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Attribute value"
+                    }
+                }
             }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "extension_attributes": {
-        "$ref": "#/definitions/eav-data-attribute-extension-interface"
+        "$ref": {
+            "is_pagebuilder_enabled": {
+                "type": "boolean"
+            }
+        }
     },
     "is_wysiwyg_enabled": {
         "type": "boolean",
@@ -280,7 +348,40 @@ padding: 10px;
         "type": "array",
         "description": "Options of the attribute (key => value pairs for select)",
         "items": {
-            "$ref": "#/definitions/eav-data-attribute-option-interface"
+            "$ref": {
+                "label": {
+                    "type": "string",
+                    "description": "Option label"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Option value"
+                },
+                "sort_order": {
+                    "type": "integer",
+                    "description": "Option order"
+                },
+                "is_default": {
+                    "type": "boolean",
+                    "description": "Default"
+                },
+                "store_labels": {
+                    "type": "array",
+                    "description": "Option label for store scopes",
+                    "items": {
+                        "$ref": {
+                            "store_id": {
+                                "type": "integer",
+                                "description": "Store id"
+                            },
+                            "label": {
+                                "type": "string",
+                                "description": "Option label"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "is_user_defined": {
@@ -295,7 +396,16 @@ padding: 10px;
         "type": "array",
         "description": "Frontend label for each store",
         "items": {
-            "$ref": "#/definitions/eav-data-attribute-frontend-label-interface"
+            "$ref": {
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store id"
+                },
+                "label": {
+                    "type": "string",
+                    "description": "Option label"
+                }
+            }
         }
     },
     "note": {
@@ -330,14 +440,32 @@ padding: 10px;
         "type": "array",
         "description": "Validation rules.",
         "items": {
-            "$ref": "#/definitions/eav-data-attribute-validation-rule-interface"
+            "$ref": {
+                "key": {
+                    "type": "string",
+                    "description": "Object key"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Object value"
+                }
+            }
         }
     },
     "custom_attributes": {
         "type": "array",
         "description": "Custom attributes values.",
         "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+            "$ref": {
+                "attribute_code": {
+                    "type": "string",
+                    "description": "Attribute code"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Attribute value"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

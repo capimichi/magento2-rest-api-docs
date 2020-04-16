@@ -34,7 +34,19 @@ padding: 10px;
             "description": "relative file path"
         },
         "sample_file_content": {
-            "$ref": "#/definitions/downloadable-data-file-content-interface"
+            "$ref": {
+                "file_data": {
+                    "type": "string",
+                    "description": "Data (base64 encoded content)"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "File name"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/downloadable-data-file-content-extension-interface"
+                }
+            }
         },
         "sample_url": {
             "type": "string",

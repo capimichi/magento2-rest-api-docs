@@ -71,7 +71,16 @@ padding: 10px;
         "type": "array",
         "description": "Custom attributes values.",
         "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+            "$ref": {
+                "attribute_code": {
+                    "type": "string",
+                    "description": "Attribute code"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Attribute value"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

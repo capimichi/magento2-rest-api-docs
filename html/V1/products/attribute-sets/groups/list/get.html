@@ -17,11 +17,74 @@ padding: 10px;
         "type": "array",
         "description": "Attribute sets list.",
         "items": {
-            "$ref": "#/definitions/eav-data-attribute-group-interface"
+            "$ref": {
+                "attribute_group_id": {
+                    "type": "string",
+                    "description": "Id"
+                },
+                "attribute_group_name": {
+                    "type": "string",
+                    "description": "Name"
+                },
+                "attribute_set_id": {
+                    "type": "integer",
+                    "description": "Attribute set id"
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "attribute_group_code": {
+                            "type": "string"
+                        },
+                        "sort_order": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

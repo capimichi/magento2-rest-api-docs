@@ -17,11 +17,128 @@ padding: 10px;
         "type": "array",
         "description": "Pages list.",
         "items": {
-            "$ref": "#/definitions/cms-data-page-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "ID"
+                },
+                "identifier": {
+                    "type": "string",
+                    "description": "Identifier"
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Title"
+                },
+                "page_layout": {
+                    "type": "string",
+                    "description": "Page layout"
+                },
+                "meta_title": {
+                    "type": "string",
+                    "description": "Meta title"
+                },
+                "meta_keywords": {
+                    "type": "string",
+                    "description": "Meta keywords"
+                },
+                "meta_description": {
+                    "type": "string",
+                    "description": "Meta description"
+                },
+                "content_heading": {
+                    "type": "string",
+                    "description": "Content heading"
+                },
+                "content": {
+                    "type": "string",
+                    "description": "Content"
+                },
+                "creation_time": {
+                    "type": "string",
+                    "description": "Creation time"
+                },
+                "update_time": {
+                    "type": "string",
+                    "description": "Update time"
+                },
+                "sort_order": {
+                    "type": "string",
+                    "description": "Sort order"
+                },
+                "layout_update_xml": {
+                    "type": "string",
+                    "description": "Layout update xml"
+                },
+                "custom_theme": {
+                    "type": "string",
+                    "description": "Custom theme"
+                },
+                "custom_root_template": {
+                    "type": "string",
+                    "description": "Custom root template"
+                },
+                "custom_layout_update_xml": {
+                    "type": "string",
+                    "description": "Custom layout update xml"
+                },
+                "custom_theme_from": {
+                    "type": "string",
+                    "description": "Custom theme from"
+                },
+                "custom_theme_to": {
+                    "type": "string",
+                    "description": "Custom theme to"
+                },
+                "active": {
+                    "type": "boolean",
+                    "description": "Active"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

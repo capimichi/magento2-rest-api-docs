@@ -30,20 +30,67 @@ padding: 10px;
             }
         },
         "extension_attributes": {
-            "$ref": "#/definitions/quote-data-payment-extension-interface"
+            "$ref": {
+                "agreement_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
         }
     },
     "shippingCarrierCode": [],
     "shippingMethodCode": [],
     "additionalData": {
         "extension_attributes": {
-            "$ref": "#/definitions/quote-data-totals-additional-data-extension-interface"
+            "$ref": {
+                "gift_messages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "gift_message_id": {
+                                "type": "integer",
+                                "description": "Gift message ID. Otherwise, null."
+                            },
+                            "customer_id": {
+                                "type": "integer",
+                                "description": "Customer ID. Otherwise, null."
+                            },
+                            "sender": {
+                                "type": "string",
+                                "description": "Sender name."
+                            },
+                            "recipient": {
+                                "type": "string",
+                                "description": "Recipient name."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Message text."
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/gift-message-data-message-extension-interface"
+                            }
+                        }
+                    }
+                }
+            }
         },
         "custom_attributes": {
             "type": "array",
             "description": "Custom attributes values.",
             "items": {
-                "$ref": "#/definitions/framework-attribute-interface"
+                "$ref": {
+                    "attribute_code": {
+                        "type": "string",
+                        "description": "Attribute code"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Attribute value"
+                    }
+                }
             }
         }
     }
@@ -152,18 +199,302 @@ padding: 10px;
         "type": "array",
         "description": "Totals by items",
         "items": {
-            "$ref": "#/definitions/quote-data-totals-item-interface"
+            "$ref": {
+                "item_id": {
+                    "type": "integer",
+                    "description": "Item id"
+                },
+                "price": {
+                    "type": "number",
+                    "description": "Item price in quote currency."
+                },
+                "base_price": {
+                    "type": "number",
+                    "description": "Item price in base currency."
+                },
+                "qty": {
+                    "type": "number",
+                    "description": "Item quantity."
+                },
+                "row_total": {
+                    "type": "number",
+                    "description": "Row total in quote currency."
+                },
+                "base_row_total": {
+                    "type": "number",
+                    "description": "Row total in base currency."
+                },
+                "row_total_with_discount": {
+                    "type": "number",
+                    "description": "Row total with discount in quote currency. Otherwise, null."
+                },
+                "tax_amount": {
+                    "type": "number",
+                    "description": "Tax amount in quote currency. Otherwise, null."
+                },
+                "base_tax_amount": {
+                    "type": "number",
+                    "description": "Tax amount in base currency. Otherwise, null."
+                },
+                "tax_percent": {
+                    "type": "number",
+                    "description": "Tax percent. Otherwise, null."
+                },
+                "discount_amount": {
+                    "type": "number",
+                    "description": "Discount amount in quote currency. Otherwise, null."
+                },
+                "base_discount_amount": {
+                    "type": "number",
+                    "description": "Discount amount in base currency. Otherwise, null."
+                },
+                "discount_percent": {
+                    "type": "number",
+                    "description": "Discount percent. Otherwise, null."
+                },
+                "price_incl_tax": {
+                    "type": "number",
+                    "description": "Price including tax in quote currency. Otherwise, null."
+                },
+                "base_price_incl_tax": {
+                    "type": "number",
+                    "description": "Price including tax in base currency. Otherwise, null."
+                },
+                "row_total_incl_tax": {
+                    "type": "number",
+                    "description": "Row total including tax in quote currency. Otherwise, null."
+                },
+                "base_row_total_incl_tax": {
+                    "type": "number",
+                    "description": "Row total including tax in base currency. Otherwise, null."
+                },
+                "options": {
+                    "type": "string",
+                    "description": "Item price in quote currency."
+                },
+                "weee_tax_applied_amount": {
+                    "type": "number",
+                    "description": "Item weee tax applied amount in quote currency."
+                },
+                "weee_tax_applied": {
+                    "type": "string",
+                    "description": "Item weee tax applied in quote currency."
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "negotiable_quote_item_totals": {
+                            "$ref": "#/definitions/negotiable-quote-data-negotiable-quote-item-totals-interface"
+                        }
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Product name. Otherwise, null."
+                }
+            }
         }
     },
     "total_segments": {
         "type": "array",
         "description": "Dynamically calculated totals",
         "items": {
-            "$ref": "#/definitions/quote-data-total-segment-interface"
+            "$ref": {
+                "code": {
+                    "type": "string",
+                    "description": "Code"
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Total title"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "Total value"
+                },
+                "area": {
+                    "type": "string",
+                    "description": "Display area code."
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "tax_grandtotal_details": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/tax-data-grand-total-details-interface"
+                            }
+                        },
+                        "gift_cards": {
+                            "type": "string"
+                        },
+                        "gw_order_id": {
+                            "type": "string"
+                        },
+                        "gw_item_ids": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "gw_allow_gift_receipt": {
+                            "type": "string"
+                        },
+                        "gw_add_card": {
+                            "type": "string"
+                        },
+                        "gw_price": {
+                            "type": "string"
+                        },
+                        "gw_base_price": {
+                            "type": "string"
+                        },
+                        "gw_items_price": {
+                            "type": "string"
+                        },
+                        "gw_items_base_price": {
+                            "type": "string"
+                        },
+                        "gw_card_price": {
+                            "type": "string"
+                        },
+                        "gw_card_base_price": {
+                            "type": "string"
+                        },
+                        "gw_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_items_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_items_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_card_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_card_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_price_incl_tax": {
+                            "type": "string"
+                        },
+                        "gw_base_price_incl_tax": {
+                            "type": "string"
+                        },
+                        "gw_card_price_incl_tax": {
+                            "type": "string"
+                        },
+                        "gw_card_base_price_incl_tax": {
+                            "type": "string"
+                        },
+                        "gw_items_price_incl_tax": {
+                            "type": "string"
+                        },
+                        "gw_items_base_price_incl_tax": {
+                            "type": "string"
+                        },
+                        "vertex_tax_calculation_messages": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "extension_attributes": {
-        "$ref": "#/definitions/quote-data-totals-extension-interface"
+        "$ref": {
+            "coupon_label": {
+                "type": "string"
+            },
+            "base_customer_balance_amount": {
+                "type": "number"
+            },
+            "customer_balance_amount": {
+                "type": "number"
+            },
+            "negotiable_quote_totals": {
+                "$ref": {
+                    "items_count": {
+                        "type": "integer",
+                        "description": "The number of different items or products in the cart."
+                    },
+                    "quote_status": {
+                        "type": "string",
+                        "description": "Negotiable quote status."
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "description": "The cart creation date and time."
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "description": "The cart last update date and time."
+                    },
+                    "customer_group": {
+                        "type": "integer",
+                        "description": "Customer group id."
+                    },
+                    "base_to_quote_rate": {
+                        "type": "number",
+                        "description": "Base currency to quote currency rate."
+                    },
+                    "cost_total": {
+                        "type": "number",
+                        "description": "Total cost for quote."
+                    },
+                    "base_cost_total": {
+                        "type": "number",
+                        "description": "Total cost for quote in base currency."
+                    },
+                    "original_total": {
+                        "type": "number",
+                        "description": "Original quote total."
+                    },
+                    "base_original_total": {
+                        "type": "number",
+                        "description": "Original quote total in base currency."
+                    },
+                    "original_tax": {
+                        "type": "number",
+                        "description": "Original tax amount for quote."
+                    },
+                    "base_original_tax": {
+                        "type": "number",
+                        "description": "Original tax amount for quote in base currency."
+                    },
+                    "original_price_incl_tax": {
+                        "type": "number",
+                        "description": "Original price with included tax for quote."
+                    },
+                    "base_original_price_incl_tax": {
+                        "type": "number",
+                        "description": "Original price with included tax for quote in base currency."
+                    },
+                    "negotiated_price_type": {
+                        "type": "integer",
+                        "description": "Negotiable quote type."
+                    },
+                    "negotiated_price_value": {
+                        "type": "number",
+                        "description": "Negotiable price value for quote."
+                    }
+                }
+            },
+            "reward_points_balance": {
+                "type": "number"
+            },
+            "reward_currency_amount": {
+                "type": "number"
+            },
+            "base_reward_currency_amount": {
+                "type": "number"
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

@@ -34,7 +34,16 @@ padding: 10px;
             "type": "array",
             "description": "Option label for store scopes",
             "items": {
-                "$ref": "#/definitions/eav-data-attribute-option-label-interface"
+                "$ref": {
+                    "store_id": {
+                        "type": "integer",
+                        "description": "Store id"
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "Option label"
+                    }
+                }
             }
         }
     }

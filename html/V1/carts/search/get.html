@@ -17,11 +17,415 @@ padding: 10px;
         "type": "array",
         "description": "Carts list.",
         "items": {
-            "$ref": "#/definitions/quote-data-cart-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Cart/quote ID."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Cart creation date and time. Otherwise, null."
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Cart last update date and time. Otherwise, null."
+                },
+                "converted_at": {
+                    "type": "string",
+                    "description": "Cart conversion date and time. Otherwise, null."
+                },
+                "is_active": {
+                    "type": "boolean",
+                    "description": "Active status flag value. Otherwise, null."
+                },
+                "is_virtual": {
+                    "type": "boolean",
+                    "description": "Virtual flag value. Otherwise, null."
+                },
+                "items": {
+                    "type": "array",
+                    "description": "Array of items. Otherwise, null.",
+                    "items": {
+                        "$ref": {
+                            "item_id": {
+                                "type": "integer",
+                                "description": "Item ID. Otherwise, null."
+                            },
+                            "sku": {
+                                "type": "string",
+                                "description": "Product SKU. Otherwise, null."
+                            },
+                            "qty": {
+                                "type": "number",
+                                "description": "Product quantity."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Product name. Otherwise, null."
+                            },
+                            "price": {
+                                "type": "number",
+                                "description": "Product price. Otherwise, null."
+                            },
+                            "product_type": {
+                                "type": "string",
+                                "description": "Product type. Otherwise, null."
+                            },
+                            "quote_id": {
+                                "type": "string",
+                                "description": "Quote id."
+                            },
+                            "product_option": {
+                                "$ref": "#/definitions/quote-data-product-option-interface"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/quote-data-cart-item-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "items_count": {
+                    "type": "integer",
+                    "description": "Number of different items or products in the cart. Otherwise, null."
+                },
+                "items_qty": {
+                    "type": "number",
+                    "description": "Total quantity of all cart items. Otherwise, null."
+                },
+                "customer": {
+                    "$ref": {
+                        "id": {
+                            "type": "integer",
+                            "description": "Customer id"
+                        },
+                        "group_id": {
+                            "type": "integer",
+                            "description": "Group id"
+                        },
+                        "default_billing": {
+                            "type": "string",
+                            "description": "Default billing address id"
+                        },
+                        "default_shipping": {
+                            "type": "string",
+                            "description": "Default shipping address id"
+                        },
+                        "confirmation": {
+                            "type": "string",
+                            "description": "Confirmation"
+                        },
+                        "created_at": {
+                            "type": "string",
+                            "description": "Created at time"
+                        },
+                        "updated_at": {
+                            "type": "string",
+                            "description": "Updated at time"
+                        },
+                        "created_in": {
+                            "type": "string",
+                            "description": "Created in area"
+                        },
+                        "dob": {
+                            "type": "string",
+                            "description": "Date of birth"
+                        },
+                        "email": {
+                            "type": "string",
+                            "description": "Email address"
+                        },
+                        "firstname": {
+                            "type": "string",
+                            "description": "First name"
+                        },
+                        "lastname": {
+                            "type": "string",
+                            "description": "Last name"
+                        },
+                        "middlename": {
+                            "type": "string",
+                            "description": "Middle name"
+                        },
+                        "prefix": {
+                            "type": "string",
+                            "description": "Prefix"
+                        },
+                        "suffix": {
+                            "type": "string",
+                            "description": "Suffix"
+                        },
+                        "gender": {
+                            "type": "integer",
+                            "description": "Gender"
+                        },
+                        "store_id": {
+                            "type": "integer",
+                            "description": "Store id"
+                        },
+                        "taxvat": {
+                            "type": "string",
+                            "description": "Tax Vat"
+                        },
+                        "website_id": {
+                            "type": "integer",
+                            "description": "Website id"
+                        },
+                        "addresses": {
+                            "type": "array",
+                            "description": "Customer addresses.",
+                            "items": {
+                                "$ref": "#/definitions/customer-data-address-interface"
+                            }
+                        },
+                        "disable_auto_group_change": {
+                            "type": "integer",
+                            "description": "Disable auto group change flag."
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/customer-data-customer-extension-interface"
+                        },
+                        "custom_attributes": {
+                            "type": "array",
+                            "description": "Custom attributes values.",
+                            "items": {
+                                "$ref": "#/definitions/framework-attribute-interface"
+                            }
+                        }
+                    }
+                },
+                "billing_address": {
+                    "$ref": {
+                        "id": {
+                            "type": "integer",
+                            "description": "Id"
+                        },
+                        "region": {
+                            "type": "string",
+                            "description": "Region name"
+                        },
+                        "region_id": {
+                            "type": "integer",
+                            "description": "Region id"
+                        },
+                        "region_code": {
+                            "type": "string",
+                            "description": "Region code"
+                        },
+                        "country_id": {
+                            "type": "string",
+                            "description": "Country id"
+                        },
+                        "street": {
+                            "type": "array",
+                            "description": "Street",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "company": {
+                            "type": "string",
+                            "description": "Company"
+                        },
+                        "telephone": {
+                            "type": "string",
+                            "description": "Telephone number"
+                        },
+                        "fax": {
+                            "type": "string",
+                            "description": "Fax number"
+                        },
+                        "postcode": {
+                            "type": "string",
+                            "description": "Postcode"
+                        },
+                        "city": {
+                            "type": "string",
+                            "description": "City name"
+                        },
+                        "firstname": {
+                            "type": "string",
+                            "description": "First name"
+                        },
+                        "lastname": {
+                            "type": "string",
+                            "description": "Last name"
+                        },
+                        "middlename": {
+                            "type": "string",
+                            "description": "Middle name"
+                        },
+                        "prefix": {
+                            "type": "string",
+                            "description": "Prefix"
+                        },
+                        "suffix": {
+                            "type": "string",
+                            "description": "Suffix"
+                        },
+                        "vat_id": {
+                            "type": "string",
+                            "description": "Vat id"
+                        },
+                        "customer_id": {
+                            "type": "integer",
+                            "description": "Customer id"
+                        },
+                        "email": {
+                            "type": "string",
+                            "description": "Billing/shipping email"
+                        },
+                        "same_as_billing": {
+                            "type": "integer",
+                            "description": "Same as billing flag"
+                        },
+                        "customer_address_id": {
+                            "type": "integer",
+                            "description": "Customer address id"
+                        },
+                        "save_in_address_book": {
+                            "type": "integer",
+                            "description": "Save in address book flag"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/quote-data-address-extension-interface"
+                        },
+                        "custom_attributes": {
+                            "type": "array",
+                            "description": "Custom attributes values.",
+                            "items": {
+                                "$ref": "#/definitions/framework-attribute-interface"
+                            }
+                        }
+                    }
+                },
+                "reserved_order_id": {
+                    "type": "string",
+                    "description": "Reserved order ID. Otherwise, null."
+                },
+                "orig_order_id": {
+                    "type": "integer",
+                    "description": "Original order ID. Otherwise, null."
+                },
+                "currency": {
+                    "$ref": {
+                        "global_currency_code": {
+                            "type": "string",
+                            "description": "Global currency code"
+                        },
+                        "base_currency_code": {
+                            "type": "string",
+                            "description": "Base currency code"
+                        },
+                        "store_currency_code": {
+                            "type": "string",
+                            "description": "Store currency code"
+                        },
+                        "quote_currency_code": {
+                            "type": "string",
+                            "description": "Quote currency code"
+                        },
+                        "store_to_base_rate": {
+                            "type": "number",
+                            "description": "Store currency to base currency rate"
+                        },
+                        "store_to_quote_rate": {
+                            "type": "number",
+                            "description": "Store currency to quote currency rate"
+                        },
+                        "base_to_global_rate": {
+                            "type": "number",
+                            "description": "Base currency to global currency rate"
+                        },
+                        "base_to_quote_rate": {
+                            "type": "number",
+                            "description": "Base currency to quote currency rate"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/quote-data-currency-extension-interface"
+                        }
+                    }
+                },
+                "customer_is_guest": {
+                    "type": "boolean",
+                    "description": "For guest customers, false for logged in customers"
+                },
+                "customer_note": {
+                    "type": "string",
+                    "description": "Notice text"
+                },
+                "customer_note_notify": {
+                    "type": "boolean",
+                    "description": "Customer notification flag"
+                },
+                "customer_tax_class_id": {
+                    "type": "integer",
+                    "description": "Customer tax class ID."
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store identifier"
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "shipping_assignments": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/quote-data-shipping-assignment-interface"
+                            }
+                        },
+                        "negotiable_quote": {
+                            "$ref": "#/definitions/negotiable-quote-data-negotiable-quote-interface"
+                        },
+                        "amazon_order_reference_id": {
+                            "$ref": "#/definitions/amazon-payment-data-quote-link-interface"
+                        }
+                    }
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

@@ -17,11 +17,75 @@ padding: 10px;
         "type": "array",
         "description": "Rma list",
         "items": {
-            "$ref": "#/definitions/rma-data-track-interface"
+            "$ref": {
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Entity id"
+                },
+                "rma_entity_id": {
+                    "type": "integer",
+                    "description": "Rma entity id"
+                },
+                "track_number": {
+                    "type": "string",
+                    "description": "Track number"
+                },
+                "carrier_title": {
+                    "type": "string",
+                    "description": "Carrier title"
+                },
+                "carrier_code": {
+                    "type": "string",
+                    "description": "Carrier code"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/rma-data-track-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

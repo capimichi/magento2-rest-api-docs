@@ -17,7 +17,24 @@ padding: 10px;
         "type": "array",
         "description": "List of operation with statuses (short data).",
         "items": {
-            "$ref": "#/definitions/asynchronous-operations-data-summary-operation-status-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Id"
+                },
+                "status": {
+                    "type": "integer",
+                    "description": "Operation status"
+                },
+                "result_message": {
+                    "type": "string",
+                    "description": "Result message"
+                },
+                "error_code": {
+                    "type": "integer",
+                    "description": "Error code"
+                }
+            }
         }
     },
     "extension_attributes": {

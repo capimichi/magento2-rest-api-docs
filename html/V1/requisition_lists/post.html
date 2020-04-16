@@ -38,7 +38,42 @@ padding: 10px;
             "type": "array",
             "description": "Requisition List Items",
             "items": {
-                "$ref": "#/definitions/requisition-list-data-requisition-list-item-interface"
+                "$ref": {
+                    "id": {
+                        "type": "integer",
+                        "description": "Requisition List ID."
+                    },
+                    "sku": {
+                        "type": "integer",
+                        "description": "Product SKU."
+                    },
+                    "requisition_list_id": {
+                        "type": "integer",
+                        "description": "Requisition List ID."
+                    },
+                    "qty": {
+                        "type": "number",
+                        "description": "Product Qty."
+                    },
+                    "options": {
+                        "type": "array",
+                        "description": "Requisition list item options.",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "store_id": {
+                        "type": "integer",
+                        "description": "Store ID."
+                    },
+                    "added_at": {
+                        "type": "string",
+                        "description": "Added_at value."
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/requisition-list-data-requisition-list-item-extension-interface"
+                    }
+                }
             }
         },
         "extension_attributes": {
@@ -70,7 +105,42 @@ padding: 10px;
         "type": "array",
         "description": "Requisition List Items",
         "items": {
-            "$ref": "#/definitions/requisition-list-data-requisition-list-item-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Requisition List ID."
+                },
+                "sku": {
+                    "type": "integer",
+                    "description": "Product SKU."
+                },
+                "requisition_list_id": {
+                    "type": "integer",
+                    "description": "Requisition List ID."
+                },
+                "qty": {
+                    "type": "number",
+                    "description": "Product Qty."
+                },
+                "options": {
+                    "type": "array",
+                    "description": "Requisition list item options.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store ID."
+                },
+                "added_at": {
+                    "type": "string",
+                    "description": "Added_at value."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/requisition-list-data-requisition-list-item-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {

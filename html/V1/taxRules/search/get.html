@@ -17,11 +17,96 @@ padding: 10px;
         "type": "array",
         "description": "Items",
         "items": {
-            "$ref": "#/definitions/tax-data-tax-rule-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Id"
+                },
+                "code": {
+                    "type": "string",
+                    "description": "Tax rule code"
+                },
+                "priority": {
+                    "type": "integer",
+                    "description": "Priority"
+                },
+                "position": {
+                    "type": "integer",
+                    "description": "Sort order."
+                },
+                "customer_tax_class_ids": {
+                    "type": "array",
+                    "description": "Customer tax class id",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "product_tax_class_ids": {
+                    "type": "array",
+                    "description": "Product tax class id",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "tax_rate_ids": {
+                    "type": "array",
+                    "description": "Tax rate ids",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "calculate_subtotal": {
+                    "type": "boolean",
+                    "description": "Calculate subtotal."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/tax-data-tax-rule-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

@@ -50,7 +50,55 @@ padding: 10px;
             "type": "array",
             "description": "Items",
             "items": {
-                "$ref": "#/definitions/rma-data-item-interface"
+                "$ref": {
+                    "entity_id": {
+                        "type": "integer",
+                        "description": "Id"
+                    },
+                    "rma_entity_id": {
+                        "type": "integer",
+                        "description": "RMA id"
+                    },
+                    "order_item_id": {
+                        "type": "integer",
+                        "description": "Order_item_id"
+                    },
+                    "qty_requested": {
+                        "type": "integer",
+                        "description": "Qty_requested"
+                    },
+                    "qty_authorized": {
+                        "type": "integer",
+                        "description": "Qty_authorized"
+                    },
+                    "qty_approved": {
+                        "type": "integer",
+                        "description": "Qty_approved"
+                    },
+                    "qty_returned": {
+                        "type": "integer",
+                        "description": "Qty_returned"
+                    },
+                    "reason": {
+                        "type": "string",
+                        "description": "Reason"
+                    },
+                    "condition": {
+                        "type": "string",
+                        "description": "Condition"
+                    },
+                    "resolution": {
+                        "type": "string",
+                        "description": "Resolution"
+                    },
+                    "status": {
+                        "type": "string",
+                        "description": "Status"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/rma-data-item-extension-interface"
+                    }
+                }
             }
         },
         "status": {
@@ -61,14 +109,90 @@ padding: 10px;
             "type": "array",
             "description": "Comments list",
             "items": {
-                "$ref": "#/definitions/rma-data-comment-interface"
+                "$ref": {
+                    "comment": {
+                        "type": "string",
+                        "description": "Comment"
+                    },
+                    "rma_entity_id": {
+                        "type": "integer",
+                        "description": "Rma Id"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "description": "Created_at"
+                    },
+                    "entity_id": {
+                        "type": "integer",
+                        "description": "Entity_id"
+                    },
+                    "customer_notified": {
+                        "type": "boolean",
+                        "description": "Is_customer_notified"
+                    },
+                    "visible_on_front": {
+                        "type": "boolean",
+                        "description": "Is_visible_on_front"
+                    },
+                    "status": {
+                        "type": "string",
+                        "description": "Status"
+                    },
+                    "admin": {
+                        "type": "boolean",
+                        "description": "Is_admin"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/rma-data-comment-extension-interface"
+                    },
+                    "custom_attributes": {
+                        "type": "array",
+                        "description": "Custom attributes values.",
+                        "items": {
+                            "$ref": {
+                                "attribute_code": {
+                                    "type": "string",
+                                    "description": "Attribute code"
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "description": "Attribute value"
+                                }
+                            }
+                        }
+                    }
+                }
             }
         },
         "tracks": {
             "type": "array",
             "description": "Tracks list",
             "items": {
-                "$ref": "#/definitions/rma-data-track-interface"
+                "$ref": {
+                    "entity_id": {
+                        "type": "integer",
+                        "description": "Entity id"
+                    },
+                    "rma_entity_id": {
+                        "type": "integer",
+                        "description": "Rma entity id"
+                    },
+                    "track_number": {
+                        "type": "string",
+                        "description": "Track number"
+                    },
+                    "carrier_title": {
+                        "type": "string",
+                        "description": "Carrier title"
+                    },
+                    "carrier_code": {
+                        "type": "string",
+                        "description": "Carrier code"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/rma-data-track-extension-interface"
+                    }
+                }
             }
         },
         "extension_attributes": {
@@ -78,7 +202,16 @@ padding: 10px;
             "type": "array",
             "description": "Custom attributes values.",
             "items": {
-                "$ref": "#/definitions/framework-attribute-interface"
+                "$ref": {
+                    "attribute_code": {
+                        "type": "string",
+                        "description": "Attribute code"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Attribute value"
+                    }
+                }
             }
         }
     }
@@ -119,7 +252,55 @@ padding: 10px;
         "type": "array",
         "description": "Items",
         "items": {
-            "$ref": "#/definitions/rma-data-item-interface"
+            "$ref": {
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Id"
+                },
+                "rma_entity_id": {
+                    "type": "integer",
+                    "description": "RMA id"
+                },
+                "order_item_id": {
+                    "type": "integer",
+                    "description": "Order_item_id"
+                },
+                "qty_requested": {
+                    "type": "integer",
+                    "description": "Qty_requested"
+                },
+                "qty_authorized": {
+                    "type": "integer",
+                    "description": "Qty_authorized"
+                },
+                "qty_approved": {
+                    "type": "integer",
+                    "description": "Qty_approved"
+                },
+                "qty_returned": {
+                    "type": "integer",
+                    "description": "Qty_returned"
+                },
+                "reason": {
+                    "type": "string",
+                    "description": "Reason"
+                },
+                "condition": {
+                    "type": "string",
+                    "description": "Condition"
+                },
+                "resolution": {
+                    "type": "string",
+                    "description": "Resolution"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/rma-data-item-extension-interface"
+                }
+            }
         }
     },
     "status": {
@@ -130,14 +311,90 @@ padding: 10px;
         "type": "array",
         "description": "Comments list",
         "items": {
-            "$ref": "#/definitions/rma-data-comment-interface"
+            "$ref": {
+                "comment": {
+                    "type": "string",
+                    "description": "Comment"
+                },
+                "rma_entity_id": {
+                    "type": "integer",
+                    "description": "Rma Id"
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created_at"
+                },
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Entity_id"
+                },
+                "customer_notified": {
+                    "type": "boolean",
+                    "description": "Is_customer_notified"
+                },
+                "visible_on_front": {
+                    "type": "boolean",
+                    "description": "Is_visible_on_front"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status"
+                },
+                "admin": {
+                    "type": "boolean",
+                    "description": "Is_admin"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/rma-data-comment-extension-interface"
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "tracks": {
         "type": "array",
         "description": "Tracks list",
         "items": {
-            "$ref": "#/definitions/rma-data-track-interface"
+            "$ref": {
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Entity id"
+                },
+                "rma_entity_id": {
+                    "type": "integer",
+                    "description": "Rma entity id"
+                },
+                "track_number": {
+                    "type": "string",
+                    "description": "Track number"
+                },
+                "carrier_title": {
+                    "type": "string",
+                    "description": "Carrier title"
+                },
+                "carrier_code": {
+                    "type": "string",
+                    "description": "Carrier code"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/rma-data-track-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {
@@ -147,7 +404,16 @@ padding: 10px;
         "type": "array",
         "description": "Custom attributes values.",
         "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+            "$ref": {
+                "attribute_code": {
+                    "type": "string",
+                    "description": "Attribute code"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Attribute value"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

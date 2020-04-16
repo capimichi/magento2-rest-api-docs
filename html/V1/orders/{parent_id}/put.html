@@ -122,7 +122,23 @@ padding: 10px;
             "description": "VAT-request-success flag value."
         },
         "extension_attributes": {
-            "$ref": "#/definitions/sales-data-order-address-extension-interface"
+            "$ref": {
+                "checkout_fields": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
@@ -234,7 +250,23 @@ padding: 10px;
         "description": "VAT-request-success flag value."
     },
     "extension_attributes": {
-        "$ref": "#/definitions/sales-data-order-address-extension-interface"
+        "$ref": {
+            "checkout_fields": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "attribute_code": {
+                            "type": "string",
+                            "description": "Attribute code"
+                        },
+                        "value": {
+                            "type": "string",
+                            "description": "Attribute value"
+                        }
+                    }
+                }
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

@@ -17,7 +17,47 @@ padding: 10px;
         "type": "array",
         "description": "Operations list.",
         "items": {
-            "$ref": "#/definitions/asynchronous-operations-data-operation-interface"
+            "$ref": {
+                "extension_attributes": {
+                    "$ref": {
+                        "start_time": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "id": {
+                    "type": "integer",
+                    "description": "Id"
+                },
+                "bulk_uuid": {
+                    "type": "string",
+                    "description": "Bulk uuid"
+                },
+                "topic_name": {
+                    "type": "string",
+                    "description": "Queue Topic"
+                },
+                "serialized_data": {
+                    "type": "string",
+                    "description": "Data"
+                },
+                "result_serialized_data": {
+                    "type": "string",
+                    "description": "Serialized Data"
+                },
+                "status": {
+                    "type": "integer",
+                    "description": "Operation status"
+                },
+                "result_message": {
+                    "type": "string",
+                    "description": "Result message"
+                },
+                "error_code": {
+                    "type": "integer",
+                    "description": "Error code"
+                }
+            }
         }
     },
     "extension_attributes": {

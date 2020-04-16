@@ -94,7 +94,121 @@ padding: 10px;
             "type": "array",
             "description": "Customer addresses.",
             "items": {
-                "$ref": "#/definitions/customer-data-address-interface"
+                "$ref": {
+                    "id": {
+                        "type": "integer",
+                        "description": "ID"
+                    },
+                    "customer_id": {
+                        "type": "integer",
+                        "description": "Customer ID"
+                    },
+                    "region": {
+                        "$ref": {
+                            "region_code": {
+                                "type": "string",
+                                "description": "Region code"
+                            },
+                            "region": {
+                                "type": "string",
+                                "description": "Region"
+                            },
+                            "region_id": {
+                                "type": "integer",
+                                "description": "Region id"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/customer-data-region-extension-interface"
+                            }
+                        }
+                    },
+                    "region_id": {
+                        "type": "integer",
+                        "description": "Region ID"
+                    },
+                    "country_id": {
+                        "type": "string",
+                        "description": "Country code in ISO_3166-2 format"
+                    },
+                    "street": {
+                        "type": "array",
+                        "description": "Street",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "company": {
+                        "type": "string",
+                        "description": "Company"
+                    },
+                    "telephone": {
+                        "type": "string",
+                        "description": "Telephone number"
+                    },
+                    "fax": {
+                        "type": "string",
+                        "description": "Fax number"
+                    },
+                    "postcode": {
+                        "type": "string",
+                        "description": "Postcode"
+                    },
+                    "city": {
+                        "type": "string",
+                        "description": "City name"
+                    },
+                    "firstname": {
+                        "type": "string",
+                        "description": "First name"
+                    },
+                    "lastname": {
+                        "type": "string",
+                        "description": "Last name"
+                    },
+                    "middlename": {
+                        "type": "string",
+                        "description": "Middle name"
+                    },
+                    "prefix": {
+                        "type": "string",
+                        "description": "Prefix"
+                    },
+                    "suffix": {
+                        "type": "string",
+                        "description": "Suffix"
+                    },
+                    "vat_id": {
+                        "type": "string",
+                        "description": "Vat id"
+                    },
+                    "default_shipping": {
+                        "type": "boolean",
+                        "description": "If this address is default shipping address."
+                    },
+                    "default_billing": {
+                        "type": "boolean",
+                        "description": "If this address is default billing address"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/customer-data-address-extension-interface"
+                    },
+                    "custom_attributes": {
+                        "type": "array",
+                        "description": "Custom attributes values.",
+                        "items": {
+                            "$ref": {
+                                "attribute_code": {
+                                    "type": "string",
+                                    "description": "Attribute code"
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "description": "Attribute value"
+                                }
+                            }
+                        }
+                    }
+                }
             }
         },
         "disable_auto_group_change": {
@@ -102,13 +216,59 @@ padding: 10px;
             "description": "Disable auto group change flag."
         },
         "extension_attributes": {
-            "$ref": "#/definitions/customer-data-customer-extension-interface"
+            "$ref": {
+                "company_attributes": {
+                    "$ref": {
+                        "customer_id": {
+                            "type": "integer",
+                            "description": "Customer ID."
+                        },
+                        "company_id": {
+                            "type": "integer",
+                            "description": "Company ID."
+                        },
+                        "job_title": {
+                            "type": "string",
+                            "description": "Get job title."
+                        },
+                        "status": {
+                            "type": "integer",
+                            "description": "Customer status."
+                        },
+                        "telephone": {
+                            "type": "string",
+                            "description": "Get telephone."
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/company-data-company-customer-extension-interface"
+                        }
+                    }
+                },
+                "is_subscribed": {
+                    "type": "boolean"
+                },
+                "amazon_id": {
+                    "type": "string"
+                },
+                "vertex_customer_code": {
+                    "type": "string"
+                }
+            }
         },
         "custom_attributes": {
             "type": "array",
             "description": "Custom attributes values.",
             "items": {
-                "$ref": "#/definitions/framework-attribute-interface"
+                "$ref": {
+                    "attribute_code": {
+                        "type": "string",
+                        "description": "Attribute code"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Attribute value"
+                    }
+                }
             }
         }
     },
@@ -194,7 +354,121 @@ padding: 10px;
         "type": "array",
         "description": "Customer addresses.",
         "items": {
-            "$ref": "#/definitions/customer-data-address-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "ID"
+                },
+                "customer_id": {
+                    "type": "integer",
+                    "description": "Customer ID"
+                },
+                "region": {
+                    "$ref": {
+                        "region_code": {
+                            "type": "string",
+                            "description": "Region code"
+                        },
+                        "region": {
+                            "type": "string",
+                            "description": "Region"
+                        },
+                        "region_id": {
+                            "type": "integer",
+                            "description": "Region id"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/customer-data-region-extension-interface"
+                        }
+                    }
+                },
+                "region_id": {
+                    "type": "integer",
+                    "description": "Region ID"
+                },
+                "country_id": {
+                    "type": "string",
+                    "description": "Country code in ISO_3166-2 format"
+                },
+                "street": {
+                    "type": "array",
+                    "description": "Street",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "company": {
+                    "type": "string",
+                    "description": "Company"
+                },
+                "telephone": {
+                    "type": "string",
+                    "description": "Telephone number"
+                },
+                "fax": {
+                    "type": "string",
+                    "description": "Fax number"
+                },
+                "postcode": {
+                    "type": "string",
+                    "description": "Postcode"
+                },
+                "city": {
+                    "type": "string",
+                    "description": "City name"
+                },
+                "firstname": {
+                    "type": "string",
+                    "description": "First name"
+                },
+                "lastname": {
+                    "type": "string",
+                    "description": "Last name"
+                },
+                "middlename": {
+                    "type": "string",
+                    "description": "Middle name"
+                },
+                "prefix": {
+                    "type": "string",
+                    "description": "Prefix"
+                },
+                "suffix": {
+                    "type": "string",
+                    "description": "Suffix"
+                },
+                "vat_id": {
+                    "type": "string",
+                    "description": "Vat id"
+                },
+                "default_shipping": {
+                    "type": "boolean",
+                    "description": "If this address is default shipping address."
+                },
+                "default_billing": {
+                    "type": "boolean",
+                    "description": "If this address is default billing address"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/customer-data-address-extension-interface"
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "disable_auto_group_change": {
@@ -202,13 +476,59 @@ padding: 10px;
         "description": "Disable auto group change flag."
     },
     "extension_attributes": {
-        "$ref": "#/definitions/customer-data-customer-extension-interface"
+        "$ref": {
+            "company_attributes": {
+                "$ref": {
+                    "customer_id": {
+                        "type": "integer",
+                        "description": "Customer ID."
+                    },
+                    "company_id": {
+                        "type": "integer",
+                        "description": "Company ID."
+                    },
+                    "job_title": {
+                        "type": "string",
+                        "description": "Get job title."
+                    },
+                    "status": {
+                        "type": "integer",
+                        "description": "Customer status."
+                    },
+                    "telephone": {
+                        "type": "string",
+                        "description": "Get telephone."
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/company-data-company-customer-extension-interface"
+                    }
+                }
+            },
+            "is_subscribed": {
+                "type": "boolean"
+            },
+            "amazon_id": {
+                "type": "string"
+            },
+            "vertex_customer_code": {
+                "type": "string"
+            }
+        }
     },
     "custom_attributes": {
         "type": "array",
         "description": "Custom attributes values.",
         "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+            "$ref": {
+                "attribute_code": {
+                    "type": "string",
+                    "description": "Attribute code"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Attribute value"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

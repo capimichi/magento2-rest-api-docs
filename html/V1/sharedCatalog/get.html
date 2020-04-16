@@ -17,11 +17,88 @@ padding: 10px;
         "type": "array",
         "description": "Shared Catalog list.",
         "items": {
-            "$ref": "#/definitions/shared-catalog-data-shared-catalog-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "ID."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Shared Catalog name."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Shared Catalog description."
+                },
+                "customer_group_id": {
+                    "type": "integer",
+                    "description": "Customer Group Id."
+                },
+                "type": {
+                    "type": "integer",
+                    "description": "Shared Catalog type."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created time for Shared Catalog."
+                },
+                "created_by": {
+                    "type": "integer",
+                    "description": "Admin id for Shared Catalog."
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store id for Shared Catalog."
+                },
+                "tax_class_id": {
+                    "type": "integer",
+                    "description": "Tax class id."
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

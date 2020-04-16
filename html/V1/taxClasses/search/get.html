@@ -17,11 +17,67 @@ padding: 10px;
         "type": "array",
         "description": "Items",
         "items": {
-            "$ref": "#/definitions/tax-data-tax-class-interface"
+            "$ref": {
+                "class_id": {
+                    "type": "integer",
+                    "description": "Tax class ID."
+                },
+                "class_name": {
+                    "type": "string",
+                    "description": "Tax class name."
+                },
+                "class_type": {
+                    "type": "string",
+                    "description": "Tax class type."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/tax-data-tax-class-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

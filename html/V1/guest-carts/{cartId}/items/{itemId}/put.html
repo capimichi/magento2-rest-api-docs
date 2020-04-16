@@ -43,10 +43,81 @@ padding: 10px;
             "description": "Quote id."
         },
         "product_option": {
-            "$ref": "#/definitions/quote-data-product-option-interface"
+            "$ref": {
+                "extension_attributes": {
+                    "$ref": {
+                        "custom_options": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/catalog-data-custom-option-interface"
+                            }
+                        },
+                        "bundle_options": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/bundle-data-bundle-option-interface"
+                            }
+                        },
+                        "configurable_item_options": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/configurable-product-data-configurable-item-option-value-interface"
+                            }
+                        },
+                        "downloadable_option": {
+                            "$ref": "#/definitions/downloadable-data-downloadable-option-interface"
+                        },
+                        "giftcard_item_option": {
+                            "$ref": "#/definitions/gift-card-data-gift-card-option-interface"
+                        }
+                    }
+                }
+            }
         },
         "extension_attributes": {
-            "$ref": "#/definitions/quote-data-cart-item-extension-interface"
+            "$ref": {
+                "discounts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "discount_data": {
+                                "$ref": "#/definitions/sales-rule-data-discount-data-interface"
+                            },
+                            "rule_label": {
+                                "type": "string",
+                                "description": "Rule Label"
+                            },
+                            "rule_id": {
+                                "type": "integer",
+                                "description": "Rule ID"
+                            }
+                        }
+                    }
+                },
+                "negotiable_quote_item": {
+                    "$ref": {
+                        "item_id": {
+                            "type": "integer",
+                            "description": "Quote item id"
+                        },
+                        "original_price": {
+                            "type": "number",
+                            "description": "Quote item original price"
+                        },
+                        "original_tax_amount": {
+                            "type": "number",
+                            "description": "Quote item original tax amount"
+                        },
+                        "original_discount_amount": {
+                            "type": "number",
+                            "description": "Quote item original discount amount"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/negotiable-quote-data-negotiable-quote-item-extension-interface"
+                        }
+                    }
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
@@ -79,10 +150,81 @@ padding: 10px;
         "description": "Quote id."
     },
     "product_option": {
-        "$ref": "#/definitions/quote-data-product-option-interface"
+        "$ref": {
+            "extension_attributes": {
+                "$ref": {
+                    "custom_options": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/catalog-data-custom-option-interface"
+                        }
+                    },
+                    "bundle_options": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/bundle-data-bundle-option-interface"
+                        }
+                    },
+                    "configurable_item_options": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/configurable-product-data-configurable-item-option-value-interface"
+                        }
+                    },
+                    "downloadable_option": {
+                        "$ref": "#/definitions/downloadable-data-downloadable-option-interface"
+                    },
+                    "giftcard_item_option": {
+                        "$ref": "#/definitions/gift-card-data-gift-card-option-interface"
+                    }
+                }
+            }
+        }
     },
     "extension_attributes": {
-        "$ref": "#/definitions/quote-data-cart-item-extension-interface"
+        "$ref": {
+            "discounts": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "discount_data": {
+                            "$ref": "#/definitions/sales-rule-data-discount-data-interface"
+                        },
+                        "rule_label": {
+                            "type": "string",
+                            "description": "Rule Label"
+                        },
+                        "rule_id": {
+                            "type": "integer",
+                            "description": "Rule ID"
+                        }
+                    }
+                }
+            },
+            "negotiable_quote_item": {
+                "$ref": {
+                    "item_id": {
+                        "type": "integer",
+                        "description": "Quote item id"
+                    },
+                    "original_price": {
+                        "type": "number",
+                        "description": "Quote item original price"
+                    },
+                    "original_tax_amount": {
+                        "type": "number",
+                        "description": "Quote item original tax amount"
+                    },
+                    "original_discount_amount": {
+                        "type": "number",
+                        "description": "Quote item original discount amount"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/negotiable-quote-data-negotiable-quote-item-extension-interface"
+                    }
+                }
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

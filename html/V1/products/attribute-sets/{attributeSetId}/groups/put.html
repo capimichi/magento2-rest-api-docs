@@ -27,7 +27,14 @@ padding: 10px;
             "description": "Attribute set id"
         },
         "extension_attributes": {
-            "$ref": "#/definitions/eav-data-attribute-group-extension-interface"
+            "$ref": {
+                "attribute_group_code": {
+                    "type": "string"
+                },
+                "sort_order": {
+                    "type": "string"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
@@ -44,7 +51,14 @@ padding: 10px;
         "description": "Attribute set id"
     },
     "extension_attributes": {
-        "$ref": "#/definitions/eav-data-attribute-group-extension-interface"
+        "$ref": {
+            "attribute_group_code": {
+                "type": "string"
+            },
+            "sort_order": {
+                "type": "string"
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

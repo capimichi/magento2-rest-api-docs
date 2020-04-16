@@ -37,7 +37,23 @@ padding: 10px;
         "type": "array",
         "description": "The available regions for the store.",
         "items": {
-            "$ref": "#/definitions/directory-data-region-information-interface"
+            "$ref": {
+                "id": {
+                    "type": "string",
+                    "description": "Region id"
+                },
+                "code": {
+                    "type": "string",
+                    "description": "Region code"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Region name"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/directory-data-region-information-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {

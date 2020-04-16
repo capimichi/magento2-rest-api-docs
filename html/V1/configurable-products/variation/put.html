@@ -59,41 +59,561 @@ padding: 10px;
             "description": "Weight"
         },
         "extension_attributes": {
-            "$ref": "#/definitions/catalog-data-product-extension-interface"
+            "$ref": {
+                "website_ids": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "category_links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "position": {
+                                "type": "integer"
+                            },
+                            "category_id": {
+                                "type": "string",
+                                "description": "Category id"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/catalog-data-category-link-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "stock_item": {
+                    "$ref": {
+                        "item_id": {
+                            "type": "integer"
+                        },
+                        "product_id": {
+                            "type": "integer"
+                        },
+                        "stock_id": {
+                            "type": "integer",
+                            "description": "Stock identifier"
+                        },
+                        "qty": {
+                            "type": "number"
+                        },
+                        "is_in_stock": {
+                            "type": "boolean",
+                            "description": "Stock Availability"
+                        },
+                        "is_qty_decimal": {
+                            "type": "boolean"
+                        },
+                        "show_default_notification_message": {
+                            "type": "boolean"
+                        },
+                        "use_config_min_qty": {
+                            "type": "boolean"
+                        },
+                        "min_qty": {
+                            "type": "number",
+                            "description": "Minimal quantity available for item status in stock"
+                        },
+                        "use_config_min_sale_qty": {
+                            "type": "integer"
+                        },
+                        "min_sale_qty": {
+                            "type": "number",
+                            "description": "Minimum Qty Allowed in Shopping Cart or NULL when there is no limitation"
+                        },
+                        "use_config_max_sale_qty": {
+                            "type": "boolean"
+                        },
+                        "max_sale_qty": {
+                            "type": "number",
+                            "description": "Maximum Qty Allowed in Shopping Cart data wrapper"
+                        },
+                        "use_config_backorders": {
+                            "type": "boolean"
+                        },
+                        "backorders": {
+                            "type": "integer",
+                            "description": "Backorders status"
+                        },
+                        "use_config_notify_stock_qty": {
+                            "type": "boolean"
+                        },
+                        "notify_stock_qty": {
+                            "type": "number",
+                            "description": "Notify for Quantity Below data wrapper"
+                        },
+                        "use_config_qty_increments": {
+                            "type": "boolean"
+                        },
+                        "qty_increments": {
+                            "type": "number",
+                            "description": "Quantity Increments data wrapper"
+                        },
+                        "use_config_enable_qty_inc": {
+                            "type": "boolean"
+                        },
+                        "enable_qty_increments": {
+                            "type": "boolean",
+                            "description": "Whether Quantity Increments is enabled"
+                        },
+                        "use_config_manage_stock": {
+                            "type": "boolean"
+                        },
+                        "manage_stock": {
+                            "type": "boolean",
+                            "description": "Can Manage Stock"
+                        },
+                        "low_stock_date": {
+                            "type": "string"
+                        },
+                        "is_decimal_divided": {
+                            "type": "boolean"
+                        },
+                        "stock_status_changed_auto": {
+                            "type": "integer"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/catalog-inventory-data-stock-item-extension-interface"
+                        }
+                    }
+                },
+                "bundle_product_options": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "option_id": {
+                                "type": "integer",
+                                "description": "Option id"
+                            },
+                            "title": {
+                                "type": "string",
+                                "description": "Option title"
+                            },
+                            "required": {
+                                "type": "boolean",
+                                "description": "Is required option"
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "Input type"
+                            },
+                            "position": {
+                                "type": "integer",
+                                "description": "Option position"
+                            },
+                            "sku": {
+                                "type": "string",
+                                "description": "Product sku"
+                            },
+                            "product_links": {
+                                "type": "array",
+                                "description": "Product links",
+                                "items": {
+                                    "$ref": "#/definitions/bundle-data-link-interface"
+                                }
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/bundle-data-option-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "configurable_product_options": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "attribute_id": {
+                                "type": "string"
+                            },
+                            "label": {
+                                "type": "string"
+                            },
+                            "position": {
+                                "type": "integer"
+                            },
+                            "is_use_default": {
+                                "type": "boolean"
+                            },
+                            "values": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/configurable-product-data-option-value-interface"
+                                }
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/configurable-product-data-option-extension-interface"
+                            },
+                            "product_id": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                },
+                "configurable_product_links": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "downloadable_product_links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "id": {
+                                "type": "integer",
+                                "description": "Sample(or link) id"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "sort_order": {
+                                "type": "integer"
+                            },
+                            "is_shareable": {
+                                "type": "integer",
+                                "description": "Shareable status"
+                            },
+                            "price": {
+                                "type": "number",
+                                "description": "Price"
+                            },
+                            "number_of_downloads": {
+                                "type": "integer",
+                                "description": "Of downloads per user"
+                            },
+                            "link_type": {
+                                "type": "string"
+                            },
+                            "link_file": {
+                                "type": "string",
+                                "description": "relative file path"
+                            },
+                            "link_file_content": {
+                                "$ref": "#/definitions/downloadable-data-file-content-interface"
+                            },
+                            "link_url": {
+                                "type": "string",
+                                "description": "Link url or null when type is 'file'"
+                            },
+                            "sample_type": {
+                                "type": "string"
+                            },
+                            "sample_file": {
+                                "type": "string",
+                                "description": "relative file path"
+                            },
+                            "sample_file_content": {
+                                "$ref": "#/definitions/downloadable-data-file-content-interface"
+                            },
+                            "sample_url": {
+                                "type": "string",
+                                "description": "file URL"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/downloadable-data-link-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "downloadable_product_samples": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "id": {
+                                "type": "integer",
+                                "description": "Sample(or link) id"
+                            },
+                            "title": {
+                                "type": "string",
+                                "description": "Title"
+                            },
+                            "sort_order": {
+                                "type": "integer",
+                                "description": "Order index for sample"
+                            },
+                            "sample_type": {
+                                "type": "string"
+                            },
+                            "sample_file": {
+                                "type": "string",
+                                "description": "relative file path"
+                            },
+                            "sample_file_content": {
+                                "$ref": "#/definitions/downloadable-data-file-content-interface"
+                            },
+                            "sample_url": {
+                                "type": "string",
+                                "description": "file URL"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/downloadable-data-sample-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "giftcard_amounts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "attribute_id": {
+                                "type": "integer"
+                            },
+                            "website_id": {
+                                "type": "integer"
+                            },
+                            "value": {
+                                "type": "number"
+                            },
+                            "website_value": {
+                                "type": "number"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/gift-card-data-giftcard-amount-extension-interface"
+                            }
+                        }
+                    }
+                }
+            }
         },
         "product_links": {
             "type": "array",
             "description": "Product links info",
             "items": {
-                "$ref": "#/definitions/catalog-data-product-link-interface"
+                "$ref": {
+                    "sku": {
+                        "type": "string",
+                        "description": "SKU"
+                    },
+                    "link_type": {
+                        "type": "string",
+                        "description": "Link type"
+                    },
+                    "linked_product_sku": {
+                        "type": "string",
+                        "description": "Linked product sku"
+                    },
+                    "linked_product_type": {
+                        "type": "string",
+                        "description": "Linked product type (simple, virtual, etc)"
+                    },
+                    "position": {
+                        "type": "integer",
+                        "description": "Linked item position"
+                    },
+                    "extension_attributes": {
+                        "$ref": {
+                            "qty": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                }
             }
         },
         "options": {
             "type": "array",
             "description": "List of product options",
             "items": {
-                "$ref": "#/definitions/catalog-data-product-custom-option-interface"
+                "$ref": {
+                    "product_sku": {
+                        "type": "string",
+                        "description": "Product SKU"
+                    },
+                    "option_id": {
+                        "type": "integer",
+                        "description": "Option id"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "Option title"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Option type"
+                    },
+                    "sort_order": {
+                        "type": "integer",
+                        "description": "Sort order"
+                    },
+                    "is_require": {
+                        "type": "boolean",
+                        "description": "Is require"
+                    },
+                    "price": {
+                        "type": "number",
+                        "description": "Price"
+                    },
+                    "price_type": {
+                        "type": "string",
+                        "description": "Price type"
+                    },
+                    "sku": {
+                        "type": "string",
+                        "description": "Sku"
+                    },
+                    "file_extension": {
+                        "type": "string"
+                    },
+                    "max_characters": {
+                        "type": "integer"
+                    },
+                    "image_size_x": {
+                        "type": "integer"
+                    },
+                    "image_size_y": {
+                        "type": "integer"
+                    },
+                    "values": {
+                        "type": "array",
+                        "items": {
+                            "$ref": {
+                                "title": {
+                                    "type": "string",
+                                    "description": "Option title"
+                                },
+                                "sort_order": {
+                                    "type": "integer",
+                                    "description": "Sort order"
+                                },
+                                "price": {
+                                    "type": "number",
+                                    "description": "Price"
+                                },
+                                "price_type": {
+                                    "type": "string",
+                                    "description": "Price type"
+                                },
+                                "sku": {
+                                    "type": "string",
+                                    "description": "Sku"
+                                },
+                                "option_type_id": {
+                                    "type": "integer",
+                                    "description": "Option type id"
+                                }
+                            }
+                        }
+                    },
+                    "extension_attributes": {
+                        "$ref": {
+                            "vertex_flex_field": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
             }
         },
         "media_gallery_entries": {
             "type": "array",
             "description": "Media gallery entries",
             "items": {
-                "$ref": "#/definitions/catalog-data-product-attribute-media-gallery-entry-interface"
+                "$ref": {
+                    "id": {
+                        "type": "integer",
+                        "description": "Gallery entry ID"
+                    },
+                    "media_type": {
+                        "type": "string",
+                        "description": "Media type"
+                    },
+                    "label": {
+                        "type": "string",
+                        "description": "Gallery entry alternative text"
+                    },
+                    "position": {
+                        "type": "integer",
+                        "description": "Gallery entry position (sort order)"
+                    },
+                    "disabled": {
+                        "type": "boolean",
+                        "description": "If gallery entry is hidden from product page"
+                    },
+                    "types": {
+                        "type": "array",
+                        "description": "Gallery entry image types (thumbnail, image, small_image etc)",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "file": {
+                        "type": "string",
+                        "description": "File path"
+                    },
+                    "content": {
+                        "$ref": {
+                            "base64_encoded_data": {
+                                "type": "string",
+                                "description": "Media data (base64 encoded content)"
+                            },
+                            "type": {
+                                "type": "string",
+                                "description": "MIME type"
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Image name"
+                            }
+                        }
+                    },
+                    "extension_attributes": {
+                        "$ref": {
+                            "video_content": {
+                                "$ref": "#/definitions/framework-data-video-content-interface"
+                            }
+                        }
+                    }
+                }
             }
         },
         "tier_prices": {
             "type": "array",
             "description": "List of product tier prices",
             "items": {
-                "$ref": "#/definitions/catalog-data-product-tier-price-interface"
+                "$ref": {
+                    "customer_group_id": {
+                        "type": "integer",
+                        "description": "Customer group id"
+                    },
+                    "qty": {
+                        "type": "number",
+                        "description": "Tier qty"
+                    },
+                    "value": {
+                        "type": "number",
+                        "description": "Price value"
+                    },
+                    "extension_attributes": {
+                        "$ref": {
+                            "percentage_value": {
+                                "type": "number"
+                            },
+                            "website_id": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
             }
         },
         "custom_attributes": {
             "type": "array",
             "description": "Custom attributes values.",
             "items": {
-                "$ref": "#/definitions/framework-attribute-interface"
+                "$ref": {
+                    "attribute_code": {
+                        "type": "string",
+                        "description": "Attribute code"
+                    },
+                    "value": {
+                        "type": "string",
+                        "description": "Attribute value"
+                    }
+                }
             }
         }
     },

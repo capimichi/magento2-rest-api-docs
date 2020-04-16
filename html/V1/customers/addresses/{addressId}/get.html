@@ -22,7 +22,23 @@ padding: 10px;
         "description": "Customer ID"
     },
     "region": {
-        "$ref": "#/definitions/customer-data-region-interface"
+        "$ref": {
+            "region_code": {
+                "type": "string",
+                "description": "Region code"
+            },
+            "region": {
+                "type": "string",
+                "description": "Region"
+            },
+            "region_id": {
+                "type": "integer",
+                "description": "Region id"
+            },
+            "extension_attributes": {
+                "$ref": "#/definitions/customer-data-region-extension-interface"
+            }
+        }
     },
     "region_id": {
         "type": "integer",
@@ -98,7 +114,16 @@ padding: 10px;
         "type": "array",
         "description": "Custom attributes values.",
         "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+            "$ref": {
+                "attribute_code": {
+                    "type": "string",
+                    "description": "Attribute code"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Attribute value"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

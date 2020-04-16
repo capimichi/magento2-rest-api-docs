@@ -22,7 +22,26 @@ padding: 10px;
         "description": "Stock name"
     },
     "extension_attributes": {
-        "$ref": "#/definitions/inventory-api-data-stock-extension-interface"
+        "$ref": {
+            "sales_channels": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "type": {
+                            "type": "string",
+                            "description": "Sales channel type"
+                        },
+                        "code": {
+                            "type": "string",
+                            "description": "Sales channel code"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/inventory-sales-api-data-sales-channel-extension-interface"
+                        }
+                    }
+                }
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

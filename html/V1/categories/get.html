@@ -43,7 +43,75 @@ padding: 10px;
     "children_data": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/catalog-data-category-tree-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer"
+                },
+                "parent_id": {
+                    "type": "integer",
+                    "description": "Parent category ID"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Category name"
+                },
+                "is_active": {
+                    "type": "boolean",
+                    "description": "Whether category is active"
+                },
+                "position": {
+                    "type": "integer",
+                    "description": "Category position"
+                },
+                "level": {
+                    "type": "integer",
+                    "description": "Category level"
+                },
+                "product_count": {
+                    "type": "integer",
+                    "description": "Product count"
+                },
+                "children_data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "id": {
+                                "type": "integer"
+                            },
+                            "parent_id": {
+                                "type": "integer",
+                                "description": "Parent category ID"
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Category name"
+                            },
+                            "is_active": {
+                                "type": "boolean",
+                                "description": "Whether category is active"
+                            },
+                            "position": {
+                                "type": "integer",
+                                "description": "Category position"
+                            },
+                            "level": {
+                                "type": "integer",
+                                "description": "Category level"
+                            },
+                            "product_count": {
+                                "type": "integer",
+                                "description": "Product count"
+                            },
+                            "children_data": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/catalog-data-category-tree-interface"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

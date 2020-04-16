@@ -19,7 +19,17 @@ padding: 10px;
     "errors": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/inventory-sales-api-data-product-salability-error-interface"
+            "$ref": {
+                "code": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/inventory-sales-api-data-product-salability-error-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {

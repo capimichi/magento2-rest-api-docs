@@ -17,11 +17,141 @@ padding: 10px;
         "type": "array",
         "description": "Sources list",
         "items": {
-            "$ref": "#/definitions/inventory-api-data-source-interface"
+            "$ref": {
+                "source_code": {
+                    "type": "string",
+                    "description": "Source code"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Source name"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Source email"
+                },
+                "contact_name": {
+                    "type": "string",
+                    "description": "Source contact name"
+                },
+                "enabled": {
+                    "type": "boolean",
+                    "description": "If source is enabled. For new entity can be null"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Source description"
+                },
+                "latitude": {
+                    "type": "number",
+                    "description": "Source latitude"
+                },
+                "longitude": {
+                    "type": "number",
+                    "description": "Source longitude"
+                },
+                "country_id": {
+                    "type": "string",
+                    "description": "Source country id"
+                },
+                "region_id": {
+                    "type": "integer",
+                    "description": "Region id if source has registered region."
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Region title if source has custom region"
+                },
+                "city": {
+                    "type": "string",
+                    "description": "Source city"
+                },
+                "street": {
+                    "type": "string",
+                    "description": "Source street name"
+                },
+                "postcode": {
+                    "type": "string",
+                    "description": "Source post code"
+                },
+                "phone": {
+                    "type": "string",
+                    "description": "Source phone number"
+                },
+                "fax": {
+                    "type": "string",
+                    "description": "Source fax"
+                },
+                "use_default_carrier_config": {
+                    "type": "boolean",
+                    "description": "Is need to use default config"
+                },
+                "carrier_links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "carrier_code": {
+                                "type": "string",
+                                "description": "Carrier code"
+                            },
+                            "position": {
+                                "type": "integer",
+                                "description": "Position"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/inventory-api-data-source-carrier-link-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/inventory-api-data-source-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

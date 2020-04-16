@@ -17,11 +17,80 @@ padding: 10px;
         "type": "array",
         "description": "Blocks list.",
         "items": {
-            "$ref": "#/definitions/cms-data-block-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "ID"
+                },
+                "identifier": {
+                    "type": "string",
+                    "description": "Identifier"
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Title"
+                },
+                "content": {
+                    "type": "string",
+                    "description": "Content"
+                },
+                "creation_time": {
+                    "type": "string",
+                    "description": "Creation time"
+                },
+                "update_time": {
+                    "type": "string",
+                    "description": "Update time"
+                },
+                "active": {
+                    "type": "boolean",
+                    "description": "Active"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

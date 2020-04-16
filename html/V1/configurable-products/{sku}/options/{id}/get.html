@@ -31,7 +31,14 @@ padding: 10px;
     "values": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/configurable-product-data-option-value-interface"
+            "$ref": {
+                "value_index": {
+                    "type": "integer"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/configurable-product-data-option-value-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {

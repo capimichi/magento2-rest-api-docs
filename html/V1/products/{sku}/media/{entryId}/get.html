@@ -45,10 +45,52 @@ padding: 10px;
         "description": "File path"
     },
     "content": {
-        "$ref": "#/definitions/framework-data-image-content-interface"
+        "$ref": {
+            "base64_encoded_data": {
+                "type": "string",
+                "description": "Media data (base64 encoded content)"
+            },
+            "type": {
+                "type": "string",
+                "description": "MIME type"
+            },
+            "name": {
+                "type": "string",
+                "description": "Image name"
+            }
+        }
     },
     "extension_attributes": {
-        "$ref": "#/definitions/catalog-data-product-attribute-media-gallery-entry-extension-interface"
+        "$ref": {
+            "video_content": {
+                "$ref": {
+                    "media_type": {
+                        "type": "string",
+                        "description": "MIME type"
+                    },
+                    "video_provider": {
+                        "type": "string",
+                        "description": "Provider"
+                    },
+                    "video_url": {
+                        "type": "string",
+                        "description": "Video URL"
+                    },
+                    "video_title": {
+                        "type": "string",
+                        "description": "Title"
+                    },
+                    "video_description": {
+                        "type": "string",
+                        "description": "Video Description"
+                    },
+                    "video_metadata": {
+                        "type": "string",
+                        "description": "Metadata"
+                    }
+                }
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

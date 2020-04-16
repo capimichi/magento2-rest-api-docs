@@ -34,7 +34,23 @@ padding: 10px;
         "description": "Message text."
     },
     "extension_attributes": {
-        "$ref": "#/definitions/gift-message-data-message-extension-interface"
+        "$ref": {
+            "entity_id": {
+                "type": "string"
+            },
+            "entity_type": {
+                "type": "string"
+            },
+            "wrapping_id": {
+                "type": "integer"
+            },
+            "wrapping_allow_gift_receipt": {
+                "type": "boolean"
+            },
+            "wrapping_add_printed_card": {
+                "type": "boolean"
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

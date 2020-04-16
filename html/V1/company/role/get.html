@@ -17,11 +17,91 @@ padding: 10px;
         "type": "array",
         "description": "Roles list.",
         "items": {
-            "$ref": "#/definitions/company-data-role-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Role id."
+                },
+                "role_name": {
+                    "type": "string",
+                    "description": "Role name."
+                },
+                "permissions": {
+                    "type": "array",
+                    "description": "Permissions.",
+                    "items": {
+                        "$ref": {
+                            "id": {
+                                "type": "integer",
+                                "description": "Id."
+                            },
+                            "role_id": {
+                                "type": "integer",
+                                "description": "Role id."
+                            },
+                            "resource_id": {
+                                "type": "string",
+                                "description": "Resource id."
+                            },
+                            "permission": {
+                                "type": "string",
+                                "description": "Permission."
+                            }
+                        }
+                    }
+                },
+                "company_id": {
+                    "type": "integer",
+                    "description": "Company id."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/company-data-role-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

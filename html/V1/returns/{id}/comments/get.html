@@ -17,11 +17,103 @@ padding: 10px;
         "type": "array",
         "description": "Rma Status History list",
         "items": {
-            "$ref": "#/definitions/rma-data-comment-interface"
+            "$ref": {
+                "comment": {
+                    "type": "string",
+                    "description": "Comment"
+                },
+                "rma_entity_id": {
+                    "type": "integer",
+                    "description": "Rma Id"
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created_at"
+                },
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Entity_id"
+                },
+                "customer_notified": {
+                    "type": "boolean",
+                    "description": "Is_customer_notified"
+                },
+                "visible_on_front": {
+                    "type": "boolean",
+                    "description": "Is_visible_on_front"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status"
+                },
+                "admin": {
+                    "type": "boolean",
+                    "description": "Is_admin"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/rma-data-comment-extension-interface"
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

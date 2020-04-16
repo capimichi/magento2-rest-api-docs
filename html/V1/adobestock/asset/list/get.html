@@ -16,14 +16,104 @@ padding: 10px;
     "items": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/framework-search-document-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer"
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "aggregations": {
-        "$ref": "#/definitions/framework-search-aggregation-interface"
+        "$ref": {
+            "buckets": {
+                "type": "array",
+                "description": "All Document fields",
+                "items": {
+                    "$ref": {
+                        "name": {
+                            "type": "string",
+                            "description": "Field name"
+                        },
+                        "values": {
+                            "type": "array",
+                            "description": "Field values",
+                            "items": {
+                                "$ref": "#/definitions/framework-search-aggregation-value-interface"
+                            }
+                        }
+                    }
+                }
+            },
+            "bucket_names": {
+                "type": "array",
+                "description": "Document field names",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-search-criteria-interface"
+        "$ref": {
+            "request_name": {
+                "type": "string"
+            },
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

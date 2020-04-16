@@ -105,13 +105,59 @@ padding: 10px;
         "description": "Save in address book flag"
     },
     "extension_attributes": {
-        "$ref": "#/definitions/quote-data-address-extension-interface"
+        "$ref": {
+            "discounts": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "discount_data": {
+                            "$ref": "#/definitions/sales-rule-data-discount-data-interface"
+                        },
+                        "rule_label": {
+                            "type": "string",
+                            "description": "Rule Label"
+                        },
+                        "rule_id": {
+                            "type": "integer",
+                            "description": "Rule ID"
+                        }
+                    }
+                }
+            },
+            "gift_registry_id": {
+                "type": "integer"
+            },
+            "checkout_fields": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "attribute_code": {
+                            "type": "string",
+                            "description": "Attribute code"
+                        },
+                        "value": {
+                            "type": "string",
+                            "description": "Attribute value"
+                        }
+                    }
+                }
+            }
+        }
     },
     "custom_attributes": {
         "type": "array",
         "description": "Custom attributes values.",
         "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+            "$ref": {
+                "attribute_code": {
+                    "type": "string",
+                    "description": "Attribute code"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Attribute value"
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

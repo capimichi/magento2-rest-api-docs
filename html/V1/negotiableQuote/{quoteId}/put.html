@@ -42,7 +42,56 @@ padding: 10px;
             "type": "array",
             "description": "Array of items. Otherwise, null.",
             "items": {
-                "$ref": "#/definitions/quote-data-cart-item-interface"
+                "$ref": {
+                    "item_id": {
+                        "type": "integer",
+                        "description": "Item ID. Otherwise, null."
+                    },
+                    "sku": {
+                        "type": "string",
+                        "description": "Product SKU. Otherwise, null."
+                    },
+                    "qty": {
+                        "type": "number",
+                        "description": "Product quantity."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Product name. Otherwise, null."
+                    },
+                    "price": {
+                        "type": "number",
+                        "description": "Product price. Otherwise, null."
+                    },
+                    "product_type": {
+                        "type": "string",
+                        "description": "Product type. Otherwise, null."
+                    },
+                    "quote_id": {
+                        "type": "string",
+                        "description": "Quote id."
+                    },
+                    "product_option": {
+                        "$ref": {
+                            "extension_attributes": {
+                                "$ref": "#/definitions/quote-data-product-option-extension-interface"
+                            }
+                        }
+                    },
+                    "extension_attributes": {
+                        "$ref": {
+                            "discounts": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/sales-rule-data-rule-discount-interface"
+                                }
+                            },
+                            "negotiable_quote_item": {
+                                "$ref": "#/definitions/negotiable-quote-data-negotiable-quote-item-interface"
+                            }
+                        }
+                    }
+                }
             }
         },
         "items_count": {
@@ -54,10 +103,364 @@ padding: 10px;
             "description": "Total quantity of all cart items. Otherwise, null."
         },
         "customer": {
-            "$ref": "#/definitions/customer-data-customer-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Customer id"
+                },
+                "group_id": {
+                    "type": "integer",
+                    "description": "Group id"
+                },
+                "default_billing": {
+                    "type": "string",
+                    "description": "Default billing address id"
+                },
+                "default_shipping": {
+                    "type": "string",
+                    "description": "Default shipping address id"
+                },
+                "confirmation": {
+                    "type": "string",
+                    "description": "Confirmation"
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created at time"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Updated at time"
+                },
+                "created_in": {
+                    "type": "string",
+                    "description": "Created in area"
+                },
+                "dob": {
+                    "type": "string",
+                    "description": "Date of birth"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email address"
+                },
+                "firstname": {
+                    "type": "string",
+                    "description": "First name"
+                },
+                "lastname": {
+                    "type": "string",
+                    "description": "Last name"
+                },
+                "middlename": {
+                    "type": "string",
+                    "description": "Middle name"
+                },
+                "prefix": {
+                    "type": "string",
+                    "description": "Prefix"
+                },
+                "suffix": {
+                    "type": "string",
+                    "description": "Suffix"
+                },
+                "gender": {
+                    "type": "integer",
+                    "description": "Gender"
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store id"
+                },
+                "taxvat": {
+                    "type": "string",
+                    "description": "Tax Vat"
+                },
+                "website_id": {
+                    "type": "integer",
+                    "description": "Website id"
+                },
+                "addresses": {
+                    "type": "array",
+                    "description": "Customer addresses.",
+                    "items": {
+                        "$ref": {
+                            "id": {
+                                "type": "integer",
+                                "description": "ID"
+                            },
+                            "customer_id": {
+                                "type": "integer",
+                                "description": "Customer ID"
+                            },
+                            "region": {
+                                "$ref": "#/definitions/customer-data-region-interface"
+                            },
+                            "region_id": {
+                                "type": "integer",
+                                "description": "Region ID"
+                            },
+                            "country_id": {
+                                "type": "string",
+                                "description": "Country code in ISO_3166-2 format"
+                            },
+                            "street": {
+                                "type": "array",
+                                "description": "Street",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "company": {
+                                "type": "string",
+                                "description": "Company"
+                            },
+                            "telephone": {
+                                "type": "string",
+                                "description": "Telephone number"
+                            },
+                            "fax": {
+                                "type": "string",
+                                "description": "Fax number"
+                            },
+                            "postcode": {
+                                "type": "string",
+                                "description": "Postcode"
+                            },
+                            "city": {
+                                "type": "string",
+                                "description": "City name"
+                            },
+                            "firstname": {
+                                "type": "string",
+                                "description": "First name"
+                            },
+                            "lastname": {
+                                "type": "string",
+                                "description": "Last name"
+                            },
+                            "middlename": {
+                                "type": "string",
+                                "description": "Middle name"
+                            },
+                            "prefix": {
+                                "type": "string",
+                                "description": "Prefix"
+                            },
+                            "suffix": {
+                                "type": "string",
+                                "description": "Suffix"
+                            },
+                            "vat_id": {
+                                "type": "string",
+                                "description": "Vat id"
+                            },
+                            "default_shipping": {
+                                "type": "boolean",
+                                "description": "If this address is default shipping address."
+                            },
+                            "default_billing": {
+                                "type": "boolean",
+                                "description": "If this address is default billing address"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/customer-data-address-extension-interface"
+                            },
+                            "custom_attributes": {
+                                "type": "array",
+                                "description": "Custom attributes values.",
+                                "items": {
+                                    "$ref": {
+                                        "attribute_code": {
+                                            "type": "string",
+                                            "description": "Attribute code"
+                                        },
+                                        "value": {
+                                            "type": "string",
+                                            "description": "Attribute value"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "disable_auto_group_change": {
+                    "type": "integer",
+                    "description": "Disable auto group change flag."
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "company_attributes": {
+                            "$ref": "#/definitions/company-data-company-customer-interface"
+                        },
+                        "is_subscribed": {
+                            "type": "boolean"
+                        },
+                        "amazon_id": {
+                            "type": "string"
+                        },
+                        "vertex_customer_code": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         },
         "billing_address": {
-            "$ref": "#/definitions/quote-data-address-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Id"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Region name"
+                },
+                "region_id": {
+                    "type": "integer",
+                    "description": "Region id"
+                },
+                "region_code": {
+                    "type": "string",
+                    "description": "Region code"
+                },
+                "country_id": {
+                    "type": "string",
+                    "description": "Country id"
+                },
+                "street": {
+                    "type": "array",
+                    "description": "Street",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "company": {
+                    "type": "string",
+                    "description": "Company"
+                },
+                "telephone": {
+                    "type": "string",
+                    "description": "Telephone number"
+                },
+                "fax": {
+                    "type": "string",
+                    "description": "Fax number"
+                },
+                "postcode": {
+                    "type": "string",
+                    "description": "Postcode"
+                },
+                "city": {
+                    "type": "string",
+                    "description": "City name"
+                },
+                "firstname": {
+                    "type": "string",
+                    "description": "First name"
+                },
+                "lastname": {
+                    "type": "string",
+                    "description": "Last name"
+                },
+                "middlename": {
+                    "type": "string",
+                    "description": "Middle name"
+                },
+                "prefix": {
+                    "type": "string",
+                    "description": "Prefix"
+                },
+                "suffix": {
+                    "type": "string",
+                    "description": "Suffix"
+                },
+                "vat_id": {
+                    "type": "string",
+                    "description": "Vat id"
+                },
+                "customer_id": {
+                    "type": "integer",
+                    "description": "Customer id"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Billing/shipping email"
+                },
+                "same_as_billing": {
+                    "type": "integer",
+                    "description": "Same as billing flag"
+                },
+                "customer_address_id": {
+                    "type": "integer",
+                    "description": "Customer address id"
+                },
+                "save_in_address_book": {
+                    "type": "integer",
+                    "description": "Save in address book flag"
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "discounts": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/sales-rule-data-rule-discount-interface"
+                            }
+                        },
+                        "gift_registry_id": {
+                            "type": "integer"
+                        },
+                        "checkout_fields": {
+                            "type": "array",
+                            "items": {
+                                "$ref": {
+                                    "attribute_code": {
+                                        "type": "string",
+                                        "description": "Attribute code"
+                                    },
+                                    "value": {
+                                        "type": "string",
+                                        "description": "Attribute value"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         },
         "reserved_order_id": {
             "type": "string",
@@ -68,7 +471,43 @@ padding: 10px;
             "description": "Original order ID. Otherwise, null."
         },
         "currency": {
-            "$ref": "#/definitions/quote-data-currency-interface"
+            "$ref": {
+                "global_currency_code": {
+                    "type": "string",
+                    "description": "Global currency code"
+                },
+                "base_currency_code": {
+                    "type": "string",
+                    "description": "Base currency code"
+                },
+                "store_currency_code": {
+                    "type": "string",
+                    "description": "Store currency code"
+                },
+                "quote_currency_code": {
+                    "type": "string",
+                    "description": "Quote currency code"
+                },
+                "store_to_base_rate": {
+                    "type": "number",
+                    "description": "Store currency to base currency rate"
+                },
+                "store_to_quote_rate": {
+                    "type": "number",
+                    "description": "Store currency to quote currency rate"
+                },
+                "base_to_global_rate": {
+                    "type": "number",
+                    "description": "Base currency to global currency rate"
+                },
+                "base_to_quote_rate": {
+                    "type": "number",
+                    "description": "Base currency to quote currency rate"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/quote-data-currency-extension-interface"
+                }
+            }
         },
         "customer_is_guest": {
             "type": "boolean",
@@ -91,7 +530,145 @@ padding: 10px;
             "description": "Store identifier"
         },
         "extension_attributes": {
-            "$ref": "#/definitions/quote-data-cart-extension-interface"
+            "$ref": {
+                "shipping_assignments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": {
+                            "shipping": {
+                                "$ref": "#/definitions/quote-data-shipping-interface"
+                            },
+                            "items": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/quote-data-cart-item-interface"
+                                }
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/quote-data-shipping-assignment-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "negotiable_quote": {
+                    "$ref": {
+                        "quote_id": {
+                            "type": "integer",
+                            "description": "Negotiable quote ID."
+                        },
+                        "is_regular_quote": {
+                            "type": "boolean",
+                            "description": "Is regular quote."
+                        },
+                        "status": {
+                            "type": "string",
+                            "description": "Negotiable quote status."
+                        },
+                        "negotiated_price_type": {
+                            "type": "integer",
+                            "description": "Negotiated price type."
+                        },
+                        "negotiated_price_value": {
+                            "type": "number",
+                            "description": "Negotiated price value."
+                        },
+                        "shipping_price": {
+                            "type": "number",
+                            "description": "Proposed shipping price."
+                        },
+                        "quote_name": {
+                            "type": "string",
+                            "description": "Negotiable quote name."
+                        },
+                        "expiration_period": {
+                            "type": "string",
+                            "description": "Expiration period."
+                        },
+                        "email_notification_status": {
+                            "type": "integer",
+                            "description": "Email notification status."
+                        },
+                        "has_unconfirmed_changes": {
+                            "type": "boolean",
+                            "description": "Has unconfirmed changes."
+                        },
+                        "is_shipping_tax_changed": {
+                            "type": "boolean",
+                            "description": "Shipping tax changes."
+                        },
+                        "is_customer_price_changed": {
+                            "type": "boolean",
+                            "description": "Customer price changes."
+                        },
+                        "notifications": {
+                            "type": "integer",
+                            "description": "Quote notifications."
+                        },
+                        "applied_rule_ids": {
+                            "type": "string",
+                            "description": "Quote rules."
+                        },
+                        "is_address_draft": {
+                            "type": "boolean",
+                            "description": "Is address draft."
+                        },
+                        "deleted_sku": {
+                            "type": "string",
+                            "description": "Deleted products sku."
+                        },
+                        "creator_id": {
+                            "type": "integer",
+                            "description": "Quote creator id."
+                        },
+                        "creator_type": {
+                            "type": "integer",
+                            "description": "Quote creator type."
+                        },
+                        "original_total_price": {
+                            "type": "number",
+                            "description": "Quote original total price."
+                        },
+                        "base_original_total_price": {
+                            "type": "number",
+                            "description": "Quote original total price in base currency."
+                        },
+                        "negotiated_total_price": {
+                            "type": "number",
+                            "description": "Quote negotiated total price."
+                        },
+                        "base_negotiated_total_price": {
+                            "type": "number",
+                            "description": "Quote negotiated total price in base currency."
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/negotiable-quote-data-negotiable-quote-extension-interface"
+                        }
+                    }
+                },
+                "amazon_order_reference_id": {
+                    "$ref": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "amazon_order_reference_id": {
+                            "type": "string",
+                            "description": "Amazon order reference id"
+                        },
+                        "quote_id": {
+                            "type": "integer",
+                            "description": "Quote id"
+                        },
+                        "sandbox_simulation_reference": {
+                            "type": "string",
+                            "description": "Sandbox simulation reference"
+                        },
+                        "confirmed": {
+                            "type": "boolean",
+                            "description": "Quote confirmed with amazon"
+                        }
+                    }
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

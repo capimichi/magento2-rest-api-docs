@@ -545,24 +545,1708 @@ padding: 10px;
         "type": "array",
         "description": "Array of items.",
         "items": {
-            "$ref": "#/definitions/sales-data-order-item-interface"
+            "$ref": {
+                "additional_data": {
+                    "type": "string",
+                    "description": "Additional data."
+                },
+                "amount_refunded": {
+                    "type": "number",
+                    "description": "Amount refunded."
+                },
+                "applied_rule_ids": {
+                    "type": "string",
+                    "description": "Applied rule IDs."
+                },
+                "base_amount_refunded": {
+                    "type": "number",
+                    "description": "Base amount refunded."
+                },
+                "base_cost": {
+                    "type": "number",
+                    "description": "Base cost."
+                },
+                "base_discount_amount": {
+                    "type": "number",
+                    "description": "Base discount amount."
+                },
+                "base_discount_invoiced": {
+                    "type": "number",
+                    "description": "Base discount invoiced."
+                },
+                "base_discount_refunded": {
+                    "type": "number",
+                    "description": "Base discount refunded."
+                },
+                "base_discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Base discount tax compensation amount."
+                },
+                "base_discount_tax_compensation_invoiced": {
+                    "type": "number",
+                    "description": "Base discount tax compensation invoiced."
+                },
+                "base_discount_tax_compensation_refunded": {
+                    "type": "number",
+                    "description": "Base discount tax compensation refunded."
+                },
+                "base_original_price": {
+                    "type": "number",
+                    "description": "Base original price."
+                },
+                "base_price": {
+                    "type": "number",
+                    "description": "Base price."
+                },
+                "base_price_incl_tax": {
+                    "type": "number",
+                    "description": "Base price including tax."
+                },
+                "base_row_invoiced": {
+                    "type": "number",
+                    "description": "Base row invoiced."
+                },
+                "base_row_total": {
+                    "type": "number",
+                    "description": "Base row total."
+                },
+                "base_row_total_incl_tax": {
+                    "type": "number",
+                    "description": "Base row total including tax."
+                },
+                "base_tax_amount": {
+                    "type": "number",
+                    "description": "Base tax amount."
+                },
+                "base_tax_before_discount": {
+                    "type": "number",
+                    "description": "Base tax before discount."
+                },
+                "base_tax_invoiced": {
+                    "type": "number",
+                    "description": "Base tax invoiced."
+                },
+                "base_tax_refunded": {
+                    "type": "number",
+                    "description": "Base tax refunded."
+                },
+                "base_weee_tax_applied_amount": {
+                    "type": "number",
+                    "description": "Base WEEE tax applied amount."
+                },
+                "base_weee_tax_applied_row_amnt": {
+                    "type": "number",
+                    "description": "Base WEEE tax applied row amount."
+                },
+                "base_weee_tax_disposition": {
+                    "type": "number",
+                    "description": "Base WEEE tax disposition."
+                },
+                "base_weee_tax_row_disposition": {
+                    "type": "number",
+                    "description": "Base WEEE tax row disposition."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created-at timestamp."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description."
+                },
+                "discount_amount": {
+                    "type": "number",
+                    "description": "Discount amount."
+                },
+                "discount_invoiced": {
+                    "type": "number",
+                    "description": "Discount invoiced."
+                },
+                "discount_percent": {
+                    "type": "number",
+                    "description": "Discount percent."
+                },
+                "discount_refunded": {
+                    "type": "number",
+                    "description": "Discount refunded."
+                },
+                "event_id": {
+                    "type": "integer",
+                    "description": "Event ID."
+                },
+                "ext_order_item_id": {
+                    "type": "string",
+                    "description": "External order item ID."
+                },
+                "free_shipping": {
+                    "type": "integer",
+                    "description": "Free-shipping flag value."
+                },
+                "gw_base_price": {
+                    "type": "number",
+                    "description": "GW base price."
+                },
+                "gw_base_price_invoiced": {
+                    "type": "number",
+                    "description": "GW base price invoiced."
+                },
+                "gw_base_price_refunded": {
+                    "type": "number",
+                    "description": "GW base price refunded."
+                },
+                "gw_base_tax_amount": {
+                    "type": "number",
+                    "description": "GW base tax amount."
+                },
+                "gw_base_tax_amount_invoiced": {
+                    "type": "number",
+                    "description": "GW base tax amount invoiced."
+                },
+                "gw_base_tax_amount_refunded": {
+                    "type": "number",
+                    "description": "GW base tax amount refunded."
+                },
+                "gw_id": {
+                    "type": "integer",
+                    "description": "GW ID."
+                },
+                "gw_price": {
+                    "type": "number",
+                    "description": "GW price."
+                },
+                "gw_price_invoiced": {
+                    "type": "number",
+                    "description": "GW price invoiced."
+                },
+                "gw_price_refunded": {
+                    "type": "number",
+                    "description": "GW price refunded."
+                },
+                "gw_tax_amount": {
+                    "type": "number",
+                    "description": "GW tax amount."
+                },
+                "gw_tax_amount_invoiced": {
+                    "type": "number",
+                    "description": "GW tax amount invoiced."
+                },
+                "gw_tax_amount_refunded": {
+                    "type": "number",
+                    "description": "GW tax amount refunded."
+                },
+                "discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Discount tax compensation amount."
+                },
+                "discount_tax_compensation_canceled": {
+                    "type": "number",
+                    "description": "Discount tax compensation canceled."
+                },
+                "discount_tax_compensation_invoiced": {
+                    "type": "number",
+                    "description": "Discount tax compensation invoiced."
+                },
+                "discount_tax_compensation_refunded": {
+                    "type": "number",
+                    "description": "Discount tax compensation refunded."
+                },
+                "is_qty_decimal": {
+                    "type": "integer",
+                    "description": "Is-quantity-decimal flag value."
+                },
+                "is_virtual": {
+                    "type": "integer",
+                    "description": "Is-virtual flag value."
+                },
+                "item_id": {
+                    "type": "integer",
+                    "description": "Item ID."
+                },
+                "locked_do_invoice": {
+                    "type": "integer",
+                    "description": "Locked DO invoice flag value."
+                },
+                "locked_do_ship": {
+                    "type": "integer",
+                    "description": "Locked DO ship flag value."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name."
+                },
+                "no_discount": {
+                    "type": "integer",
+                    "description": "No-discount flag value."
+                },
+                "order_id": {
+                    "type": "integer",
+                    "description": "Order ID."
+                },
+                "original_price": {
+                    "type": "number",
+                    "description": "Original price."
+                },
+                "parent_item_id": {
+                    "type": "integer",
+                    "description": "Parent item ID."
+                },
+                "price": {
+                    "type": "number",
+                    "description": "Price."
+                },
+                "price_incl_tax": {
+                    "type": "number",
+                    "description": "Price including tax."
+                },
+                "product_id": {
+                    "type": "integer",
+                    "description": "Product ID."
+                },
+                "product_type": {
+                    "type": "string",
+                    "description": "Product type."
+                },
+                "qty_backordered": {
+                    "type": "number",
+                    "description": "Quantity backordered."
+                },
+                "qty_canceled": {
+                    "type": "number",
+                    "description": "Quantity canceled."
+                },
+                "qty_invoiced": {
+                    "type": "number",
+                    "description": "Quantity invoiced."
+                },
+                "qty_ordered": {
+                    "type": "number",
+                    "description": "Quantity ordered."
+                },
+                "qty_refunded": {
+                    "type": "number",
+                    "description": "Quantity refunded."
+                },
+                "qty_returned": {
+                    "type": "number",
+                    "description": "Quantity returned."
+                },
+                "qty_shipped": {
+                    "type": "number",
+                    "description": "Quantity shipped."
+                },
+                "quote_item_id": {
+                    "type": "integer",
+                    "description": "Quote item ID."
+                },
+                "row_invoiced": {
+                    "type": "number",
+                    "description": "Row invoiced."
+                },
+                "row_total": {
+                    "type": "number",
+                    "description": "Row total."
+                },
+                "row_total_incl_tax": {
+                    "type": "number",
+                    "description": "Row total including tax."
+                },
+                "row_weight": {
+                    "type": "number",
+                    "description": "Row weight."
+                },
+                "sku": {
+                    "type": "string",
+                    "description": "SKU."
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store ID."
+                },
+                "tax_amount": {
+                    "type": "number",
+                    "description": "Tax amount."
+                },
+                "tax_before_discount": {
+                    "type": "number",
+                    "description": "Tax before discount."
+                },
+                "tax_canceled": {
+                    "type": "number",
+                    "description": "Tax canceled."
+                },
+                "tax_invoiced": {
+                    "type": "number",
+                    "description": "Tax invoiced."
+                },
+                "tax_percent": {
+                    "type": "number",
+                    "description": "Tax percent."
+                },
+                "tax_refunded": {
+                    "type": "number",
+                    "description": "Tax refunded."
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Updated-at timestamp."
+                },
+                "weee_tax_applied": {
+                    "type": "string",
+                    "description": "WEEE tax applied."
+                },
+                "weee_tax_applied_amount": {
+                    "type": "number",
+                    "description": "WEEE tax applied amount."
+                },
+                "weee_tax_applied_row_amount": {
+                    "type": "number",
+                    "description": "WEEE tax applied row amount."
+                },
+                "weee_tax_disposition": {
+                    "type": "number",
+                    "description": "WEEE tax disposition."
+                },
+                "weee_tax_row_disposition": {
+                    "type": "number",
+                    "description": "WEEE tax row disposition."
+                },
+                "weight": {
+                    "type": "number",
+                    "description": "Weight."
+                },
+                "parent_item": {
+                    "$ref": {
+                        "additional_data": {
+                            "type": "string",
+                            "description": "Additional data."
+                        },
+                        "amount_refunded": {
+                            "type": "number",
+                            "description": "Amount refunded."
+                        },
+                        "applied_rule_ids": {
+                            "type": "string",
+                            "description": "Applied rule IDs."
+                        },
+                        "base_amount_refunded": {
+                            "type": "number",
+                            "description": "Base amount refunded."
+                        },
+                        "base_cost": {
+                            "type": "number",
+                            "description": "Base cost."
+                        },
+                        "base_discount_amount": {
+                            "type": "number",
+                            "description": "Base discount amount."
+                        },
+                        "base_discount_invoiced": {
+                            "type": "number",
+                            "description": "Base discount invoiced."
+                        },
+                        "base_discount_refunded": {
+                            "type": "number",
+                            "description": "Base discount refunded."
+                        },
+                        "base_discount_tax_compensation_amount": {
+                            "type": "number",
+                            "description": "Base discount tax compensation amount."
+                        },
+                        "base_discount_tax_compensation_invoiced": {
+                            "type": "number",
+                            "description": "Base discount tax compensation invoiced."
+                        },
+                        "base_discount_tax_compensation_refunded": {
+                            "type": "number",
+                            "description": "Base discount tax compensation refunded."
+                        },
+                        "base_original_price": {
+                            "type": "number",
+                            "description": "Base original price."
+                        },
+                        "base_price": {
+                            "type": "number",
+                            "description": "Base price."
+                        },
+                        "base_price_incl_tax": {
+                            "type": "number",
+                            "description": "Base price including tax."
+                        },
+                        "base_row_invoiced": {
+                            "type": "number",
+                            "description": "Base row invoiced."
+                        },
+                        "base_row_total": {
+                            "type": "number",
+                            "description": "Base row total."
+                        },
+                        "base_row_total_incl_tax": {
+                            "type": "number",
+                            "description": "Base row total including tax."
+                        },
+                        "base_tax_amount": {
+                            "type": "number",
+                            "description": "Base tax amount."
+                        },
+                        "base_tax_before_discount": {
+                            "type": "number",
+                            "description": "Base tax before discount."
+                        },
+                        "base_tax_invoiced": {
+                            "type": "number",
+                            "description": "Base tax invoiced."
+                        },
+                        "base_tax_refunded": {
+                            "type": "number",
+                            "description": "Base tax refunded."
+                        },
+                        "base_weee_tax_applied_amount": {
+                            "type": "number",
+                            "description": "Base WEEE tax applied amount."
+                        },
+                        "base_weee_tax_applied_row_amnt": {
+                            "type": "number",
+                            "description": "Base WEEE tax applied row amount."
+                        },
+                        "base_weee_tax_disposition": {
+                            "type": "number",
+                            "description": "Base WEEE tax disposition."
+                        },
+                        "base_weee_tax_row_disposition": {
+                            "type": "number",
+                            "description": "Base WEEE tax row disposition."
+                        },
+                        "created_at": {
+                            "type": "string",
+                            "description": "Created-at timestamp."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "Description."
+                        },
+                        "discount_amount": {
+                            "type": "number",
+                            "description": "Discount amount."
+                        },
+                        "discount_invoiced": {
+                            "type": "number",
+                            "description": "Discount invoiced."
+                        },
+                        "discount_percent": {
+                            "type": "number",
+                            "description": "Discount percent."
+                        },
+                        "discount_refunded": {
+                            "type": "number",
+                            "description": "Discount refunded."
+                        },
+                        "event_id": {
+                            "type": "integer",
+                            "description": "Event ID."
+                        },
+                        "ext_order_item_id": {
+                            "type": "string",
+                            "description": "External order item ID."
+                        },
+                        "free_shipping": {
+                            "type": "integer",
+                            "description": "Free-shipping flag value."
+                        },
+                        "gw_base_price": {
+                            "type": "number",
+                            "description": "GW base price."
+                        },
+                        "gw_base_price_invoiced": {
+                            "type": "number",
+                            "description": "GW base price invoiced."
+                        },
+                        "gw_base_price_refunded": {
+                            "type": "number",
+                            "description": "GW base price refunded."
+                        },
+                        "gw_base_tax_amount": {
+                            "type": "number",
+                            "description": "GW base tax amount."
+                        },
+                        "gw_base_tax_amount_invoiced": {
+                            "type": "number",
+                            "description": "GW base tax amount invoiced."
+                        },
+                        "gw_base_tax_amount_refunded": {
+                            "type": "number",
+                            "description": "GW base tax amount refunded."
+                        },
+                        "gw_id": {
+                            "type": "integer",
+                            "description": "GW ID."
+                        },
+                        "gw_price": {
+                            "type": "number",
+                            "description": "GW price."
+                        },
+                        "gw_price_invoiced": {
+                            "type": "number",
+                            "description": "GW price invoiced."
+                        },
+                        "gw_price_refunded": {
+                            "type": "number",
+                            "description": "GW price refunded."
+                        },
+                        "gw_tax_amount": {
+                            "type": "number",
+                            "description": "GW tax amount."
+                        },
+                        "gw_tax_amount_invoiced": {
+                            "type": "number",
+                            "description": "GW tax amount invoiced."
+                        },
+                        "gw_tax_amount_refunded": {
+                            "type": "number",
+                            "description": "GW tax amount refunded."
+                        },
+                        "discount_tax_compensation_amount": {
+                            "type": "number",
+                            "description": "Discount tax compensation amount."
+                        },
+                        "discount_tax_compensation_canceled": {
+                            "type": "number",
+                            "description": "Discount tax compensation canceled."
+                        },
+                        "discount_tax_compensation_invoiced": {
+                            "type": "number",
+                            "description": "Discount tax compensation invoiced."
+                        },
+                        "discount_tax_compensation_refunded": {
+                            "type": "number",
+                            "description": "Discount tax compensation refunded."
+                        },
+                        "is_qty_decimal": {
+                            "type": "integer",
+                            "description": "Is-quantity-decimal flag value."
+                        },
+                        "is_virtual": {
+                            "type": "integer",
+                            "description": "Is-virtual flag value."
+                        },
+                        "item_id": {
+                            "type": "integer",
+                            "description": "Item ID."
+                        },
+                        "locked_do_invoice": {
+                            "type": "integer",
+                            "description": "Locked DO invoice flag value."
+                        },
+                        "locked_do_ship": {
+                            "type": "integer",
+                            "description": "Locked DO ship flag value."
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "Name."
+                        },
+                        "no_discount": {
+                            "type": "integer",
+                            "description": "No-discount flag value."
+                        },
+                        "order_id": {
+                            "type": "integer",
+                            "description": "Order ID."
+                        },
+                        "original_price": {
+                            "type": "number",
+                            "description": "Original price."
+                        },
+                        "parent_item_id": {
+                            "type": "integer",
+                            "description": "Parent item ID."
+                        },
+                        "price": {
+                            "type": "number",
+                            "description": "Price."
+                        },
+                        "price_incl_tax": {
+                            "type": "number",
+                            "description": "Price including tax."
+                        },
+                        "product_id": {
+                            "type": "integer",
+                            "description": "Product ID."
+                        },
+                        "product_type": {
+                            "type": "string",
+                            "description": "Product type."
+                        },
+                        "qty_backordered": {
+                            "type": "number",
+                            "description": "Quantity backordered."
+                        },
+                        "qty_canceled": {
+                            "type": "number",
+                            "description": "Quantity canceled."
+                        },
+                        "qty_invoiced": {
+                            "type": "number",
+                            "description": "Quantity invoiced."
+                        },
+                        "qty_ordered": {
+                            "type": "number",
+                            "description": "Quantity ordered."
+                        },
+                        "qty_refunded": {
+                            "type": "number",
+                            "description": "Quantity refunded."
+                        },
+                        "qty_returned": {
+                            "type": "number",
+                            "description": "Quantity returned."
+                        },
+                        "qty_shipped": {
+                            "type": "number",
+                            "description": "Quantity shipped."
+                        },
+                        "quote_item_id": {
+                            "type": "integer",
+                            "description": "Quote item ID."
+                        },
+                        "row_invoiced": {
+                            "type": "number",
+                            "description": "Row invoiced."
+                        },
+                        "row_total": {
+                            "type": "number",
+                            "description": "Row total."
+                        },
+                        "row_total_incl_tax": {
+                            "type": "number",
+                            "description": "Row total including tax."
+                        },
+                        "row_weight": {
+                            "type": "number",
+                            "description": "Row weight."
+                        },
+                        "sku": {
+                            "type": "string",
+                            "description": "SKU."
+                        },
+                        "store_id": {
+                            "type": "integer",
+                            "description": "Store ID."
+                        },
+                        "tax_amount": {
+                            "type": "number",
+                            "description": "Tax amount."
+                        },
+                        "tax_before_discount": {
+                            "type": "number",
+                            "description": "Tax before discount."
+                        },
+                        "tax_canceled": {
+                            "type": "number",
+                            "description": "Tax canceled."
+                        },
+                        "tax_invoiced": {
+                            "type": "number",
+                            "description": "Tax invoiced."
+                        },
+                        "tax_percent": {
+                            "type": "number",
+                            "description": "Tax percent."
+                        },
+                        "tax_refunded": {
+                            "type": "number",
+                            "description": "Tax refunded."
+                        },
+                        "updated_at": {
+                            "type": "string",
+                            "description": "Updated-at timestamp."
+                        },
+                        "weee_tax_applied": {
+                            "type": "string",
+                            "description": "WEEE tax applied."
+                        },
+                        "weee_tax_applied_amount": {
+                            "type": "number",
+                            "description": "WEEE tax applied amount."
+                        },
+                        "weee_tax_applied_row_amount": {
+                            "type": "number",
+                            "description": "WEEE tax applied row amount."
+                        },
+                        "weee_tax_disposition": {
+                            "type": "number",
+                            "description": "WEEE tax disposition."
+                        },
+                        "weee_tax_row_disposition": {
+                            "type": "number",
+                            "description": "WEEE tax row disposition."
+                        },
+                        "weight": {
+                            "type": "number",
+                            "description": "Weight."
+                        },
+                        "parent_item": {
+                            "$ref": "#/definitions/sales-data-order-item-interface"
+                        },
+                        "product_option": {
+                            "$ref": {
+                                "extension_attributes": {
+                                    "$ref": "#/definitions/catalog-data-product-option-extension-interface"
+                                }
+                            }
+                        },
+                        "extension_attributes": {
+                            "$ref": {
+                                "gift_message": {
+                                    "$ref": {
+                                        "gift_message_id": {
+                                            "type": "integer",
+                                            "description": "Gift message ID. Otherwise, null."
+                                        },
+                                        "customer_id": {
+                                            "type": "integer",
+                                            "description": "Customer ID. Otherwise, null."
+                                        },
+                                        "sender": {
+                                            "type": "string",
+                                            "description": "Sender name."
+                                        },
+                                        "recipient": {
+                                            "type": "string",
+                                            "description": "Recipient name."
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "description": "Message text."
+                                        },
+                                        "extension_attributes": {
+                                            "$ref": "#/definitions/gift-message-data-message-extension-interface"
+                                        }
+                                    }
+                                },
+                                "gw_id": {
+                                    "type": "string"
+                                },
+                                "gw_base_price": {
+                                    "type": "string"
+                                },
+                                "gw_price": {
+                                    "type": "string"
+                                },
+                                "gw_base_tax_amount": {
+                                    "type": "string"
+                                },
+                                "gw_tax_amount": {
+                                    "type": "string"
+                                },
+                                "gw_base_price_invoiced": {
+                                    "type": "string"
+                                },
+                                "gw_price_invoiced": {
+                                    "type": "string"
+                                },
+                                "gw_base_tax_amount_invoiced": {
+                                    "type": "string"
+                                },
+                                "gw_tax_amount_invoiced": {
+                                    "type": "string"
+                                },
+                                "gw_base_price_refunded": {
+                                    "type": "string"
+                                },
+                                "gw_price_refunded": {
+                                    "type": "string"
+                                },
+                                "gw_base_tax_amount_refunded": {
+                                    "type": "string"
+                                },
+                                "gw_tax_amount_refunded": {
+                                    "type": "string"
+                                },
+                                "vertex_tax_codes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "invoice_text_codes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "tax_codes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "product_option": {
+                    "$ref": {
+                        "extension_attributes": {
+                            "$ref": "#/definitions/catalog-data-product-option-extension-interface"
+                        }
+                    }
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "gift_message": {
+                            "$ref": {
+                                "gift_message_id": {
+                                    "type": "integer",
+                                    "description": "Gift message ID. Otherwise, null."
+                                },
+                                "customer_id": {
+                                    "type": "integer",
+                                    "description": "Customer ID. Otherwise, null."
+                                },
+                                "sender": {
+                                    "type": "string",
+                                    "description": "Sender name."
+                                },
+                                "recipient": {
+                                    "type": "string",
+                                    "description": "Recipient name."
+                                },
+                                "message": {
+                                    "type": "string",
+                                    "description": "Message text."
+                                },
+                                "extension_attributes": {
+                                    "$ref": "#/definitions/gift-message-data-message-extension-interface"
+                                }
+                            }
+                        },
+                        "gw_id": {
+                            "type": "string"
+                        },
+                        "gw_base_price": {
+                            "type": "string"
+                        },
+                        "gw_price": {
+                            "type": "string"
+                        },
+                        "gw_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_base_price_invoiced": {
+                            "type": "string"
+                        },
+                        "gw_price_invoiced": {
+                            "type": "string"
+                        },
+                        "gw_base_tax_amount_invoiced": {
+                            "type": "string"
+                        },
+                        "gw_tax_amount_invoiced": {
+                            "type": "string"
+                        },
+                        "gw_base_price_refunded": {
+                            "type": "string"
+                        },
+                        "gw_price_refunded": {
+                            "type": "string"
+                        },
+                        "gw_base_tax_amount_refunded": {
+                            "type": "string"
+                        },
+                        "gw_tax_amount_refunded": {
+                            "type": "string"
+                        },
+                        "vertex_tax_codes": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "invoice_text_codes": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "tax_codes": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "billing_address": {
-        "$ref": "#/definitions/sales-data-order-address-interface"
+        "$ref": {
+            "address_type": {
+                "type": "string",
+                "description": "Address type."
+            },
+            "city": {
+                "type": "string",
+                "description": "City."
+            },
+            "company": {
+                "type": "string",
+                "description": "Company."
+            },
+            "country_id": {
+                "type": "string",
+                "description": "Country ID."
+            },
+            "customer_address_id": {
+                "type": "integer",
+                "description": "Country address ID."
+            },
+            "customer_id": {
+                "type": "integer",
+                "description": "Customer ID."
+            },
+            "email": {
+                "type": "string",
+                "description": "Email address."
+            },
+            "entity_id": {
+                "type": "integer",
+                "description": "Order address ID."
+            },
+            "fax": {
+                "type": "string",
+                "description": "Fax number."
+            },
+            "firstname": {
+                "type": "string",
+                "description": "First name."
+            },
+            "lastname": {
+                "type": "string",
+                "description": "Last name."
+            },
+            "middlename": {
+                "type": "string",
+                "description": "Middle name."
+            },
+            "parent_id": {
+                "type": "integer",
+                "description": "Parent ID."
+            },
+            "postcode": {
+                "type": "string",
+                "description": "Postal code."
+            },
+            "prefix": {
+                "type": "string",
+                "description": "Prefix."
+            },
+            "region": {
+                "type": "string",
+                "description": "Region."
+            },
+            "region_code": {
+                "type": "string",
+                "description": "Region code."
+            },
+            "region_id": {
+                "type": "integer",
+                "description": "Region ID."
+            },
+            "street": {
+                "type": "array",
+                "description": "Array of any street values. Otherwise, null.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "suffix": {
+                "type": "string",
+                "description": "Suffix."
+            },
+            "telephone": {
+                "type": "string",
+                "description": "Telephone number."
+            },
+            "vat_id": {
+                "type": "string",
+                "description": "VAT ID."
+            },
+            "vat_is_valid": {
+                "type": "integer",
+                "description": "VAT-is-valid flag value."
+            },
+            "vat_request_date": {
+                "type": "string",
+                "description": "VAT request date."
+            },
+            "vat_request_id": {
+                "type": "string",
+                "description": "VAT request ID."
+            },
+            "vat_request_success": {
+                "type": "integer",
+                "description": "VAT-request-success flag value."
+            },
+            "extension_attributes": {
+                "$ref": {
+                    "checkout_fields": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/framework-attribute-interface"
+                        }
+                    }
+                }
+            }
+        }
     },
     "payment": {
-        "$ref": "#/definitions/sales-data-order-payment-interface"
+        "$ref": {
+            "account_status": {
+                "type": "string",
+                "description": "Account status."
+            },
+            "additional_data": {
+                "type": "string",
+                "description": "Additional data."
+            },
+            "additional_information": {
+                "type": "array",
+                "description": "Array of additional information.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "address_status": {
+                "type": "string",
+                "description": "Address status."
+            },
+            "amount_authorized": {
+                "type": "number",
+                "description": "Amount authorized."
+            },
+            "amount_canceled": {
+                "type": "number",
+                "description": "Amount canceled."
+            },
+            "amount_ordered": {
+                "type": "number",
+                "description": "Amount ordered."
+            },
+            "amount_paid": {
+                "type": "number",
+                "description": "Amount paid."
+            },
+            "amount_refunded": {
+                "type": "number",
+                "description": "Amount refunded."
+            },
+            "anet_trans_method": {
+                "type": "string",
+                "description": "Anet transaction method."
+            },
+            "base_amount_authorized": {
+                "type": "number",
+                "description": "Base amount authorized."
+            },
+            "base_amount_canceled": {
+                "type": "number",
+                "description": "Base amount canceled."
+            },
+            "base_amount_ordered": {
+                "type": "number",
+                "description": "Base amount ordered."
+            },
+            "base_amount_paid": {
+                "type": "number",
+                "description": "Base amount paid."
+            },
+            "base_amount_paid_online": {
+                "type": "number",
+                "description": "Base amount paid online."
+            },
+            "base_amount_refunded": {
+                "type": "number",
+                "description": "Base amount refunded."
+            },
+            "base_amount_refunded_online": {
+                "type": "number",
+                "description": "Base amount refunded online."
+            },
+            "base_shipping_amount": {
+                "type": "number",
+                "description": "Base shipping amount."
+            },
+            "base_shipping_captured": {
+                "type": "number",
+                "description": "Base shipping captured amount."
+            },
+            "base_shipping_refunded": {
+                "type": "number",
+                "description": "Base shipping refunded amount."
+            },
+            "cc_approval": {
+                "type": "string",
+                "description": "Credit card approval."
+            },
+            "cc_avs_status": {
+                "type": "string",
+                "description": "Credit card avs status."
+            },
+            "cc_cid_status": {
+                "type": "string",
+                "description": "Credit card CID status."
+            },
+            "cc_debug_request_body": {
+                "type": "string",
+                "description": "Credit card debug request body."
+            },
+            "cc_debug_response_body": {
+                "type": "string",
+                "description": "Credit card debug response body."
+            },
+            "cc_debug_response_serialized": {
+                "type": "string",
+                "description": "Credit card debug response serialized."
+            },
+            "cc_exp_month": {
+                "type": "string",
+                "description": "Credit card expiration month."
+            },
+            "cc_exp_year": {
+                "type": "string",
+                "description": "Credit card expiration year."
+            },
+            "cc_last4": {
+                "type": "string",
+                "description": "Last four digits of the credit card."
+            },
+            "cc_number_enc": {
+                "type": "string",
+                "description": "Encrypted credit card number."
+            },
+            "cc_owner": {
+                "type": "string",
+                "description": "Credit card number."
+            },
+            "cc_secure_verify": {
+                "type": "string",
+                "description": "Credit card secure verify."
+            },
+            "cc_ss_issue": {
+                "type": "string",
+                "description": "Credit card SS issue."
+            },
+            "cc_ss_start_month": {
+                "type": "string",
+                "description": "Credit card SS start month."
+            },
+            "cc_ss_start_year": {
+                "type": "string",
+                "description": "Credit card SS start year."
+            },
+            "cc_status": {
+                "type": "string",
+                "description": "Credit card status."
+            },
+            "cc_status_description": {
+                "type": "string",
+                "description": "Credit card status description."
+            },
+            "cc_trans_id": {
+                "type": "string",
+                "description": "Credit card transaction ID."
+            },
+            "cc_type": {
+                "type": "string",
+                "description": "Credit card type."
+            },
+            "echeck_account_name": {
+                "type": "string",
+                "description": "eCheck account name."
+            },
+            "echeck_account_type": {
+                "type": "string",
+                "description": "eCheck account type."
+            },
+            "echeck_bank_name": {
+                "type": "string",
+                "description": "eCheck bank name."
+            },
+            "echeck_routing_number": {
+                "type": "string",
+                "description": "eCheck routing number."
+            },
+            "echeck_type": {
+                "type": "string",
+                "description": "eCheck type."
+            },
+            "entity_id": {
+                "type": "integer",
+                "description": "Entity ID."
+            },
+            "last_trans_id": {
+                "type": "string",
+                "description": "Last transaction ID."
+            },
+            "method": {
+                "type": "string",
+                "description": "Method."
+            },
+            "parent_id": {
+                "type": "integer",
+                "description": "Parent ID."
+            },
+            "po_number": {
+                "type": "string",
+                "description": "PO number."
+            },
+            "protection_eligibility": {
+                "type": "string",
+                "description": "Protection eligibility."
+            },
+            "quote_payment_id": {
+                "type": "integer",
+                "description": "Quote payment ID."
+            },
+            "shipping_amount": {
+                "type": "number",
+                "description": "Shipping amount."
+            },
+            "shipping_captured": {
+                "type": "number",
+                "description": "Shipping captured."
+            },
+            "shipping_refunded": {
+                "type": "number",
+                "description": "Shipping refunded."
+            },
+            "extension_attributes": {
+                "$ref": {
+                    "vault_payment_token": {
+                        "$ref": "#/definitions/vault-data-payment-token-interface"
+                    }
+                }
+            }
+        }
     },
     "status_histories": {
         "type": "array",
         "description": "Array of status histories.",
         "items": {
-            "$ref": "#/definitions/sales-data-order-status-history-interface"
+            "$ref": {
+                "comment": {
+                    "type": "string",
+                    "description": "Comment."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created-at timestamp."
+                },
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Order status history ID."
+                },
+                "entity_name": {
+                    "type": "string",
+                    "description": "Entity name."
+                },
+                "is_customer_notified": {
+                    "type": "integer",
+                    "description": "Is-customer-notified flag value."
+                },
+                "is_visible_on_front": {
+                    "type": "integer",
+                    "description": "Is-visible-on-storefront flag value."
+                },
+                "parent_id": {
+                    "type": "integer",
+                    "description": "Parent ID."
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/sales-data-order-status-history-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {
-        "$ref": "#/definitions/sales-data-order-extension-interface"
+        "$ref": {
+            "shipping_assignments": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "shipping": {
+                            "$ref": "#/definitions/sales-data-shipping-interface"
+                        },
+                        "items": {
+                            "type": "array",
+                            "description": "Order items of shipping assignment",
+                            "items": {
+                                "$ref": "#/definitions/sales-data-order-item-interface"
+                            }
+                        },
+                        "stock_id": {
+                            "type": "integer",
+                            "description": "Stock id"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/sales-data-shipping-assignment-extension-interface"
+                        }
+                    }
+                }
+            },
+            "payment_additional_info": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "key": {
+                            "type": "string",
+                            "description": "Object key"
+                        },
+                        "value": {
+                            "type": "string",
+                            "description": "Object value"
+                        }
+                    }
+                }
+            },
+            "applied_taxes": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "code": {
+                            "type": "string",
+                            "description": "Code"
+                        },
+                        "title": {
+                            "type": "string",
+                            "description": "Title"
+                        },
+                        "percent": {
+                            "type": "number",
+                            "description": "Tax Percent"
+                        },
+                        "amount": {
+                            "type": "number",
+                            "description": "Tax amount"
+                        },
+                        "base_amount": {
+                            "type": "number",
+                            "description": "Tax amount in base currency"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/tax-data-order-tax-details-applied-tax-extension-interface"
+                        }
+                    }
+                }
+            },
+            "item_applied_taxes": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "type": {
+                            "type": "string",
+                            "description": "Type (shipping, product, weee, gift wrapping, etc)"
+                        },
+                        "item_id": {
+                            "type": "integer",
+                            "description": "Item id if this item is a product"
+                        },
+                        "associated_item_id": {
+                            "type": "integer",
+                            "description": "Associated item id if this item is associated with another item, null otherwise"
+                        },
+                        "applied_taxes": {
+                            "type": "array",
+                            "description": "Applied taxes",
+                            "items": {
+                                "$ref": "#/definitions/tax-data-order-tax-details-applied-tax-interface"
+                            }
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/tax-data-order-tax-details-item-extension-interface"
+                        }
+                    }
+                }
+            },
+            "converting_from_quote": {
+                "type": "boolean"
+            },
+            "company_order_attributes": {
+                "$ref": {
+                    "order_id": {
+                        "type": "integer",
+                        "description": "Order ID."
+                    },
+                    "company_id": {
+                        "type": "integer",
+                        "description": "Company ID."
+                    },
+                    "company_name": {
+                        "type": "string",
+                        "description": "Company name."
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/company-data-company-order-extension-interface"
+                    }
+                }
+            },
+            "base_customer_balance_amount": {
+                "type": "number"
+            },
+            "customer_balance_amount": {
+                "type": "number"
+            },
+            "base_customer_balance_invoiced": {
+                "type": "number"
+            },
+            "customer_balance_invoiced": {
+                "type": "number"
+            },
+            "base_customer_balance_refunded": {
+                "type": "number"
+            },
+            "customer_balance_refunded": {
+                "type": "number"
+            },
+            "base_customer_balance_total_refunded": {
+                "type": "number"
+            },
+            "customer_balance_total_refunded": {
+                "type": "number"
+            },
+            "gift_cards": {
+                "type": "array",
+                "items": {
+                    "$ref": {
+                        "id": {
+                            "type": "integer",
+                            "description": "Id"
+                        },
+                        "code": {
+                            "type": "string",
+                            "description": "Code"
+                        },
+                        "amount": {
+                            "type": "number",
+                            "description": "Amount"
+                        },
+                        "base_amount": {
+                            "type": "number",
+                            "description": "Base Amount"
+                        }
+                    }
+                }
+            },
+            "base_gift_cards_amount": {
+                "type": "number"
+            },
+            "gift_cards_amount": {
+                "type": "number"
+            },
+            "base_gift_cards_invoiced": {
+                "type": "number"
+            },
+            "gift_cards_invoiced": {
+                "type": "number"
+            },
+            "base_gift_cards_refunded": {
+                "type": "number"
+            },
+            "gift_cards_refunded": {
+                "type": "number"
+            },
+            "gift_message": {
+                "$ref": {
+                    "gift_message_id": {
+                        "type": "integer",
+                        "description": "Gift message ID. Otherwise, null."
+                    },
+                    "customer_id": {
+                        "type": "integer",
+                        "description": "Customer ID. Otherwise, null."
+                    },
+                    "sender": {
+                        "type": "string",
+                        "description": "Sender name."
+                    },
+                    "recipient": {
+                        "type": "string",
+                        "description": "Recipient name."
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "Message text."
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/gift-message-data-message-extension-interface"
+                    }
+                }
+            },
+            "gw_id": {
+                "type": "string"
+            },
+            "gw_allow_gift_receipt": {
+                "type": "string"
+            },
+            "gw_add_card": {
+                "type": "string"
+            },
+            "gw_base_price": {
+                "type": "string"
+            },
+            "gw_price": {
+                "type": "string"
+            },
+            "gw_items_base_price": {
+                "type": "string"
+            },
+            "gw_items_price": {
+                "type": "string"
+            },
+            "gw_card_base_price": {
+                "type": "string"
+            },
+            "gw_card_price": {
+                "type": "string"
+            },
+            "gw_base_tax_amount": {
+                "type": "string"
+            },
+            "gw_tax_amount": {
+                "type": "string"
+            },
+            "gw_items_base_tax_amount": {
+                "type": "string"
+            },
+            "gw_items_tax_amount": {
+                "type": "string"
+            },
+            "gw_card_base_tax_amount": {
+                "type": "string"
+            },
+            "gw_card_tax_amount": {
+                "type": "string"
+            },
+            "gw_base_price_incl_tax": {
+                "type": "string"
+            },
+            "gw_price_incl_tax": {
+                "type": "string"
+            },
+            "gw_items_base_price_incl_tax": {
+                "type": "string"
+            },
+            "gw_items_price_incl_tax": {
+                "type": "string"
+            },
+            "gw_card_base_price_incl_tax": {
+                "type": "string"
+            },
+            "gw_card_price_incl_tax": {
+                "type": "string"
+            },
+            "gw_base_price_invoiced": {
+                "type": "string"
+            },
+            "gw_price_invoiced": {
+                "type": "string"
+            },
+            "gw_items_base_price_invoiced": {
+                "type": "string"
+            },
+            "gw_items_price_invoiced": {
+                "type": "string"
+            },
+            "gw_card_base_price_invoiced": {
+                "type": "string"
+            },
+            "gw_card_price_invoiced": {
+                "type": "string"
+            },
+            "gw_base_tax_amount_invoiced": {
+                "type": "string"
+            },
+            "gw_tax_amount_invoiced": {
+                "type": "string"
+            },
+            "gw_items_base_tax_invoiced": {
+                "type": "string"
+            },
+            "gw_items_tax_invoiced": {
+                "type": "string"
+            },
+            "gw_card_base_tax_invoiced": {
+                "type": "string"
+            },
+            "gw_card_tax_invoiced": {
+                "type": "string"
+            },
+            "gw_base_price_refunded": {
+                "type": "string"
+            },
+            "gw_price_refunded": {
+                "type": "string"
+            },
+            "gw_items_base_price_refunded": {
+                "type": "string"
+            },
+            "gw_items_price_refunded": {
+                "type": "string"
+            },
+            "gw_card_base_price_refunded": {
+                "type": "string"
+            },
+            "gw_card_price_refunded": {
+                "type": "string"
+            },
+            "gw_base_tax_amount_refunded": {
+                "type": "string"
+            },
+            "gw_tax_amount_refunded": {
+                "type": "string"
+            },
+            "gw_items_base_tax_refunded": {
+                "type": "string"
+            },
+            "gw_items_tax_refunded": {
+                "type": "string"
+            },
+            "gw_card_base_tax_refunded": {
+                "type": "string"
+            },
+            "gw_card_tax_refunded": {
+                "type": "string"
+            },
+            "reward_points_balance": {
+                "type": "integer"
+            },
+            "reward_currency_amount": {
+                "type": "number"
+            },
+            "base_reward_currency_amount": {
+                "type": "number"
+            },
+            "amazon_order_reference_id": {
+                "$ref": {
+                    "amazon_order_reference_id": {
+                        "type": "string",
+                        "description": "Amazon order reference id"
+                    },
+                    "order_id": {
+                        "type": "integer",
+                        "description": "Order id"
+                    }
+                }
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

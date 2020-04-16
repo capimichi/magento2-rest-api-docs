@@ -17,11 +17,67 @@ padding: 10px;
         "type": "array",
         "description": "StockSourceLink list",
         "items": {
-            "$ref": "#/definitions/inventory-api-data-stock-source-link-interface"
+            "$ref": {
+                "stock_id": {
+                    "type": "integer",
+                    "description": "Stock id"
+                },
+                "source_code": {
+                    "type": "string",
+                    "description": "Source code of the link"
+                },
+                "priority": {
+                    "type": "integer",
+                    "description": "Priority of the link"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/inventory-api-data-stock-source-link-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

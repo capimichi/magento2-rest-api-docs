@@ -22,11 +22,48 @@ padding: 10px;
             "type": "array",
             "description": "Items",
             "items": {
-                "$ref": "#/definitions/inventory-source-selection-api-data-item-request-interface"
+                "$ref": {
+                    "sku": {
+                        "type": "string",
+                        "description": "SKU"
+                    },
+                    "qty": {
+                        "type": "number",
+                        "description": "Product Quantity"
+                    },
+                    "extension_attributes": {
+                        "$ref": "#/definitions/inventory-source-selection-api-data-item-request-extension-interface"
+                    }
+                }
             }
         },
         "extension_attributes": {
-            "$ref": "#/definitions/inventory-source-selection-api-data-inventory-request-extension-interface"
+            "$ref": {
+                "destination_address": {
+                    "$ref": {
+                        "country": {
+                            "type": "string",
+                            "description": "Shipping country"
+                        },
+                        "postcode": {
+                            "type": "string",
+                            "description": "Shipping postcode"
+                        },
+                        "street": {
+                            "type": "string",
+                            "description": "Shipping street address"
+                        },
+                        "region": {
+                            "type": "string",
+                            "description": "Shipping region"
+                        },
+                        "city": {
+                            "type": "string",
+                            "description": "Shipping city"
+                        }
+                    }
+                }
+            }
         }
     },
     "algorithmCode": []
@@ -34,7 +71,27 @@ padding: 10px;
     "source_selection_items": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/inventory-source-selection-api-data-source-selection-item-interface"
+            "$ref": {
+                "source_code": {
+                    "type": "string",
+                    "description": "Source code"
+                },
+                "sku": {
+                    "type": "string",
+                    "description": "Item SKU"
+                },
+                "qty_to_deduct": {
+                    "type": "number",
+                    "description": "Quantity which will be deducted for this source"
+                },
+                "qty_available": {
+                    "type": "number",
+                    "description": "Available quantity for this source"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/inventory-source-selection-api-data-source-selection-item-extension-interface"
+                }
+            }
         }
     },
     "shippable": {

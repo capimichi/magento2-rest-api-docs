@@ -17,11 +17,122 @@ padding: 10px;
         "type": "array",
         "description": "Categories",
         "items": {
-            "$ref": "#/definitions/catalog-data-category-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Category id."
+                },
+                "parent_id": {
+                    "type": "integer",
+                    "description": "Parent category ID"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Category name"
+                },
+                "is_active": {
+                    "type": "boolean",
+                    "description": "Whether category is active"
+                },
+                "position": {
+                    "type": "integer",
+                    "description": "Category position"
+                },
+                "level": {
+                    "type": "integer",
+                    "description": "Category level"
+                },
+                "children": {
+                    "type": "string",
+                    "description": "Children ids comma separated."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Category creation date and time."
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Category last update date and time."
+                },
+                "path": {
+                    "type": "string",
+                    "description": "Category full path."
+                },
+                "available_sort_by": {
+                    "type": "array",
+                    "description": "Available sort by for category.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "include_in_menu": {
+                    "type": "boolean",
+                    "description": "Category is included in menu."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/catalog-data-category-extension-interface"
+                },
+                "custom_attributes": {
+                    "type": "array",
+                    "description": "Custom attributes values.",
+                    "items": {
+                        "$ref": {
+                            "attribute_code": {
+                                "type": "string",
+                                "description": "Attribute code"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Attribute value"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

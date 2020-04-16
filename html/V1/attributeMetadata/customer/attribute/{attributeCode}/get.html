@@ -29,7 +29,16 @@ padding: 10px;
         "type": "array",
         "description": "Validation rules.",
         "items": {
-            "$ref": "#/definitions/customer-data-validation-rule-interface"
+            "$ref": {
+                "name": {
+                    "type": "string",
+                    "description": "Validation rule name"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Validation rule value"
+                }
+            }
         }
     },
     "multiline_count": {
@@ -52,7 +61,39 @@ padding: 10px;
         "type": "array",
         "description": "Options of the attribute (key => value pairs for select)",
         "items": {
-            "$ref": "#/definitions/customer-data-option-interface"
+            "$ref": {
+                "label": {
+                    "type": "string",
+                    "description": "Option label"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Option value"
+                },
+                "options": {
+                    "type": "array",
+                    "description": "Nested options",
+                    "items": {
+                        "$ref": {
+                            "label": {
+                                "type": "string",
+                                "description": "Option label"
+                            },
+                            "value": {
+                                "type": "string",
+                                "description": "Option value"
+                            },
+                            "options": {
+                                "type": "array",
+                                "description": "Nested options",
+                                "items": {
+                                    "$ref": "#/definitions/customer-data-option-interface"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "frontend_class": {

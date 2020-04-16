@@ -17,11 +17,474 @@ padding: 10px;
         "type": "array",
         "description": "Array of collection items.",
         "items": {
-            "$ref": "#/definitions/sales-data-creditmemo-interface"
+            "$ref": {
+                "adjustment": {
+                    "type": "number",
+                    "description": "Credit memo adjustment."
+                },
+                "adjustment_negative": {
+                    "type": "number",
+                    "description": "Credit memo negative adjustment."
+                },
+                "adjustment_positive": {
+                    "type": "number",
+                    "description": "Credit memo positive adjustment."
+                },
+                "base_adjustment": {
+                    "type": "number",
+                    "description": "Credit memo base adjustment."
+                },
+                "base_adjustment_negative": {
+                    "type": "number",
+                    "description": "Credit memo negative base adjustment."
+                },
+                "base_adjustment_positive": {
+                    "type": "number",
+                    "description": "Credit memo positive base adjustment."
+                },
+                "base_currency_code": {
+                    "type": "string",
+                    "description": "Credit memo base currency code."
+                },
+                "base_discount_amount": {
+                    "type": "number",
+                    "description": "Credit memo base discount amount."
+                },
+                "base_grand_total": {
+                    "type": "number",
+                    "description": "Credit memo base grand total."
+                },
+                "base_discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Credit memo base discount tax compensation amount."
+                },
+                "base_shipping_amount": {
+                    "type": "number",
+                    "description": "Credit memo base shipping amount."
+                },
+                "base_shipping_discount_tax_compensation_amnt": {
+                    "type": "number",
+                    "description": "Credit memo base shipping discount tax compensation amount."
+                },
+                "base_shipping_incl_tax": {
+                    "type": "number",
+                    "description": "Credit memo base shipping including tax."
+                },
+                "base_shipping_tax_amount": {
+                    "type": "number",
+                    "description": "Credit memo base shipping tax amount."
+                },
+                "base_subtotal": {
+                    "type": "number",
+                    "description": "Credit memo base subtotal."
+                },
+                "base_subtotal_incl_tax": {
+                    "type": "number",
+                    "description": "Credit memo base subtotal including tax."
+                },
+                "base_tax_amount": {
+                    "type": "number",
+                    "description": "Credit memo base tax amount."
+                },
+                "base_to_global_rate": {
+                    "type": "number",
+                    "description": "Credit memo base-to-global rate."
+                },
+                "base_to_order_rate": {
+                    "type": "number",
+                    "description": "Credit memo base-to-order rate."
+                },
+                "billing_address_id": {
+                    "type": "integer",
+                    "description": "Credit memo billing address ID."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Credit memo created-at timestamp."
+                },
+                "creditmemo_status": {
+                    "type": "integer",
+                    "description": "Credit memo status."
+                },
+                "discount_amount": {
+                    "type": "number",
+                    "description": "Credit memo discount amount."
+                },
+                "discount_description": {
+                    "type": "string",
+                    "description": "Credit memo discount description."
+                },
+                "email_sent": {
+                    "type": "integer",
+                    "description": "Credit memo email sent flag value."
+                },
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Credit memo ID."
+                },
+                "global_currency_code": {
+                    "type": "string",
+                    "description": "Credit memo global currency code."
+                },
+                "grand_total": {
+                    "type": "number",
+                    "description": "Credit memo grand total."
+                },
+                "discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Credit memo discount tax compensation amount."
+                },
+                "increment_id": {
+                    "type": "string",
+                    "description": "Credit memo increment ID."
+                },
+                "invoice_id": {
+                    "type": "integer",
+                    "description": "Credit memo invoice ID."
+                },
+                "order_currency_code": {
+                    "type": "string",
+                    "description": "Credit memo order currency code."
+                },
+                "order_id": {
+                    "type": "integer",
+                    "description": "Credit memo order ID."
+                },
+                "shipping_address_id": {
+                    "type": "integer",
+                    "description": "Credit memo shipping address ID."
+                },
+                "shipping_amount": {
+                    "type": "number",
+                    "description": "Credit memo shipping amount."
+                },
+                "shipping_discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Credit memo shipping discount tax compensation amount."
+                },
+                "shipping_incl_tax": {
+                    "type": "number",
+                    "description": "Credit memo shipping including tax."
+                },
+                "shipping_tax_amount": {
+                    "type": "number",
+                    "description": "Credit memo shipping tax amount."
+                },
+                "state": {
+                    "type": "integer",
+                    "description": "Credit memo state."
+                },
+                "store_currency_code": {
+                    "type": "string",
+                    "description": "Credit memo store currency code."
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Credit memo store ID."
+                },
+                "store_to_base_rate": {
+                    "type": "number",
+                    "description": "Credit memo store-to-base rate."
+                },
+                "store_to_order_rate": {
+                    "type": "number",
+                    "description": "Credit memo store-to-order rate."
+                },
+                "subtotal": {
+                    "type": "number",
+                    "description": "Credit memo subtotal."
+                },
+                "subtotal_incl_tax": {
+                    "type": "number",
+                    "description": "Credit memo subtotal including tax."
+                },
+                "tax_amount": {
+                    "type": "number",
+                    "description": "Credit memo tax amount."
+                },
+                "transaction_id": {
+                    "type": "string",
+                    "description": "Credit memo transaction ID."
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Credit memo updated-at timestamp."
+                },
+                "items": {
+                    "type": "array",
+                    "description": "Array of credit memo items.",
+                    "items": {
+                        "$ref": {
+                            "additional_data": {
+                                "type": "string",
+                                "description": "Additional data."
+                            },
+                            "base_cost": {
+                                "type": "number",
+                                "description": "The base cost for a credit memo item."
+                            },
+                            "base_discount_amount": {
+                                "type": "number",
+                                "description": "The base discount amount for a credit memo item."
+                            },
+                            "base_discount_tax_compensation_amount": {
+                                "type": "number",
+                                "description": "The base discount tax compensation amount for a credit memo item."
+                            },
+                            "base_price": {
+                                "type": "number",
+                                "description": "The base price for a credit memo item."
+                            },
+                            "base_price_incl_tax": {
+                                "type": "number",
+                                "description": "Base price including tax."
+                            },
+                            "base_row_total": {
+                                "type": "number",
+                                "description": "Base row total."
+                            },
+                            "base_row_total_incl_tax": {
+                                "type": "number",
+                                "description": "Base row total including tax."
+                            },
+                            "base_tax_amount": {
+                                "type": "number",
+                                "description": "Base tax amount."
+                            },
+                            "base_weee_tax_applied_amount": {
+                                "type": "number",
+                                "description": "Base WEEE tax applied amount."
+                            },
+                            "base_weee_tax_applied_row_amnt": {
+                                "type": "number",
+                                "description": "Base WEEE tax applied row amount."
+                            },
+                            "base_weee_tax_disposition": {
+                                "type": "number",
+                                "description": "Base WEEE tax disposition."
+                            },
+                            "base_weee_tax_row_disposition": {
+                                "type": "number",
+                                "description": "Base WEEE tax row disposition."
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "Description."
+                            },
+                            "discount_amount": {
+                                "type": "number",
+                                "description": "Discount amount."
+                            },
+                            "entity_id": {
+                                "type": "integer",
+                                "description": "Credit memo item ID."
+                            },
+                            "discount_tax_compensation_amount": {
+                                "type": "number",
+                                "description": "Discount tax compensation amount."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Name."
+                            },
+                            "order_item_id": {
+                                "type": "integer",
+                                "description": "Order item ID."
+                            },
+                            "parent_id": {
+                                "type": "integer",
+                                "description": "Parent ID."
+                            },
+                            "price": {
+                                "type": "number",
+                                "description": "Price."
+                            },
+                            "price_incl_tax": {
+                                "type": "number",
+                                "description": "Price including tax."
+                            },
+                            "product_id": {
+                                "type": "integer",
+                                "description": "Product ID."
+                            },
+                            "qty": {
+                                "type": "number",
+                                "description": "Quantity."
+                            },
+                            "row_total": {
+                                "type": "number",
+                                "description": "Row total."
+                            },
+                            "row_total_incl_tax": {
+                                "type": "number",
+                                "description": "Row total including tax."
+                            },
+                            "sku": {
+                                "type": "string",
+                                "description": "SKU."
+                            },
+                            "tax_amount": {
+                                "type": "number",
+                                "description": "Tax amount."
+                            },
+                            "weee_tax_applied": {
+                                "type": "string",
+                                "description": "WEEE tax applied."
+                            },
+                            "weee_tax_applied_amount": {
+                                "type": "number",
+                                "description": "WEEE tax applied amount."
+                            },
+                            "weee_tax_applied_row_amount": {
+                                "type": "number",
+                                "description": "WEEE tax applied row amount."
+                            },
+                            "weee_tax_disposition": {
+                                "type": "number",
+                                "description": "WEEE tax disposition."
+                            },
+                            "weee_tax_row_disposition": {
+                                "type": "number",
+                                "description": "WEEE tax row disposition."
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/sales-data-creditmemo-item-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "comments": {
+                    "type": "array",
+                    "description": "Array of any credit memo comments. Otherwise, null.",
+                    "items": {
+                        "$ref": {
+                            "comment": {
+                                "type": "string",
+                                "description": "Comment."
+                            },
+                            "created_at": {
+                                "type": "string",
+                                "description": "Created-at timestamp."
+                            },
+                            "entity_id": {
+                                "type": "integer",
+                                "description": "Credit memo ID."
+                            },
+                            "is_customer_notified": {
+                                "type": "integer",
+                                "description": "Is-customer-notified flag value."
+                            },
+                            "is_visible_on_front": {
+                                "type": "integer",
+                                "description": "Is-visible-on-storefront flag value."
+                            },
+                            "parent_id": {
+                                "type": "integer",
+                                "description": "Parent ID."
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/sales-data-creditmemo-comment-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "base_customer_balance_amount": {
+                            "type": "number"
+                        },
+                        "customer_balance_amount": {
+                            "type": "number"
+                        },
+                        "base_gift_cards_amount": {
+                            "type": "number"
+                        },
+                        "gift_cards_amount": {
+                            "type": "number"
+                        },
+                        "gw_base_price": {
+                            "type": "string"
+                        },
+                        "gw_price": {
+                            "type": "string"
+                        },
+                        "gw_items_base_price": {
+                            "type": "string"
+                        },
+                        "gw_items_price": {
+                            "type": "string"
+                        },
+                        "gw_card_base_price": {
+                            "type": "string"
+                        },
+                        "gw_card_price": {
+                            "type": "string"
+                        },
+                        "gw_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_items_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_items_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_card_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_card_tax_amount": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

@@ -25,7 +25,24 @@ padding: 10px;
         "type": "array",
         "description": "Permissions.",
         "items": {
-            "$ref": "#/definitions/company-data-permission-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "Id."
+                },
+                "role_id": {
+                    "type": "integer",
+                    "description": "Role id."
+                },
+                "resource_id": {
+                    "type": "string",
+                    "description": "Resource id."
+                },
+                "permission": {
+                    "type": "string",
+                    "description": "Permission."
+                }
+            }
         }
     },
     "company_id": {

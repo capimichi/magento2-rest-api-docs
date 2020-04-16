@@ -61,6 +61,22 @@ foreach ($data['paths'] as $endpoint => $path) {
                         }
                     }
                     $json = json_encode($object, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+
+                    for ($j = 0; $j < 2; $j++) {
+                        if (preg_match_all('/"#\/definitions\/(.*?)"/', $json, $matches)) {
+                            $max = max(count($matches[0]), count($matches[1]));
+                            for ($i = 0; $i < $max; $i++) {
+                                $definitionKey = $matches[1][$i];
+                                $replaceKey = $matches[0][$i];
+                                if (isset($data['definitions'][$definitionKey]['properties'])) {
+                                    $json = str_replace($replaceKey, json_encode($data['definitions'][$definitionKey]['properties']), $json);
+                                    $json = json_decode($json, true);
+                                    $json = json_encode($json, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+                                }
+                            }
+                        }
+                    }
+
                     $content .= "<pre style='font-family: Arial; font-size: 10px;'>{$json}</pre>";
                     $content .= "<p></p>";
                 }
@@ -90,6 +106,28 @@ foreach ($data['paths'] as $endpoint => $path) {
                         $object = $data['definitions'][$ref]['properties'];
 
                         $json = json_encode($object, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+
+                        for ($j = 0; $j < 2; $j++) {
+                            if (preg_match_all('/"#\/definitions\/(.*?)"/', $json, $matches)) {
+                                $max = max(count($matches[0]), count($matches[1]));
+                                for ($i = 0; $i < $max; $i++) {
+                                    if (
+                                        isset($matches[00][$i])
+                                        && isset($matches[1][$i])
+                                    ) {
+                                        $definitionKey = $matches[1][$i];
+                                        $replaceKey = $matches[0][$i];
+
+                                        if (isset($data['definitions'][$definitionKey]['properties'])) {
+                                            $json = str_replace($replaceKey, json_encode($data['definitions'][$definitionKey]['properties']), $json);
+                                            $json = json_decode($json, true);
+                                            $json = json_encode($json, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
                         $content .= "<pre style='font-family: Arial; font-size: 10px;'>{$json}</pre>";
                     }
                     $content .= "<p></p>";

@@ -17,7 +17,161 @@ padding: 10px;
         "type": "array",
         "description": "List of products rendered information",
         "items": {
-            "$ref": "#/definitions/catalog-data-product-render-interface"
+            "$ref": {
+                "add_to_cart_button": {
+                    "$ref": {
+                        "post_data": {
+                            "type": "string",
+                            "description": "Post data"
+                        },
+                        "url": {
+                            "type": "string",
+                            "description": "Url, needed to add product to cart"
+                        },
+                        "required_options": {
+                            "type": "boolean",
+                            "description": "Flag whether a product has options or not"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/catalog-data-product-render-button-extension-interface"
+                        }
+                    }
+                },
+                "add_to_compare_button": {
+                    "$ref": {
+                        "post_data": {
+                            "type": "string",
+                            "description": "Post data"
+                        },
+                        "url": {
+                            "type": "string",
+                            "description": "Url, needed to add product to cart"
+                        },
+                        "required_options": {
+                            "type": "boolean",
+                            "description": "Flag whether a product has options or not"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/catalog-data-product-render-button-extension-interface"
+                        }
+                    }
+                },
+                "price_info": {
+                    "$ref": {
+                        "final_price": {
+                            "type": "number",
+                            "description": "Final price"
+                        },
+                        "max_price": {
+                            "type": "number",
+                            "description": "Max price of a product"
+                        },
+                        "max_regular_price": {
+                            "type": "number",
+                            "description": "Max regular price"
+                        },
+                        "minimal_regular_price": {
+                            "type": "number",
+                            "description": "Minimal regular price"
+                        },
+                        "special_price": {
+                            "type": "number",
+                            "description": "Special price"
+                        },
+                        "minimal_price": {
+                            "type": "number",
+                            "description": "Minimal price"
+                        },
+                        "regular_price": {
+                            "type": "number",
+                            "description": "Regular price"
+                        },
+                        "formatted_prices": {
+                            "$ref": "#/definitions/catalog-data-product-render-formatted-price-info-interface"
+                        },
+                        "extension_attributes": {
+                            "$ref": "#/definitions/catalog-data-product-render-price-info-extension-interface"
+                        }
+                    }
+                },
+                "images": {
+                    "type": "array",
+                    "description": "Enough information, that needed to render image on front",
+                    "items": {
+                        "$ref": {
+                            "url": {
+                                "type": "string",
+                                "description": "Image url"
+                            },
+                            "code": {
+                                "type": "string",
+                                "description": "Image code"
+                            },
+                            "height": {
+                                "type": "number",
+                                "description": "Image height"
+                            },
+                            "width": {
+                                "type": "number",
+                                "description": "Image width in px"
+                            },
+                            "label": {
+                                "type": "string",
+                                "description": "Image label"
+                            },
+                            "resized_width": {
+                                "type": "number",
+                                "description": "Resize width"
+                            },
+                            "resized_height": {
+                                "type": "number",
+                                "description": "Resize height"
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/catalog-data-product-render-image-extension-interface"
+                            }
+                        }
+                    }
+                },
+                "url": {
+                    "type": "string",
+                    "description": "Product url"
+                },
+                "id": {
+                    "type": "integer",
+                    "description": "Product identifier"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Product name"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Product type. Such as bundle, grouped, simple, etc..."
+                },
+                "is_salable": {
+                    "type": "string",
+                    "description": "Information about product saleability (In Stock)"
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Information about current store id or requested store id"
+                },
+                "currency_code": {
+                    "type": "string",
+                    "description": "Current or desired currency code to product"
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "wishlist_button": {
+                            "$ref": "#/definitions/catalog-data-product-render-button-interface"
+                        },
+                        "review_html": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
         }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

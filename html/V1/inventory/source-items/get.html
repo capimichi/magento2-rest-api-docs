@@ -17,11 +17,71 @@ padding: 10px;
         "type": "array",
         "description": "Source items list",
         "items": {
-            "$ref": "#/definitions/inventory-api-data-source-item-interface"
+            "$ref": {
+                "sku": {
+                    "type": "string",
+                    "description": "Source item sku"
+                },
+                "source_code": {
+                    "type": "string",
+                    "description": "Source code"
+                },
+                "quantity": {
+                    "type": "number",
+                    "description": "Source item quantity"
+                },
+                "status": {
+                    "type": "integer",
+                    "description": "Source item status (One of self::STATUS_*)"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/inventory-api-data-source-item-extension-interface"
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

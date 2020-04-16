@@ -84,7 +84,19 @@ padding: 10px;
     "carrier_links": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/inventory-api-data-source-carrier-link-interface"
+            "$ref": {
+                "carrier_code": {
+                    "type": "string",
+                    "description": "Carrier code"
+                },
+                "position": {
+                    "type": "integer",
+                    "description": "Position"
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/inventory-api-data-source-carrier-link-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {

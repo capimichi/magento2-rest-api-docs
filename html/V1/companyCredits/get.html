@@ -17,11 +17,80 @@ padding: 10px;
         "type": "array",
         "description": "Credit Limit list.",
         "items": {
-            "$ref": "#/definitions/company-credit-data-credit-data-interface"
+            "$ref": {
+                "id": {
+                    "type": "integer",
+                    "description": "ID."
+                },
+                "company_id": {
+                    "type": "integer",
+                    "description": "Company id."
+                },
+                "credit_limit": {
+                    "type": "number",
+                    "description": "Credit Limit."
+                },
+                "balance": {
+                    "type": "number",
+                    "description": "Balance."
+                },
+                "currency_code": {
+                    "type": "string",
+                    "description": "Currency Code."
+                },
+                "exceed_limit": {
+                    "type": "boolean",
+                    "description": "Exceed Limit."
+                },
+                "available_limit": {
+                    "type": "number",
+                    "description": "Available Limit."
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

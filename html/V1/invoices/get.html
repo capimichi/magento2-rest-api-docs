@@ -17,11 +17,431 @@ padding: 10px;
         "type": "array",
         "description": "Array of collection items.",
         "items": {
-            "$ref": "#/definitions/sales-data-invoice-interface"
+            "$ref": {
+                "base_currency_code": {
+                    "type": "string",
+                    "description": "Base currency code."
+                },
+                "base_discount_amount": {
+                    "type": "number",
+                    "description": "Base discount amount."
+                },
+                "base_grand_total": {
+                    "type": "number",
+                    "description": "Base grand total."
+                },
+                "base_discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Base discount tax compensation amount."
+                },
+                "base_shipping_amount": {
+                    "type": "number",
+                    "description": "Base shipping amount."
+                },
+                "base_shipping_discount_tax_compensation_amnt": {
+                    "type": "number",
+                    "description": "Base shipping discount tax compensation amount."
+                },
+                "base_shipping_incl_tax": {
+                    "type": "number",
+                    "description": "Base shipping including tax."
+                },
+                "base_shipping_tax_amount": {
+                    "type": "number",
+                    "description": "Base shipping tax amount."
+                },
+                "base_subtotal": {
+                    "type": "number",
+                    "description": "Base subtotal."
+                },
+                "base_subtotal_incl_tax": {
+                    "type": "number",
+                    "description": "Base subtotal including tax."
+                },
+                "base_tax_amount": {
+                    "type": "number",
+                    "description": "Base tax amount."
+                },
+                "base_total_refunded": {
+                    "type": "number",
+                    "description": "Base total refunded."
+                },
+                "base_to_global_rate": {
+                    "type": "number",
+                    "description": "Base-to-global rate."
+                },
+                "base_to_order_rate": {
+                    "type": "number",
+                    "description": "Base-to-order rate."
+                },
+                "billing_address_id": {
+                    "type": "integer",
+                    "description": "Billing address ID."
+                },
+                "can_void_flag": {
+                    "type": "integer",
+                    "description": "Can void flag value."
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Created-at timestamp."
+                },
+                "discount_amount": {
+                    "type": "number",
+                    "description": "Discount amount."
+                },
+                "discount_description": {
+                    "type": "string",
+                    "description": "Discount description."
+                },
+                "email_sent": {
+                    "type": "integer",
+                    "description": "Email-sent flag value."
+                },
+                "entity_id": {
+                    "type": "integer",
+                    "description": "Invoice ID."
+                },
+                "global_currency_code": {
+                    "type": "string",
+                    "description": "Global currency code."
+                },
+                "grand_total": {
+                    "type": "number",
+                    "description": "Grand total."
+                },
+                "discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Discount tax compensation amount."
+                },
+                "increment_id": {
+                    "type": "string",
+                    "description": "Increment ID."
+                },
+                "is_used_for_refund": {
+                    "type": "integer",
+                    "description": "Is-used-for-refund flag value."
+                },
+                "order_currency_code": {
+                    "type": "string",
+                    "description": "Order currency code."
+                },
+                "order_id": {
+                    "type": "integer",
+                    "description": "Order ID."
+                },
+                "shipping_address_id": {
+                    "type": "integer",
+                    "description": "Shipping address ID."
+                },
+                "shipping_amount": {
+                    "type": "number",
+                    "description": "Shipping amount."
+                },
+                "shipping_discount_tax_compensation_amount": {
+                    "type": "number",
+                    "description": "Shipping discount tax compensation amount."
+                },
+                "shipping_incl_tax": {
+                    "type": "number",
+                    "description": "Shipping including tax."
+                },
+                "shipping_tax_amount": {
+                    "type": "number",
+                    "description": "Shipping tax amount."
+                },
+                "state": {
+                    "type": "integer",
+                    "description": "State."
+                },
+                "store_currency_code": {
+                    "type": "string",
+                    "description": "Store currency code."
+                },
+                "store_id": {
+                    "type": "integer",
+                    "description": "Store ID."
+                },
+                "store_to_base_rate": {
+                    "type": "number",
+                    "description": "Store-to-base rate."
+                },
+                "store_to_order_rate": {
+                    "type": "number",
+                    "description": "Store-to-order rate."
+                },
+                "subtotal": {
+                    "type": "number",
+                    "description": "Subtotal."
+                },
+                "subtotal_incl_tax": {
+                    "type": "number",
+                    "description": "Subtotal including tax."
+                },
+                "tax_amount": {
+                    "type": "number",
+                    "description": "Tax amount."
+                },
+                "total_qty": {
+                    "type": "number",
+                    "description": "Total quantity."
+                },
+                "transaction_id": {
+                    "type": "string",
+                    "description": "Transaction ID."
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Updated-at timestamp."
+                },
+                "items": {
+                    "type": "array",
+                    "description": "Array of invoice items.",
+                    "items": {
+                        "$ref": {
+                            "additional_data": {
+                                "type": "string",
+                                "description": "Additional data."
+                            },
+                            "base_cost": {
+                                "type": "number",
+                                "description": "Base cost."
+                            },
+                            "base_discount_amount": {
+                                "type": "number",
+                                "description": "Base discount amount."
+                            },
+                            "base_discount_tax_compensation_amount": {
+                                "type": "number",
+                                "description": "Base discount tax compensation amount."
+                            },
+                            "base_price": {
+                                "type": "number",
+                                "description": "Base price."
+                            },
+                            "base_price_incl_tax": {
+                                "type": "number",
+                                "description": "Base price including tax."
+                            },
+                            "base_row_total": {
+                                "type": "number",
+                                "description": "Base row total."
+                            },
+                            "base_row_total_incl_tax": {
+                                "type": "number",
+                                "description": "Base row total including tax."
+                            },
+                            "base_tax_amount": {
+                                "type": "number",
+                                "description": "Base tax amount."
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "Description."
+                            },
+                            "discount_amount": {
+                                "type": "number",
+                                "description": "Discount amount."
+                            },
+                            "entity_id": {
+                                "type": "integer",
+                                "description": "Invoice item ID."
+                            },
+                            "discount_tax_compensation_amount": {
+                                "type": "number",
+                                "description": "Discount tax compensation amount."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Name."
+                            },
+                            "parent_id": {
+                                "type": "integer",
+                                "description": "Parent ID."
+                            },
+                            "price": {
+                                "type": "number",
+                                "description": "Price."
+                            },
+                            "price_incl_tax": {
+                                "type": "number",
+                                "description": "Price including tax."
+                            },
+                            "product_id": {
+                                "type": "integer",
+                                "description": "Product ID."
+                            },
+                            "row_total": {
+                                "type": "number",
+                                "description": "Row total."
+                            },
+                            "row_total_incl_tax": {
+                                "type": "number",
+                                "description": "Row total including tax."
+                            },
+                            "sku": {
+                                "type": "string",
+                                "description": "SKU."
+                            },
+                            "tax_amount": {
+                                "type": "number",
+                                "description": "Tax amount."
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/sales-data-invoice-item-extension-interface"
+                            },
+                            "order_item_id": {
+                                "type": "integer",
+                                "description": "Order item ID."
+                            },
+                            "qty": {
+                                "type": "number",
+                                "description": "Quantity."
+                            }
+                        }
+                    }
+                },
+                "comments": {
+                    "type": "array",
+                    "description": "Array of any invoice comments. Otherwise, null.",
+                    "items": {
+                        "$ref": {
+                            "is_customer_notified": {
+                                "type": "integer",
+                                "description": "Is-customer-notified flag value."
+                            },
+                            "parent_id": {
+                                "type": "integer",
+                                "description": "Parent ID."
+                            },
+                            "extension_attributes": {
+                                "$ref": "#/definitions/sales-data-invoice-comment-extension-interface"
+                            },
+                            "comment": {
+                                "type": "string",
+                                "description": "Comment."
+                            },
+                            "is_visible_on_front": {
+                                "type": "integer",
+                                "description": "Is-visible-on-storefront flag value."
+                            },
+                            "created_at": {
+                                "type": "string",
+                                "description": "Created-at timestamp."
+                            },
+                            "entity_id": {
+                                "type": "integer",
+                                "description": "Invoice ID."
+                            }
+                        }
+                    }
+                },
+                "extension_attributes": {
+                    "$ref": {
+                        "base_customer_balance_amount": {
+                            "type": "number"
+                        },
+                        "customer_balance_amount": {
+                            "type": "number"
+                        },
+                        "base_gift_cards_amount": {
+                            "type": "number"
+                        },
+                        "gift_cards_amount": {
+                            "type": "number"
+                        },
+                        "gw_base_price": {
+                            "type": "string"
+                        },
+                        "gw_price": {
+                            "type": "string"
+                        },
+                        "gw_items_base_price": {
+                            "type": "string"
+                        },
+                        "gw_items_price": {
+                            "type": "string"
+                        },
+                        "gw_card_base_price": {
+                            "type": "string"
+                        },
+                        "gw_card_price": {
+                            "type": "string"
+                        },
+                        "gw_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_items_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_items_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_card_base_tax_amount": {
+                            "type": "string"
+                        },
+                        "gw_card_tax_amount": {
+                            "type": "string"
+                        },
+                        "vertex_tax_calculation_shipping_address": {
+                            "$ref": "#/definitions/sales-data-order-address-interface"
+                        },
+                        "vertex_tax_calculation_billing_address": {
+                            "$ref": "#/definitions/sales-data-order-address-interface"
+                        },
+                        "vertex_tax_calculation_order": {
+                            "$ref": "#/definitions/sales-data-order-interface"
+                        }
+                    }
+                }
+            }
         }
     },
     "search_criteria": {
-        "$ref": "#/definitions/framework-search-criteria-interface"
+        "$ref": {
+            "filter_groups": {
+                "type": "array",
+                "description": "A list of filter groups.",
+                "items": {
+                    "$ref": {
+                        "filters": {
+                            "type": "array",
+                            "description": "A list of filters in this group",
+                            "items": {
+                                "$ref": "#/definitions/framework-filter"
+                            }
+                        }
+                    }
+                }
+            },
+            "sort_orders": {
+                "type": "array",
+                "description": "Sort order.",
+                "items": {
+                    "$ref": {
+                        "field": {
+                            "type": "string",
+                            "description": "Sorting field."
+                        },
+                        "direction": {
+                            "type": "string",
+                            "description": "Sorting direction."
+                        }
+                    }
+                }
+            },
+            "page_size": {
+                "type": "integer",
+                "description": "Page size."
+            },
+            "current_page": {
+                "type": "integer",
+                "description": "Current page."
+            }
+        }
     },
     "total_count": {
         "type": "integer",

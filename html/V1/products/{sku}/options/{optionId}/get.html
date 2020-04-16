@@ -64,11 +64,40 @@ padding: 10px;
     "values": {
         "type": "array",
         "items": {
-            "$ref": "#/definitions/catalog-data-product-custom-option-values-interface"
+            "$ref": {
+                "title": {
+                    "type": "string",
+                    "description": "Option title"
+                },
+                "sort_order": {
+                    "type": "integer",
+                    "description": "Sort order"
+                },
+                "price": {
+                    "type": "number",
+                    "description": "Price"
+                },
+                "price_type": {
+                    "type": "string",
+                    "description": "Price type"
+                },
+                "sku": {
+                    "type": "string",
+                    "description": "Sku"
+                },
+                "option_type_id": {
+                    "type": "integer",
+                    "description": "Option type id"
+                }
+            }
         }
     },
     "extension_attributes": {
-        "$ref": "#/definitions/catalog-data-product-custom-option-extension-interface"
+        "$ref": {
+            "vertex_flex_field": {
+                "type": "string"
+            }
+        }
     }
 }</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

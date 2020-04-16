@@ -26,14 +26,38 @@ padding: 10px;
         "description": "Category"
     },
     "category": {
-        "$ref": "#/definitions/adobe-stock-asset-api-data-category-interface"
+        "$ref": {
+            "id": {
+                "type": "integer",
+                "description": "The id"
+            },
+            "name": {
+                "type": "string",
+                "description": "The category name"
+            },
+            "extension_attributes": {
+                "$ref": "#/definitions/adobe-stock-asset-api-data-category-extension-interface"
+            }
+        }
     },
     "creator_id": {
         "type": "integer",
         "description": "The creator"
     },
     "creator": {
-        "$ref": "#/definitions/adobe-stock-asset-api-data-creator-interface"
+        "$ref": {
+            "id": {
+                "type": "integer",
+                "description": "The id"
+            },
+            "name": {
+                "type": "string",
+                "description": "The creator name"
+            },
+            "extension_attributes": {
+                "$ref": "#/definitions/adobe-stock-asset-api-data-creator-extension-interface"
+            }
+        }
     },
     "is_licensed": {
         "type": "integer",

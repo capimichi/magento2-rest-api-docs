@@ -40,7 +40,19 @@ padding: 10px;
         "type": "array",
         "description": "The list of exchange rate information for the store.",
         "items": {
-            "$ref": "#/definitions/directory-data-exchange-rate-interface"
+            "$ref": {
+                "currency_to": {
+                    "type": "string",
+                    "description": "The currency code associated with the exchange rate."
+                },
+                "rate": {
+                    "type": "number",
+                    "description": "The exchange rate for the associated currency and the store's base currency."
+                },
+                "extension_attributes": {
+                    "$ref": "#/definitions/directory-data-exchange-rate-extension-interface"
+                }
+            }
         }
     },
     "extension_attributes": {
