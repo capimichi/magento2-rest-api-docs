@@ -13,39 +13,41 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/guest-carts/{cartId}/items</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/guest-carts/{cartId}/items</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Add/update the specified cart item.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>cartId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>quoteGuestCartItemRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>cartItem</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "item_id": {
-        "type": "integer",
-        "description": "Item ID. Otherwise, null."
-    },
-    "sku": {
-        "type": "string",
-        "description": "Product SKU. Otherwise, null."
-    },
-    "qty": {
-        "type": "number",
-        "description": "Product quantity."
-    },
-    "name": {
-        "type": "string",
-        "description": "Product name. Otherwise, null."
-    },
-    "price": {
-        "type": "number",
-        "description": "Product price. Otherwise, null."
-    },
-    "product_type": {
-        "type": "string",
-        "description": "Product type. Otherwise, null."
-    },
-    "quote_id": {
-        "type": "string",
-        "description": "Quote id."
-    },
-    "product_option": {
-        "$ref": "#/definitions/quote-data-product-option-interface"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/quote-data-cart-item-extension-interface"
+    "cartItem": {
+        "item_id": {
+            "type": "integer",
+            "description": "Item ID. Otherwise, null."
+        },
+        "sku": {
+            "type": "string",
+            "description": "Product SKU. Otherwise, null."
+        },
+        "qty": {
+            "type": "number",
+            "description": "Product quantity."
+        },
+        "name": {
+            "type": "string",
+            "description": "Product name. Otherwise, null."
+        },
+        "price": {
+            "type": "number",
+            "description": "Product price. Otherwise, null."
+        },
+        "product_type": {
+            "type": "string",
+            "description": "Product type. Otherwise, null."
+        },
+        "quote_id": {
+            "type": "string",
+            "description": "Quote id."
+        },
+        "product_option": {
+            "$ref": "#/definitions/quote-data-product-option-interface"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/quote-data-cart-item-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "item_id": {

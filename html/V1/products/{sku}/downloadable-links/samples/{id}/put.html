@@ -12,37 +12,40 @@ display: block;
 color: #ffffff;
 padding: 10px;
 }
-</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/products/{sku}/downloadable-links/samples/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/products/{sku}/downloadable-links/samples/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Update downloadable sample of the given product</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>sku</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>downloadableSampleRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>sample</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Sample(or link) id"
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/products/{sku}/downloadable-links/samples/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/products/{sku}/downloadable-links/samples/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Update downloadable sample of the given product</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>sku</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>downloadableSampleRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>sample</p><p style='font-family: Arial; font-size: 11px;'>isGlobalScopeContent</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "sample": {
+        "id": {
+            "type": "integer",
+            "description": "Sample(or link) id"
+        },
+        "title": {
+            "type": "string",
+            "description": "Title"
+        },
+        "sort_order": {
+            "type": "integer",
+            "description": "Order index for sample"
+        },
+        "sample_type": {
+            "type": "string"
+        },
+        "sample_file": {
+            "type": "string",
+            "description": "relative file path"
+        },
+        "sample_file_content": {
+            "$ref": "#/definitions/downloadable-data-file-content-interface"
+        },
+        "sample_url": {
+            "type": "string",
+            "description": "file URL"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/downloadable-data-sample-extension-interface"
+        }
     },
-    "title": {
-        "type": "string",
-        "description": "Title"
-    },
-    "sort_order": {
-        "type": "integer",
-        "description": "Order index for sample"
-    },
-    "sample_type": {
-        "type": "string"
-    },
-    "sample_file": {
-        "type": "string",
-        "description": "relative file path"
-    },
-    "sample_file_content": {
-        "$ref": "#/definitions/downloadable-data-file-content-interface"
-    },
-    "sample_url": {
-        "type": "string",
-        "description": "file URL"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/downloadable-data-sample-extension-interface"
-    }
-}</pre><p style='font-family: Arial; font-size: 11px;'>isGlobalScopeContent</p><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "isGlobalScopeContent": []
+}</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {
         "type": "string",
         "description": "Error message"

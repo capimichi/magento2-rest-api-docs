@@ -13,41 +13,43 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/sharedCatalog</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/sharedCatalog</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create or update Shared Catalog service.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>sharedCatalogSharedCatalogRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>sharedCatalog</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "ID."
-    },
-    "name": {
-        "type": "string",
-        "description": "Shared Catalog name."
-    },
-    "description": {
-        "type": "string",
-        "description": "Shared Catalog description."
-    },
-    "customer_group_id": {
-        "type": "integer",
-        "description": "Customer Group Id."
-    },
-    "type": {
-        "type": "integer",
-        "description": "Shared Catalog type."
-    },
-    "created_at": {
-        "type": "string",
-        "description": "Created time for Shared Catalog."
-    },
-    "created_by": {
-        "type": "integer",
-        "description": "Admin id for Shared Catalog."
-    },
-    "store_id": {
-        "type": "integer",
-        "description": "Store id for Shared Catalog."
-    },
-    "tax_class_id": {
-        "type": "integer",
-        "description": "Tax class id."
+    "sharedCatalog": {
+        "id": {
+            "type": "integer",
+            "description": "ID."
+        },
+        "name": {
+            "type": "string",
+            "description": "Shared Catalog name."
+        },
+        "description": {
+            "type": "string",
+            "description": "Shared Catalog description."
+        },
+        "customer_group_id": {
+            "type": "integer",
+            "description": "Customer Group Id."
+        },
+        "type": {
+            "type": "integer",
+            "description": "Shared Catalog type."
+        },
+        "created_at": {
+            "type": "string",
+            "description": "Created time for Shared Catalog."
+        },
+        "created_by": {
+            "type": "integer",
+            "description": "Admin id for Shared Catalog."
+        },
+        "store_id": {
+            "type": "integer",
+            "description": "Store id for Shared Catalog."
+        },
+        "tax_class_id": {
+            "type": "integer",
+            "description": "Tax class id."
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

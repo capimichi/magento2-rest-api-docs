@@ -13,65 +13,67 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/categories/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/categories/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create category service</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>catalogCategoryRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>category</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Category id."
-    },
-    "parent_id": {
-        "type": "integer",
-        "description": "Parent category ID"
-    },
-    "name": {
-        "type": "string",
-        "description": "Category name"
-    },
-    "is_active": {
-        "type": "boolean",
-        "description": "Whether category is active"
-    },
-    "position": {
-        "type": "integer",
-        "description": "Category position"
-    },
-    "level": {
-        "type": "integer",
-        "description": "Category level"
-    },
-    "children": {
-        "type": "string",
-        "description": "Children ids comma separated."
-    },
-    "created_at": {
-        "type": "string",
-        "description": "Category creation date and time."
-    },
-    "updated_at": {
-        "type": "string",
-        "description": "Category last update date and time."
-    },
-    "path": {
-        "type": "string",
-        "description": "Category full path."
-    },
-    "available_sort_by": {
-        "type": "array",
-        "description": "Available sort by for category.",
-        "items": {
-            "type": "string"
-        }
-    },
-    "include_in_menu": {
-        "type": "boolean",
-        "description": "Category is included in menu."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/catalog-data-category-extension-interface"
-    },
-    "custom_attributes": {
-        "type": "array",
-        "description": "Custom attributes values.",
-        "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+    "category": {
+        "id": {
+            "type": "integer",
+            "description": "Category id."
+        },
+        "parent_id": {
+            "type": "integer",
+            "description": "Parent category ID"
+        },
+        "name": {
+            "type": "string",
+            "description": "Category name"
+        },
+        "is_active": {
+            "type": "boolean",
+            "description": "Whether category is active"
+        },
+        "position": {
+            "type": "integer",
+            "description": "Category position"
+        },
+        "level": {
+            "type": "integer",
+            "description": "Category level"
+        },
+        "children": {
+            "type": "string",
+            "description": "Children ids comma separated."
+        },
+        "created_at": {
+            "type": "string",
+            "description": "Category creation date and time."
+        },
+        "updated_at": {
+            "type": "string",
+            "description": "Category last update date and time."
+        },
+        "path": {
+            "type": "string",
+            "description": "Category full path."
+        },
+        "available_sort_by": {
+            "type": "array",
+            "description": "Available sort by for category.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "include_in_menu": {
+            "type": "boolean",
+            "description": "Category is included in menu."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/catalog-data-category-extension-interface"
+        },
+        "custom_attributes": {
+            "type": "array",
+            "description": "Custom attributes values.",
+            "items": {
+                "$ref": "#/definitions/framework-attribute-interface"
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

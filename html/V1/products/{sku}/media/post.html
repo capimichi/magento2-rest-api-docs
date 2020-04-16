@@ -13,42 +13,44 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/products/{sku}/media</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/products/{sku}/media</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create new gallery entry</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>sku</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>catalogProductAttributeMediaGalleryManagementV1CreatePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>entry</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Gallery entry ID"
-    },
-    "media_type": {
-        "type": "string",
-        "description": "Media type"
-    },
-    "label": {
-        "type": "string",
-        "description": "Gallery entry alternative text"
-    },
-    "position": {
-        "type": "integer",
-        "description": "Gallery entry position (sort order)"
-    },
-    "disabled": {
-        "type": "boolean",
-        "description": "If gallery entry is hidden from product page"
-    },
-    "types": {
-        "type": "array",
-        "description": "Gallery entry image types (thumbnail, image, small_image etc)",
-        "items": {
-            "type": "string"
+    "entry": {
+        "id": {
+            "type": "integer",
+            "description": "Gallery entry ID"
+        },
+        "media_type": {
+            "type": "string",
+            "description": "Media type"
+        },
+        "label": {
+            "type": "string",
+            "description": "Gallery entry alternative text"
+        },
+        "position": {
+            "type": "integer",
+            "description": "Gallery entry position (sort order)"
+        },
+        "disabled": {
+            "type": "boolean",
+            "description": "If gallery entry is hidden from product page"
+        },
+        "types": {
+            "type": "array",
+            "description": "Gallery entry image types (thumbnail, image, small_image etc)",
+            "items": {
+                "type": "string"
+            }
+        },
+        "file": {
+            "type": "string",
+            "description": "File path"
+        },
+        "content": {
+            "$ref": "#/definitions/framework-data-image-content-interface"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/catalog-data-product-attribute-media-gallery-entry-extension-interface"
         }
-    },
-    "file": {
-        "type": "string",
-        "description": "File path"
-    },
-    "content": {
-        "$ref": "#/definitions/framework-data-image-content-interface"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/catalog-data-product-attribute-media-gallery-entry-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

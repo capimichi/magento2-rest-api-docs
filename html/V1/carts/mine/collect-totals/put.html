@@ -12,34 +12,39 @@ display: block;
 color: #ffffff;
 padding: 10px;
 }
-</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/carts/mine/collect-totals</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/carts/mine/collect-totals</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Set shipping/billing methods and additional data for cart and collect totals.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>quoteCartTotalManagementV1CollectTotalsPutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>paymentMethod</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "po_number": {
-        "type": "string",
-        "description": "Purchase order number"
-    },
-    "method": {
-        "type": "string",
-        "description": "Payment method code"
-    },
-    "additional_data": {
-        "type": "array",
-        "description": "Payment additional details",
-        "items": {
-            "type": "string"
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/carts/mine/collect-totals</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/carts/mine/collect-totals</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Set shipping/billing methods and additional data for cart and collect totals.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>quoteCartTotalManagementV1CollectTotalsPutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>paymentMethod</p><p style='font-family: Arial; font-size: 11px;'>shippingCarrierCode</p><p style='font-family: Arial; font-size: 11px;'>shippingMethodCode</p><p style='font-family: Arial; font-size: 11px;'>additionalData</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "paymentMethod": {
+        "po_number": {
+            "type": "string",
+            "description": "Purchase order number"
+        },
+        "method": {
+            "type": "string",
+            "description": "Payment method code"
+        },
+        "additional_data": {
+            "type": "array",
+            "description": "Payment additional details",
+            "items": {
+                "type": "string"
+            }
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/quote-data-payment-extension-interface"
         }
     },
-    "extension_attributes": {
-        "$ref": "#/definitions/quote-data-payment-extension-interface"
-    }
-}</pre><p style='font-family: Arial; font-size: 11px;'>shippingCarrierCode</p><p style='font-family: Arial; font-size: 11px;'>shippingMethodCode</p><p style='font-family: Arial; font-size: 11px;'>additionalData</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "extension_attributes": {
-        "$ref": "#/definitions/quote-data-totals-additional-data-extension-interface"
-    },
-    "custom_attributes": {
-        "type": "array",
-        "description": "Custom attributes values.",
-        "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+    "shippingCarrierCode": [],
+    "shippingMethodCode": [],
+    "additionalData": {
+        "extension_attributes": {
+            "$ref": "#/definitions/quote-data-totals-additional-data-extension-interface"
+        },
+        "custom_attributes": {
+            "type": "array",
+            "description": "Custom attributes values.",
+            "items": {
+                "$ref": "#/definitions/framework-attribute-interface"
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

@@ -13,39 +13,41 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/bundle-products/options/{optionId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/bundle-products/options/{optionId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Add new option for bundle product</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>optionId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>bundleProductOptionManagementV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>option</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "option_id": {
-        "type": "integer",
-        "description": "Option id"
-    },
-    "title": {
-        "type": "string",
-        "description": "Option title"
-    },
-    "required": {
-        "type": "boolean",
-        "description": "Is required option"
-    },
-    "type": {
-        "type": "string",
-        "description": "Input type"
-    },
-    "position": {
-        "type": "integer",
-        "description": "Option position"
-    },
-    "sku": {
-        "type": "string",
-        "description": "Product sku"
-    },
-    "product_links": {
-        "type": "array",
-        "description": "Product links",
-        "items": {
-            "$ref": "#/definitions/bundle-data-link-interface"
+    "option": {
+        "option_id": {
+            "type": "integer",
+            "description": "Option id"
+        },
+        "title": {
+            "type": "string",
+            "description": "Option title"
+        },
+        "required": {
+            "type": "boolean",
+            "description": "Is required option"
+        },
+        "type": {
+            "type": "string",
+            "description": "Input type"
+        },
+        "position": {
+            "type": "integer",
+            "description": "Option position"
+        },
+        "sku": {
+            "type": "string",
+            "description": "Product sku"
+        },
+        "product_links": {
+            "type": "array",
+            "description": "Product links",
+            "items": {
+                "$ref": "#/definitions/bundle-data-link-interface"
+            }
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/bundle-data-option-extension-interface"
         }
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/bundle-data-option-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

@@ -13,81 +13,83 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/cmsPage/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/cmsPage/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save page.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>cmsPageRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>page</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "ID"
-    },
-    "identifier": {
-        "type": "string",
-        "description": "Identifier"
-    },
-    "title": {
-        "type": "string",
-        "description": "Title"
-    },
-    "page_layout": {
-        "type": "string",
-        "description": "Page layout"
-    },
-    "meta_title": {
-        "type": "string",
-        "description": "Meta title"
-    },
-    "meta_keywords": {
-        "type": "string",
-        "description": "Meta keywords"
-    },
-    "meta_description": {
-        "type": "string",
-        "description": "Meta description"
-    },
-    "content_heading": {
-        "type": "string",
-        "description": "Content heading"
-    },
-    "content": {
-        "type": "string",
-        "description": "Content"
-    },
-    "creation_time": {
-        "type": "string",
-        "description": "Creation time"
-    },
-    "update_time": {
-        "type": "string",
-        "description": "Update time"
-    },
-    "sort_order": {
-        "type": "string",
-        "description": "Sort order"
-    },
-    "layout_update_xml": {
-        "type": "string",
-        "description": "Layout update xml"
-    },
-    "custom_theme": {
-        "type": "string",
-        "description": "Custom theme"
-    },
-    "custom_root_template": {
-        "type": "string",
-        "description": "Custom root template"
-    },
-    "custom_layout_update_xml": {
-        "type": "string",
-        "description": "Custom layout update xml"
-    },
-    "custom_theme_from": {
-        "type": "string",
-        "description": "Custom theme from"
-    },
-    "custom_theme_to": {
-        "type": "string",
-        "description": "Custom theme to"
-    },
-    "active": {
-        "type": "boolean",
-        "description": "Active"
+    "page": {
+        "id": {
+            "type": "integer",
+            "description": "ID"
+        },
+        "identifier": {
+            "type": "string",
+            "description": "Identifier"
+        },
+        "title": {
+            "type": "string",
+            "description": "Title"
+        },
+        "page_layout": {
+            "type": "string",
+            "description": "Page layout"
+        },
+        "meta_title": {
+            "type": "string",
+            "description": "Meta title"
+        },
+        "meta_keywords": {
+            "type": "string",
+            "description": "Meta keywords"
+        },
+        "meta_description": {
+            "type": "string",
+            "description": "Meta description"
+        },
+        "content_heading": {
+            "type": "string",
+            "description": "Content heading"
+        },
+        "content": {
+            "type": "string",
+            "description": "Content"
+        },
+        "creation_time": {
+            "type": "string",
+            "description": "Creation time"
+        },
+        "update_time": {
+            "type": "string",
+            "description": "Update time"
+        },
+        "sort_order": {
+            "type": "string",
+            "description": "Sort order"
+        },
+        "layout_update_xml": {
+            "type": "string",
+            "description": "Layout update xml"
+        },
+        "custom_theme": {
+            "type": "string",
+            "description": "Custom theme"
+        },
+        "custom_root_template": {
+            "type": "string",
+            "description": "Custom root template"
+        },
+        "custom_layout_update_xml": {
+            "type": "string",
+            "description": "Custom layout update xml"
+        },
+        "custom_theme_from": {
+            "type": "string",
+            "description": "Custom theme from"
+        },
+        "custom_theme_to": {
+            "type": "string",
+            "description": "Custom theme to"
+        },
+        "active": {
+            "type": "boolean",
+            "description": "Active"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

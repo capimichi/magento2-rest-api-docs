@@ -13,32 +13,34 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/configurable-products/{sku}/options/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/configurable-products/{sku}/options/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save option</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>sku</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>configurableProductOptionRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>option</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer"
-    },
-    "attribute_id": {
-        "type": "string"
-    },
-    "label": {
-        "type": "string"
-    },
-    "position": {
-        "type": "integer"
-    },
-    "is_use_default": {
-        "type": "boolean"
-    },
-    "values": {
-        "type": "array",
-        "items": {
-            "$ref": "#/definitions/configurable-product-data-option-value-interface"
+    "option": {
+        "id": {
+            "type": "integer"
+        },
+        "attribute_id": {
+            "type": "string"
+        },
+        "label": {
+            "type": "string"
+        },
+        "position": {
+            "type": "integer"
+        },
+        "is_use_default": {
+            "type": "boolean"
+        },
+        "values": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/configurable-product-data-option-value-interface"
+            }
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/configurable-product-data-option-extension-interface"
+        },
+        "product_id": {
+            "type": "integer"
         }
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/configurable-product-data-option-extension-interface"
-    },
-    "product_id": {
-        "type": "integer"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

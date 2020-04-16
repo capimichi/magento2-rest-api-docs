@@ -13,126 +13,128 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/salesRules/{ruleId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/salesRules/{ruleId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save sales rule.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>ruleId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>salesRuleRuleRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>rule</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "rule_id": {
-        "type": "integer",
-        "description": "Rule id"
-    },
-    "name": {
-        "type": "string",
-        "description": "Rule name"
-    },
-    "store_labels": {
-        "type": "array",
-        "description": "Display label",
-        "items": {
-            "$ref": "#/definitions/sales-rule-data-rule-label-interface"
+    "rule": {
+        "rule_id": {
+            "type": "integer",
+            "description": "Rule id"
+        },
+        "name": {
+            "type": "string",
+            "description": "Rule name"
+        },
+        "store_labels": {
+            "type": "array",
+            "description": "Display label",
+            "items": {
+                "$ref": "#/definitions/sales-rule-data-rule-label-interface"
+            }
+        },
+        "description": {
+            "type": "string",
+            "description": "Description"
+        },
+        "website_ids": {
+            "type": "array",
+            "description": "A list of websites the rule applies to",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "customer_group_ids": {
+            "type": "array",
+            "description": "Ids of customer groups that the rule applies to",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "from_date": {
+            "type": "string",
+            "description": "The start date when the coupon is active"
+        },
+        "to_date": {
+            "type": "string",
+            "description": "The end date when the coupon is active"
+        },
+        "uses_per_customer": {
+            "type": "integer",
+            "description": "Number of uses per customer"
+        },
+        "is_active": {
+            "type": "boolean",
+            "description": "The coupon is active"
+        },
+        "condition": {
+            "$ref": "#/definitions/sales-rule-data-condition-interface"
+        },
+        "action_condition": {
+            "$ref": "#/definitions/sales-rule-data-condition-interface"
+        },
+        "stop_rules_processing": {
+            "type": "boolean",
+            "description": "To stop rule processing"
+        },
+        "is_advanced": {
+            "type": "boolean",
+            "description": "Is this field needed"
+        },
+        "product_ids": {
+            "type": "array",
+            "description": "Product ids",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "sort_order": {
+            "type": "integer",
+            "description": "Sort order"
+        },
+        "simple_action": {
+            "type": "string",
+            "description": "Simple action of the rule"
+        },
+        "discount_amount": {
+            "type": "number",
+            "description": "Discount amount"
+        },
+        "discount_qty": {
+            "type": "number",
+            "description": "Maximum qty discount is applied"
+        },
+        "discount_step": {
+            "type": "integer",
+            "description": "Discount step"
+        },
+        "apply_to_shipping": {
+            "type": "boolean",
+            "description": "The rule applies to shipping"
+        },
+        "times_used": {
+            "type": "integer",
+            "description": "How many times the rule has been used"
+        },
+        "is_rss": {
+            "type": "boolean",
+            "description": "Whether the rule is in RSS"
+        },
+        "coupon_type": {
+            "type": "string",
+            "description": "Coupon type"
+        },
+        "use_auto_generation": {
+            "type": "boolean",
+            "description": "To auto generate coupon"
+        },
+        "uses_per_coupon": {
+            "type": "integer",
+            "description": "Limit of uses per coupon"
+        },
+        "simple_free_shipping": {
+            "type": "string",
+            "description": "To grant free shipping"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/sales-rule-data-rule-extension-interface"
         }
-    },
-    "description": {
-        "type": "string",
-        "description": "Description"
-    },
-    "website_ids": {
-        "type": "array",
-        "description": "A list of websites the rule applies to",
-        "items": {
-            "type": "integer"
-        }
-    },
-    "customer_group_ids": {
-        "type": "array",
-        "description": "Ids of customer groups that the rule applies to",
-        "items": {
-            "type": "integer"
-        }
-    },
-    "from_date": {
-        "type": "string",
-        "description": "The start date when the coupon is active"
-    },
-    "to_date": {
-        "type": "string",
-        "description": "The end date when the coupon is active"
-    },
-    "uses_per_customer": {
-        "type": "integer",
-        "description": "Number of uses per customer"
-    },
-    "is_active": {
-        "type": "boolean",
-        "description": "The coupon is active"
-    },
-    "condition": {
-        "$ref": "#/definitions/sales-rule-data-condition-interface"
-    },
-    "action_condition": {
-        "$ref": "#/definitions/sales-rule-data-condition-interface"
-    },
-    "stop_rules_processing": {
-        "type": "boolean",
-        "description": "To stop rule processing"
-    },
-    "is_advanced": {
-        "type": "boolean",
-        "description": "Is this field needed"
-    },
-    "product_ids": {
-        "type": "array",
-        "description": "Product ids",
-        "items": {
-            "type": "integer"
-        }
-    },
-    "sort_order": {
-        "type": "integer",
-        "description": "Sort order"
-    },
-    "simple_action": {
-        "type": "string",
-        "description": "Simple action of the rule"
-    },
-    "discount_amount": {
-        "type": "number",
-        "description": "Discount amount"
-    },
-    "discount_qty": {
-        "type": "number",
-        "description": "Maximum qty discount is applied"
-    },
-    "discount_step": {
-        "type": "integer",
-        "description": "Discount step"
-    },
-    "apply_to_shipping": {
-        "type": "boolean",
-        "description": "The rule applies to shipping"
-    },
-    "times_used": {
-        "type": "integer",
-        "description": "How many times the rule has been used"
-    },
-    "is_rss": {
-        "type": "boolean",
-        "description": "Whether the rule is in RSS"
-    },
-    "coupon_type": {
-        "type": "string",
-        "description": "Coupon type"
-    },
-    "use_auto_generation": {
-        "type": "boolean",
-        "description": "To auto generate coupon"
-    },
-    "uses_per_coupon": {
-        "type": "integer",
-        "description": "Limit of uses per coupon"
-    },
-    "simple_free_shipping": {
-        "type": "string",
-        "description": "To grant free shipping"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/sales-rule-data-rule-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "rule_id": {

@@ -13,49 +13,51 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/taxRules</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/taxRules</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save TaxRule</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>taxTaxRuleRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>rule</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Id"
-    },
-    "code": {
-        "type": "string",
-        "description": "Tax rule code"
-    },
-    "priority": {
-        "type": "integer",
-        "description": "Priority"
-    },
-    "position": {
-        "type": "integer",
-        "description": "Sort order."
-    },
-    "customer_tax_class_ids": {
-        "type": "array",
-        "description": "Customer tax class id",
-        "items": {
-            "type": "integer"
+    "rule": {
+        "id": {
+            "type": "integer",
+            "description": "Id"
+        },
+        "code": {
+            "type": "string",
+            "description": "Tax rule code"
+        },
+        "priority": {
+            "type": "integer",
+            "description": "Priority"
+        },
+        "position": {
+            "type": "integer",
+            "description": "Sort order."
+        },
+        "customer_tax_class_ids": {
+            "type": "array",
+            "description": "Customer tax class id",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "product_tax_class_ids": {
+            "type": "array",
+            "description": "Product tax class id",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "tax_rate_ids": {
+            "type": "array",
+            "description": "Tax rate ids",
+            "items": {
+                "type": "integer"
+            }
+        },
+        "calculate_subtotal": {
+            "type": "boolean",
+            "description": "Calculate subtotal."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/tax-data-tax-rule-extension-interface"
         }
-    },
-    "product_tax_class_ids": {
-        "type": "array",
-        "description": "Product tax class id",
-        "items": {
-            "type": "integer"
-        }
-    },
-    "tax_rate_ids": {
-        "type": "array",
-        "description": "Tax rate ids",
-        "items": {
-            "type": "integer"
-        }
-    },
-    "calculate_subtotal": {
-        "type": "boolean",
-        "description": "Calculate subtotal."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/tax-data-tax-rule-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

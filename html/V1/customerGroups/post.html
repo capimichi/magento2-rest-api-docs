@@ -13,24 +13,26 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/customerGroups</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/customerGroups</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save customer group.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>customerGroupRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>group</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Id"
-    },
-    "code": {
-        "type": "string",
-        "description": "Code"
-    },
-    "tax_class_id": {
-        "type": "integer",
-        "description": "Tax class id"
-    },
-    "tax_class_name": {
-        "type": "string",
-        "description": "Tax class name"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/customer-data-group-extension-interface"
+    "group": {
+        "id": {
+            "type": "integer",
+            "description": "Id"
+        },
+        "code": {
+            "type": "string",
+            "description": "Code"
+        },
+        "tax_class_id": {
+            "type": "integer",
+            "description": "Tax class id"
+        },
+        "tax_class_name": {
+            "type": "string",
+            "description": "Tax class name"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/customer-data-group-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

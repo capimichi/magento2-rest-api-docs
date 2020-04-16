@@ -13,35 +13,37 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/requisition_lists</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/requisition_lists</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save Requisition List</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>requisitionListRequisitionListRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>requisitionList</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Requisition List ID"
-    },
-    "customer_id": {
-        "type": "integer",
-        "description": "Customer ID"
-    },
-    "name": {
-        "type": "string",
-        "description": "Requisition List Name"
-    },
-    "updated_at": {
-        "type": "string",
-        "description": "Requisition List Update Time"
-    },
-    "description": {
-        "type": "string",
-        "description": "Requisition List Description"
-    },
-    "items": {
-        "type": "array",
-        "description": "Requisition List Items",
+    "requisitionList": {
+        "id": {
+            "type": "integer",
+            "description": "Requisition List ID"
+        },
+        "customer_id": {
+            "type": "integer",
+            "description": "Customer ID"
+        },
+        "name": {
+            "type": "string",
+            "description": "Requisition List Name"
+        },
+        "updated_at": {
+            "type": "string",
+            "description": "Requisition List Update Time"
+        },
+        "description": {
+            "type": "string",
+            "description": "Requisition List Description"
+        },
         "items": {
-            "$ref": "#/definitions/requisition-list-data-requisition-list-item-interface"
+            "type": "array",
+            "description": "Requisition List Items",
+            "items": {
+                "$ref": "#/definitions/requisition-list-data-requisition-list-item-interface"
+            }
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/requisition-list-data-requisition-list-extension-interface"
         }
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/requisition-list-data-requisition-list-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

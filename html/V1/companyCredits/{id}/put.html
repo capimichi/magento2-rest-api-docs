@@ -13,40 +13,42 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/companyCredits/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/companyCredits/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Update the following company credit attributes: credit currency, credit limit and setting to exceed credit.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>companyCreditCreditLimitRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>creditLimit</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "ID."
-    },
-    "company_id": {
-        "type": "integer",
-        "description": "Company id."
-    },
-    "credit_limit": {
-        "type": "number",
-        "description": "Credit Limit."
-    },
-    "balance": {
-        "type": "number",
-        "description": "Balance."
-    },
-    "currency_code": {
-        "type": "string",
-        "description": "Currency Code."
-    },
-    "exceed_limit": {
-        "type": "boolean",
-        "description": "Exceed Limit."
-    },
-    "available_limit": {
-        "type": "number",
-        "description": "Available Limit."
-    },
-    "credit_comment": {
-        "type": "string",
-        "description": "Credit comment for company credit history."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/company-credit-data-credit-limit-extension-interface"
+    "creditLimit": {
+        "id": {
+            "type": "integer",
+            "description": "ID."
+        },
+        "company_id": {
+            "type": "integer",
+            "description": "Company id."
+        },
+        "credit_limit": {
+            "type": "number",
+            "description": "Credit Limit."
+        },
+        "balance": {
+            "type": "number",
+            "description": "Balance."
+        },
+        "currency_code": {
+            "type": "string",
+            "description": "Currency Code."
+        },
+        "exceed_limit": {
+            "type": "boolean",
+            "description": "Exceed Limit."
+        },
+        "available_limit": {
+            "type": "number",
+            "description": "Available Limit."
+        },
+        "credit_comment": {
+            "type": "string",
+            "description": "Credit comment for company credit history."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/company-credit-data-credit-limit-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

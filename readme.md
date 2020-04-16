@@ -1,6 +1,7 @@
 # Magento 2 rest api docs
 
 ## Html
+
 | Endpoint        | Method             | 
  | ------------- | -----:| 
 | [/V1/addresses/{addressId}](http://htmlpreview.github.io/?https://github.com/capimichi/magento2-rest-api-docs/master/html/V1/addresses/{addressId}/delete.html) | DELETE | 

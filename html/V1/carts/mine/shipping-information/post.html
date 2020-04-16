@@ -13,28 +13,30 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/carts/mine/shipping-information</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/carts/mine/shipping-information</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>checkoutShippingInformationManagementV1SaveAddressInformationPostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>addressInformation</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "shipping_address": {
-        "$ref": "#/definitions/quote-data-address-interface"
-    },
-    "billing_address": {
-        "$ref": "#/definitions/quote-data-address-interface"
-    },
-    "shipping_method_code": {
-        "type": "string",
-        "description": "Shipping method code"
-    },
-    "shipping_carrier_code": {
-        "type": "string",
-        "description": "Carrier code"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/checkout-data-shipping-information-extension-interface"
-    },
-    "custom_attributes": {
-        "type": "array",
-        "description": "Custom attributes values.",
-        "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
+    "addressInformation": {
+        "shipping_address": {
+            "$ref": "#/definitions/quote-data-address-interface"
+        },
+        "billing_address": {
+            "$ref": "#/definitions/quote-data-address-interface"
+        },
+        "shipping_method_code": {
+            "type": "string",
+            "description": "Shipping method code"
+        },
+        "shipping_carrier_code": {
+            "type": "string",
+            "description": "Carrier code"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/checkout-data-shipping-information-extension-interface"
+        },
+        "custom_attributes": {
+            "type": "array",
+            "description": "Custom attributes values.",
+            "items": {
+                "$ref": "#/definitions/framework-attribute-interface"
+            }
         }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{

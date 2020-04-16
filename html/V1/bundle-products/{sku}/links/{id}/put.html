@@ -13,44 +13,46 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/bundle-products/{sku}/links/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/bundle-products/{sku}/links/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>sku</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>bundleProductLinkManagementV1SaveChildPutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>linkedProduct</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "string",
-        "description": "The identifier"
-    },
-    "sku": {
-        "type": "string",
-        "description": "Linked product sku"
-    },
-    "option_id": {
-        "type": "integer",
-        "description": "Option id"
-    },
-    "qty": {
-        "type": "number",
-        "description": "Qty"
-    },
-    "position": {
-        "type": "integer",
-        "description": "Position"
-    },
-    "is_default": {
-        "type": "boolean",
-        "description": "Is default"
-    },
-    "price": {
-        "type": "number",
-        "description": "Price"
-    },
-    "price_type": {
-        "type": "integer",
-        "description": "Price type"
-    },
-    "can_change_quantity": {
-        "type": "integer",
-        "description": "Whether quantity could be changed"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/bundle-data-link-extension-interface"
+    "linkedProduct": {
+        "id": {
+            "type": "string",
+            "description": "The identifier"
+        },
+        "sku": {
+            "type": "string",
+            "description": "Linked product sku"
+        },
+        "option_id": {
+            "type": "integer",
+            "description": "Option id"
+        },
+        "qty": {
+            "type": "number",
+            "description": "Qty"
+        },
+        "position": {
+            "type": "integer",
+            "description": "Position"
+        },
+        "is_default": {
+            "type": "boolean",
+            "description": "Is default"
+        },
+        "price": {
+            "type": "number",
+            "description": "Price"
+        },
+        "price_type": {
+            "type": "integer",
+            "description": "Price type"
+        },
+        "can_change_quantity": {
+            "type": "integer",
+            "description": "Whether quantity could be changed"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/bundle-data-link-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

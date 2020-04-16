@@ -12,22 +12,25 @@ display: block;
 color: #ffffff;
 padding: 10px;
 }
-</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/inventory/source-selection-algorithm-result</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/inventory/source-selection-algorithm-result</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventorySourceSelectionApiSourceSelectionServiceV1ExecutePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventoryRequest</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "stock_id": {
-        "type": "integer",
-        "description": "Stock Id"
-    },
-    "items": {
-        "type": "array",
-        "description": "Items",
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/inventory/source-selection-algorithm-result</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/inventory/source-selection-algorithm-result</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventorySourceSelectionApiSourceSelectionServiceV1ExecutePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventoryRequest</p><p style='font-family: Arial; font-size: 11px;'>algorithmCode</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "inventoryRequest": {
+        "stock_id": {
+            "type": "integer",
+            "description": "Stock Id"
+        },
         "items": {
-            "$ref": "#/definitions/inventory-source-selection-api-data-item-request-interface"
+            "type": "array",
+            "description": "Items",
+            "items": {
+                "$ref": "#/definitions/inventory-source-selection-api-data-item-request-interface"
+            }
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/inventory-source-selection-api-data-inventory-request-extension-interface"
         }
     },
-    "extension_attributes": {
-        "$ref": "#/definitions/inventory-source-selection-api-data-inventory-request-extension-interface"
-    }
-}</pre><p style='font-family: Arial; font-size: 11px;'>algorithmCode</p><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "algorithmCode": []
+}</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "source_selection_items": {
         "type": "array",
         "items": {

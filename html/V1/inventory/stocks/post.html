@@ -13,16 +13,18 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/inventory/stocks</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/inventory/stocks</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save Stock data</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventoryApiStockRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>stock</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "stock_id": {
-        "type": "integer",
-        "description": "Stock id"
-    },
-    "name": {
-        "type": "string",
-        "description": "Stock name"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/inventory-api-data-stock-extension-interface"
+    "stock": {
+        "stock_id": {
+            "type": "integer",
+            "description": "Stock id"
+        },
+        "name": {
+            "type": "string",
+            "description": "Stock name"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/inventory-api-data-stock-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "message": {

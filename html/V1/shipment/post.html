@@ -13,92 +13,94 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/shipment/</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/shipment/</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Performs persist operations for a specified shipment.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>salesShipmentRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>entity</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "billing_address_id": {
-        "type": "integer",
-        "description": "Billing address ID."
-    },
-    "created_at": {
-        "type": "string",
-        "description": "Created-at timestamp."
-    },
-    "customer_id": {
-        "type": "integer",
-        "description": "Customer ID."
-    },
-    "email_sent": {
-        "type": "integer",
-        "description": "Email-sent flag value."
-    },
-    "entity_id": {
-        "type": "integer",
-        "description": "Shipment ID."
-    },
-    "increment_id": {
-        "type": "string",
-        "description": "Increment ID."
-    },
-    "order_id": {
-        "type": "integer",
-        "description": "Order ID."
-    },
-    "packages": {
-        "type": "array",
-        "description": "Array of packages, if any. Otherwise, null.",
+    "entity": {
+        "billing_address_id": {
+            "type": "integer",
+            "description": "Billing address ID."
+        },
+        "created_at": {
+            "type": "string",
+            "description": "Created-at timestamp."
+        },
+        "customer_id": {
+            "type": "integer",
+            "description": "Customer ID."
+        },
+        "email_sent": {
+            "type": "integer",
+            "description": "Email-sent flag value."
+        },
+        "entity_id": {
+            "type": "integer",
+            "description": "Shipment ID."
+        },
+        "increment_id": {
+            "type": "string",
+            "description": "Increment ID."
+        },
+        "order_id": {
+            "type": "integer",
+            "description": "Order ID."
+        },
+        "packages": {
+            "type": "array",
+            "description": "Array of packages, if any. Otherwise, null.",
+            "items": {
+                "$ref": "#/definitions/sales-data-shipment-package-interface"
+            }
+        },
+        "shipment_status": {
+            "type": "integer",
+            "description": "Shipment status."
+        },
+        "shipping_address_id": {
+            "type": "integer",
+            "description": "Shipping address ID."
+        },
+        "shipping_label": {
+            "type": "string",
+            "description": "Shipping label."
+        },
+        "store_id": {
+            "type": "integer",
+            "description": "Store ID."
+        },
+        "total_qty": {
+            "type": "number",
+            "description": "Total quantity."
+        },
+        "total_weight": {
+            "type": "number",
+            "description": "Total weight."
+        },
+        "updated_at": {
+            "type": "string",
+            "description": "Updated-at timestamp."
+        },
         "items": {
-            "$ref": "#/definitions/sales-data-shipment-package-interface"
+            "type": "array",
+            "description": "Array of items.",
+            "items": {
+                "$ref": "#/definitions/sales-data-shipment-item-interface"
+            }
+        },
+        "tracks": {
+            "type": "array",
+            "description": "Array of tracks.",
+            "items": {
+                "$ref": "#/definitions/sales-data-shipment-track-interface"
+            }
+        },
+        "comments": {
+            "type": "array",
+            "description": "Array of comments.",
+            "items": {
+                "$ref": "#/definitions/sales-data-shipment-comment-interface"
+            }
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/sales-data-shipment-extension-interface"
         }
-    },
-    "shipment_status": {
-        "type": "integer",
-        "description": "Shipment status."
-    },
-    "shipping_address_id": {
-        "type": "integer",
-        "description": "Shipping address ID."
-    },
-    "shipping_label": {
-        "type": "string",
-        "description": "Shipping label."
-    },
-    "store_id": {
-        "type": "integer",
-        "description": "Store ID."
-    },
-    "total_qty": {
-        "type": "number",
-        "description": "Total quantity."
-    },
-    "total_weight": {
-        "type": "number",
-        "description": "Total weight."
-    },
-    "updated_at": {
-        "type": "string",
-        "description": "Updated-at timestamp."
-    },
-    "items": {
-        "type": "array",
-        "description": "Array of items.",
-        "items": {
-            "$ref": "#/definitions/sales-data-shipment-item-interface"
-        }
-    },
-    "tracks": {
-        "type": "array",
-        "description": "Array of tracks.",
-        "items": {
-            "$ref": "#/definitions/sales-data-shipment-track-interface"
-        }
-    },
-    "comments": {
-        "type": "array",
-        "description": "Array of comments.",
-        "items": {
-            "$ref": "#/definitions/sales-data-shipment-comment-interface"
-        }
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/sales-data-shipment-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "billing_address_id": {

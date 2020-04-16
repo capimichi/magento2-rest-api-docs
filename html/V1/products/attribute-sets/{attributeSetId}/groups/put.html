@@ -13,20 +13,22 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/products/attribute-sets/{attributeSetId}/groups</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/products/attribute-sets/{attributeSetId}/groups</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save attribute group</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>attributeSetId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>catalogProductAttributeGroupRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>group</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "attribute_group_id": {
-        "type": "string",
-        "description": "Id"
-    },
-    "attribute_group_name": {
-        "type": "string",
-        "description": "Name"
-    },
-    "attribute_set_id": {
-        "type": "integer",
-        "description": "Attribute set id"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/eav-data-attribute-group-extension-interface"
+    "group": {
+        "attribute_group_id": {
+            "type": "string",
+            "description": "Id"
+        },
+        "attribute_group_name": {
+            "type": "string",
+            "description": "Name"
+        },
+        "attribute_set_id": {
+            "type": "integer",
+            "description": "Attribute set id"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/eav-data-attribute-group-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "attribute_group_id": {

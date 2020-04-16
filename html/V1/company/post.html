@@ -13,91 +13,93 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/company/</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/company/</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create or update a company account.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>companyCompanyRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>company</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Id."
-    },
-    "status": {
-        "type": "integer",
-        "description": "Status."
-    },
-    "company_name": {
-        "type": "string",
-        "description": "Company name."
-    },
-    "legal_name": {
-        "type": "string",
-        "description": "Legal name."
-    },
-    "company_email": {
-        "type": "string",
-        "description": "Company email."
-    },
-    "vat_tax_id": {
-        "type": "string",
-        "description": "Vat tax id."
-    },
-    "reseller_id": {
-        "type": "string",
-        "description": "Reseller Id."
-    },
-    "comment": {
-        "type": "string",
-        "description": "Comment."
-    },
-    "street": {
-        "type": "array",
-        "description": "Street.",
-        "items": {
-            "type": "string"
+    "company": {
+        "id": {
+            "type": "integer",
+            "description": "Id."
+        },
+        "status": {
+            "type": "integer",
+            "description": "Status."
+        },
+        "company_name": {
+            "type": "string",
+            "description": "Company name."
+        },
+        "legal_name": {
+            "type": "string",
+            "description": "Legal name."
+        },
+        "company_email": {
+            "type": "string",
+            "description": "Company email."
+        },
+        "vat_tax_id": {
+            "type": "string",
+            "description": "Vat tax id."
+        },
+        "reseller_id": {
+            "type": "string",
+            "description": "Reseller Id."
+        },
+        "comment": {
+            "type": "string",
+            "description": "Comment."
+        },
+        "street": {
+            "type": "array",
+            "description": "Street.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "city": {
+            "type": "string",
+            "description": "City."
+        },
+        "country_id": {
+            "type": "string",
+            "description": "Country."
+        },
+        "region": {
+            "type": "string",
+            "description": "Region."
+        },
+        "region_id": {
+            "type": "string",
+            "description": "Region Id."
+        },
+        "postcode": {
+            "type": "string",
+            "description": "Postcode."
+        },
+        "telephone": {
+            "type": "string",
+            "description": "Telephone."
+        },
+        "customer_group_id": {
+            "type": "integer",
+            "description": "Customer Group Id."
+        },
+        "sales_representative_id": {
+            "type": "integer",
+            "description": "Sales Representative Id."
+        },
+        "reject_reason": {
+            "type": "string",
+            "description": "Reject Reason."
+        },
+        "rejected_at": {
+            "type": "string",
+            "description": "Rejected at time."
+        },
+        "super_user_id": {
+            "type": "integer",
+            "description": "Company admin customer id."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/company-data-company-extension-interface"
         }
-    },
-    "city": {
-        "type": "string",
-        "description": "City."
-    },
-    "country_id": {
-        "type": "string",
-        "description": "Country."
-    },
-    "region": {
-        "type": "string",
-        "description": "Region."
-    },
-    "region_id": {
-        "type": "string",
-        "description": "Region Id."
-    },
-    "postcode": {
-        "type": "string",
-        "description": "Postcode."
-    },
-    "telephone": {
-        "type": "string",
-        "description": "Telephone."
-    },
-    "customer_group_id": {
-        "type": "integer",
-        "description": "Customer Group Id."
-    },
-    "sales_representative_id": {
-        "type": "integer",
-        "description": "Sales Representative Id."
-    },
-    "reject_reason": {
-        "type": "string",
-        "description": "Reject Reason."
-    },
-    "rejected_at": {
-        "type": "string",
-        "description": "Rejected at time."
-    },
-    "super_user_id": {
-        "type": "integer",
-        "description": "Company admin customer id."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/company-data-company-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

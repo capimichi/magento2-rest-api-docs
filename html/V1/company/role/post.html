@@ -13,27 +13,29 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/company/role/</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/company/role/</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create or update a role for a selected company.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>companyRoleRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>role</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Role id."
-    },
-    "role_name": {
-        "type": "string",
-        "description": "Role name."
-    },
-    "permissions": {
-        "type": "array",
-        "description": "Permissions.",
-        "items": {
-            "$ref": "#/definitions/company-data-permission-interface"
+    "role": {
+        "id": {
+            "type": "integer",
+            "description": "Role id."
+        },
+        "role_name": {
+            "type": "string",
+            "description": "Role name."
+        },
+        "permissions": {
+            "type": "array",
+            "description": "Permissions.",
+            "items": {
+                "$ref": "#/definitions/company-data-permission-interface"
+            }
+        },
+        "company_id": {
+            "type": "integer",
+            "description": "Company id."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/company-data-role-extension-interface"
         }
-    },
-    "company_id": {
-        "type": "integer",
-        "description": "Company id."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/company-data-role-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {

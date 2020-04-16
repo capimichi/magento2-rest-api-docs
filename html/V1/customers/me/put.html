@@ -12,105 +12,108 @@ display: block;
 color: #ffffff;
 padding: 10px;
 }
-</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/customers/me</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/customers/me</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create or update a customer.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>customerCustomerRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>customer</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "id": {
-        "type": "integer",
-        "description": "Customer id"
-    },
-    "group_id": {
-        "type": "integer",
-        "description": "Group id"
-    },
-    "default_billing": {
-        "type": "string",
-        "description": "Default billing address id"
-    },
-    "default_shipping": {
-        "type": "string",
-        "description": "Default shipping address id"
-    },
-    "confirmation": {
-        "type": "string",
-        "description": "Confirmation"
-    },
-    "created_at": {
-        "type": "string",
-        "description": "Created at time"
-    },
-    "updated_at": {
-        "type": "string",
-        "description": "Updated at time"
-    },
-    "created_in": {
-        "type": "string",
-        "description": "Created in area"
-    },
-    "dob": {
-        "type": "string",
-        "description": "Date of birth"
-    },
-    "email": {
-        "type": "string",
-        "description": "Email address"
-    },
-    "firstname": {
-        "type": "string",
-        "description": "First name"
-    },
-    "lastname": {
-        "type": "string",
-        "description": "Last name"
-    },
-    "middlename": {
-        "type": "string",
-        "description": "Middle name"
-    },
-    "prefix": {
-        "type": "string",
-        "description": "Prefix"
-    },
-    "suffix": {
-        "type": "string",
-        "description": "Suffix"
-    },
-    "gender": {
-        "type": "integer",
-        "description": "Gender"
-    },
-    "store_id": {
-        "type": "integer",
-        "description": "Store id"
-    },
-    "taxvat": {
-        "type": "string",
-        "description": "Tax Vat"
-    },
-    "website_id": {
-        "type": "integer",
-        "description": "Website id"
-    },
-    "addresses": {
-        "type": "array",
-        "description": "Customer addresses.",
-        "items": {
-            "$ref": "#/definitions/customer-data-address-interface"
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/customers/me</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/customers/me</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Create or update a customer.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>customerCustomerRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>customer</p><p style='font-family: Arial; font-size: 11px;'>passwordHash</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "customer": {
+        "id": {
+            "type": "integer",
+            "description": "Customer id"
+        },
+        "group_id": {
+            "type": "integer",
+            "description": "Group id"
+        },
+        "default_billing": {
+            "type": "string",
+            "description": "Default billing address id"
+        },
+        "default_shipping": {
+            "type": "string",
+            "description": "Default shipping address id"
+        },
+        "confirmation": {
+            "type": "string",
+            "description": "Confirmation"
+        },
+        "created_at": {
+            "type": "string",
+            "description": "Created at time"
+        },
+        "updated_at": {
+            "type": "string",
+            "description": "Updated at time"
+        },
+        "created_in": {
+            "type": "string",
+            "description": "Created in area"
+        },
+        "dob": {
+            "type": "string",
+            "description": "Date of birth"
+        },
+        "email": {
+            "type": "string",
+            "description": "Email address"
+        },
+        "firstname": {
+            "type": "string",
+            "description": "First name"
+        },
+        "lastname": {
+            "type": "string",
+            "description": "Last name"
+        },
+        "middlename": {
+            "type": "string",
+            "description": "Middle name"
+        },
+        "prefix": {
+            "type": "string",
+            "description": "Prefix"
+        },
+        "suffix": {
+            "type": "string",
+            "description": "Suffix"
+        },
+        "gender": {
+            "type": "integer",
+            "description": "Gender"
+        },
+        "store_id": {
+            "type": "integer",
+            "description": "Store id"
+        },
+        "taxvat": {
+            "type": "string",
+            "description": "Tax Vat"
+        },
+        "website_id": {
+            "type": "integer",
+            "description": "Website id"
+        },
+        "addresses": {
+            "type": "array",
+            "description": "Customer addresses.",
+            "items": {
+                "$ref": "#/definitions/customer-data-address-interface"
+            }
+        },
+        "disable_auto_group_change": {
+            "type": "integer",
+            "description": "Disable auto group change flag."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/customer-data-customer-extension-interface"
+        },
+        "custom_attributes": {
+            "type": "array",
+            "description": "Custom attributes values.",
+            "items": {
+                "$ref": "#/definitions/framework-attribute-interface"
+            }
         }
     },
-    "disable_auto_group_change": {
-        "type": "integer",
-        "description": "Disable auto group change flag."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/customer-data-customer-extension-interface"
-    },
-    "custom_attributes": {
-        "type": "array",
-        "description": "Custom attributes values.",
-        "items": {
-            "$ref": "#/definitions/framework-attribute-interface"
-        }
-    }
-}</pre><p style='font-family: Arial; font-size: 11px;'>passwordHash</p><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "passwordHash": []
+}</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "id": {
         "type": "integer",
         "description": "Customer id"

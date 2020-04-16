@@ -13,24 +13,26 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/products/attribute-sets/{attributeSetId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/products/attribute-sets/{attributeSetId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save attribute set data</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>attributeSetId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>catalogAttributeSetRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>attributeSet</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "attribute_set_id": {
-        "type": "integer",
-        "description": "Attribute set ID"
-    },
-    "attribute_set_name": {
-        "type": "string",
-        "description": "Attribute set name"
-    },
-    "sort_order": {
-        "type": "integer",
-        "description": "Attribute set sort order index"
-    },
-    "entity_type_id": {
-        "type": "integer",
-        "description": "Attribute set entity type id"
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/eav-data-attribute-set-extension-interface"
+    "attributeSet": {
+        "attribute_set_id": {
+            "type": "integer",
+            "description": "Attribute set ID"
+        },
+        "attribute_set_name": {
+            "type": "string",
+            "description": "Attribute set name"
+        },
+        "sort_order": {
+            "type": "integer",
+            "description": "Attribute set sort order index"
+        },
+        "entity_type_id": {
+            "type": "integer",
+            "description": "Attribute set entity type id"
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/eav-data-attribute-set-extension-interface"
+        }
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "attribute_set_id": {

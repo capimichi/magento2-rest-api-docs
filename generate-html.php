@@ -47,20 +47,21 @@ foreach ($data['paths'] as $endpoint => $path) {
                 if (isset($parameter['schema'])) {
 
                     $content .= "<p></p>";
+                    $object = [];
                     foreach ($parameter['schema']['properties'] as $propertyName => $property) {
 
+                        $object[$propertyName] = [];
                         $content .= "<p style='font-family: Arial; font-size: 11px;'>{$propertyName}</p>";
 
                         if (isset($property['$ref'])) {
                             $ref = $property['$ref'];
                             $ref = str_replace("#/definitions/", "", $ref);
 
-                            $object = $data['definitions'][$ref]['properties'];
-
-                            $json = json_encode($object, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-                            $content .= "<pre style='font-family: Arial; font-size: 10px;'>{$json}</pre>";
+                            $object[$propertyName] = $data['definitions'][$ref]['properties'];
                         }
                     }
+                    $json = json_encode($object, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+                    $content .= "<pre style='font-family: Arial; font-size: 10px;'>{$json}</pre>";
                     $content .= "<p></p>";
                 }
                 $content .= "<p></p>";

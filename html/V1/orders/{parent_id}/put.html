@@ -13,115 +13,117 @@ color: #ffffff;
 padding: 10px;
 }
 </style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/orders/{parent_id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/orders/{parent_id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Performs persist operations for a specified order address.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>parent_id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>salesOrderAddressRepositoryV1SavePutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>entity</p><pre style='font-family: Arial; font-size: 10px;'>{
-    "address_type": {
-        "type": "string",
-        "description": "Address type."
-    },
-    "city": {
-        "type": "string",
-        "description": "City."
-    },
-    "company": {
-        "type": "string",
-        "description": "Company."
-    },
-    "country_id": {
-        "type": "string",
-        "description": "Country ID."
-    },
-    "customer_address_id": {
-        "type": "integer",
-        "description": "Country address ID."
-    },
-    "customer_id": {
-        "type": "integer",
-        "description": "Customer ID."
-    },
-    "email": {
-        "type": "string",
-        "description": "Email address."
-    },
-    "entity_id": {
-        "type": "integer",
-        "description": "Order address ID."
-    },
-    "fax": {
-        "type": "string",
-        "description": "Fax number."
-    },
-    "firstname": {
-        "type": "string",
-        "description": "First name."
-    },
-    "lastname": {
-        "type": "string",
-        "description": "Last name."
-    },
-    "middlename": {
-        "type": "string",
-        "description": "Middle name."
-    },
-    "parent_id": {
-        "type": "integer",
-        "description": "Parent ID."
-    },
-    "postcode": {
-        "type": "string",
-        "description": "Postal code."
-    },
-    "prefix": {
-        "type": "string",
-        "description": "Prefix."
-    },
-    "region": {
-        "type": "string",
-        "description": "Region."
-    },
-    "region_code": {
-        "type": "string",
-        "description": "Region code."
-    },
-    "region_id": {
-        "type": "integer",
-        "description": "Region ID."
-    },
-    "street": {
-        "type": "array",
-        "description": "Array of any street values. Otherwise, null.",
-        "items": {
-            "type": "string"
+    "entity": {
+        "address_type": {
+            "type": "string",
+            "description": "Address type."
+        },
+        "city": {
+            "type": "string",
+            "description": "City."
+        },
+        "company": {
+            "type": "string",
+            "description": "Company."
+        },
+        "country_id": {
+            "type": "string",
+            "description": "Country ID."
+        },
+        "customer_address_id": {
+            "type": "integer",
+            "description": "Country address ID."
+        },
+        "customer_id": {
+            "type": "integer",
+            "description": "Customer ID."
+        },
+        "email": {
+            "type": "string",
+            "description": "Email address."
+        },
+        "entity_id": {
+            "type": "integer",
+            "description": "Order address ID."
+        },
+        "fax": {
+            "type": "string",
+            "description": "Fax number."
+        },
+        "firstname": {
+            "type": "string",
+            "description": "First name."
+        },
+        "lastname": {
+            "type": "string",
+            "description": "Last name."
+        },
+        "middlename": {
+            "type": "string",
+            "description": "Middle name."
+        },
+        "parent_id": {
+            "type": "integer",
+            "description": "Parent ID."
+        },
+        "postcode": {
+            "type": "string",
+            "description": "Postal code."
+        },
+        "prefix": {
+            "type": "string",
+            "description": "Prefix."
+        },
+        "region": {
+            "type": "string",
+            "description": "Region."
+        },
+        "region_code": {
+            "type": "string",
+            "description": "Region code."
+        },
+        "region_id": {
+            "type": "integer",
+            "description": "Region ID."
+        },
+        "street": {
+            "type": "array",
+            "description": "Array of any street values. Otherwise, null.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "suffix": {
+            "type": "string",
+            "description": "Suffix."
+        },
+        "telephone": {
+            "type": "string",
+            "description": "Telephone number."
+        },
+        "vat_id": {
+            "type": "string",
+            "description": "VAT ID."
+        },
+        "vat_is_valid": {
+            "type": "integer",
+            "description": "VAT-is-valid flag value."
+        },
+        "vat_request_date": {
+            "type": "string",
+            "description": "VAT request date."
+        },
+        "vat_request_id": {
+            "type": "string",
+            "description": "VAT request ID."
+        },
+        "vat_request_success": {
+            "type": "integer",
+            "description": "VAT-request-success flag value."
+        },
+        "extension_attributes": {
+            "$ref": "#/definitions/sales-data-order-address-extension-interface"
         }
-    },
-    "suffix": {
-        "type": "string",
-        "description": "Suffix."
-    },
-    "telephone": {
-        "type": "string",
-        "description": "Telephone number."
-    },
-    "vat_id": {
-        "type": "string",
-        "description": "VAT ID."
-    },
-    "vat_is_valid": {
-        "type": "integer",
-        "description": "VAT-is-valid flag value."
-    },
-    "vat_request_date": {
-        "type": "string",
-        "description": "VAT request date."
-    },
-    "vat_request_id": {
-        "type": "string",
-        "description": "VAT request ID."
-    },
-    "vat_request_success": {
-        "type": "integer",
-        "description": "VAT-request-success flag value."
-    },
-    "extension_attributes": {
-        "$ref": "#/definitions/sales-data-order-address-extension-interface"
     }
 }</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
     "address_type": {
