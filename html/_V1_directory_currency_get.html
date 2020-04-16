@@ -1,0 +1,68 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/directory/currency</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/directory/currency</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Get currency information for the store.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "base_currency_code": {
+        "type": "string",
+        "description": "The base currency code for the store."
+    },
+    "base_currency_symbol": {
+        "type": "string",
+        "description": "The currency symbol of the base currency for the store."
+    },
+    "default_display_currency_code": {
+        "type": "string",
+        "description": "The default display currency code for the store."
+    },
+    "default_display_currency_symbol": {
+        "type": "string",
+        "description": "The currency symbol of the default display currency for the store."
+    },
+    "available_currency_codes": {
+        "type": "array",
+        "description": "The list of allowed currency codes for the store.",
+        "items": {
+            "type": "string"
+        }
+    },
+    "exchange_rates": {
+        "type": "array",
+        "description": "The list of exchange rate information for the store.",
+        "items": {
+            "$ref": "#/definitions/directory-data-exchange-rate-interface"
+        }
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/directory-data-currency-information-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

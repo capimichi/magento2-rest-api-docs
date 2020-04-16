@@ -1,0 +1,182 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/attributeMetadata/customerAddress/attribute/{attributeCode}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/attributeMetadata/customerAddress/attribute/{attributeCode}</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Retrieve attribute metadata.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>attributeCode</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "frontend_input": {
+        "type": "string",
+        "description": "HTML for input element."
+    },
+    "input_filter": {
+        "type": "string",
+        "description": "Template used for input (e.g. \"date\")"
+    },
+    "store_label": {
+        "type": "string",
+        "description": "Label of the store."
+    },
+    "validation_rules": {
+        "type": "array",
+        "description": "Validation rules.",
+        "items": {
+            "$ref": "#/definitions/customer-data-validation-rule-interface"
+        }
+    },
+    "multiline_count": {
+        "type": "integer",
+        "description": "Of lines of the attribute value."
+    },
+    "visible": {
+        "type": "boolean",
+        "description": "Attribute is visible on frontend."
+    },
+    "required": {
+        "type": "boolean",
+        "description": "Attribute is required."
+    },
+    "data_model": {
+        "type": "string",
+        "description": "Data model for attribute."
+    },
+    "options": {
+        "type": "array",
+        "description": "Options of the attribute (key => value pairs for select)",
+        "items": {
+            "$ref": "#/definitions/customer-data-option-interface"
+        }
+    },
+    "frontend_class": {
+        "type": "string",
+        "description": "Class which is used to display the attribute on frontend."
+    },
+    "user_defined": {
+        "type": "boolean",
+        "description": "Current attribute has been defined by a user."
+    },
+    "sort_order": {
+        "type": "integer",
+        "description": "Attributes sort order."
+    },
+    "frontend_label": {
+        "type": "string",
+        "description": "Label which supposed to be displayed on frontend."
+    },
+    "note": {
+        "type": "string",
+        "description": "The note attribute for the element."
+    },
+    "system": {
+        "type": "boolean",
+        "description": "This is a system attribute."
+    },
+    "backend_type": {
+        "type": "string",
+        "description": "Backend type."
+    },
+    "is_used_in_grid": {
+        "type": "boolean",
+        "description": "It is used in customer grid"
+    },
+    "is_visible_in_grid": {
+        "type": "boolean",
+        "description": "It is visible in customer grid"
+    },
+    "is_filterable_in_grid": {
+        "type": "boolean",
+        "description": "It is filterable in customer grid"
+    },
+    "is_searchable_in_grid": {
+        "type": "boolean",
+        "description": "It is searchable in customer grid"
+    },
+    "attribute_code": {
+        "type": "string",
+        "description": "Code of the attribute."
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>500</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Internal Server error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

@@ -1,0 +1,72 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/carts/{cartId}/items/{itemId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/carts/{cartId}/items/{itemId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>DELETE</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Removes the specified item from the specified cart.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>cartId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: integer - Description: The cart ID.</p><p></p><p style='font-family: Arial; font-size: 11px;'>itemId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: integer - Description: The item ID of the item to be removed.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

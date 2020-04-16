@@ -1,0 +1,81 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/inventory/source-selection-algorithm-result</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/inventory/source-selection-algorithm-result</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventorySourceSelectionApiSourceSelectionServiceV1ExecutePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventoryRequest</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "stock_id": {
+        "type": "integer",
+        "description": "Stock Id"
+    },
+    "items": {
+        "type": "array",
+        "description": "Items",
+        "items": {
+            "$ref": "#/definitions/inventory-source-selection-api-data-item-request-interface"
+        }
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/inventory-source-selection-api-data-inventory-request-extension-interface"
+    }
+}</pre><p style='font-family: Arial; font-size: 11px;'>algorithmCode</p><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "source_selection_items": {
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/inventory-source-selection-api-data-source-selection-item-interface"
+        }
+    },
+    "shippable": {
+        "type": "boolean"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/inventory-source-selection-api-data-source-selection-result-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

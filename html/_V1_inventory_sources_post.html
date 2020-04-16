@@ -1,0 +1,150 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/inventory/sources</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/inventory/sources</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save Source data</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>inventoryApiSourceRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>source</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "source_code": {
+        "type": "string",
+        "description": "Source code"
+    },
+    "name": {
+        "type": "string",
+        "description": "Source name"
+    },
+    "email": {
+        "type": "string",
+        "description": "Source email"
+    },
+    "contact_name": {
+        "type": "string",
+        "description": "Source contact name"
+    },
+    "enabled": {
+        "type": "boolean",
+        "description": "If source is enabled. For new entity can be null"
+    },
+    "description": {
+        "type": "string",
+        "description": "Source description"
+    },
+    "latitude": {
+        "type": "number",
+        "description": "Source latitude"
+    },
+    "longitude": {
+        "type": "number",
+        "description": "Source longitude"
+    },
+    "country_id": {
+        "type": "string",
+        "description": "Source country id"
+    },
+    "region_id": {
+        "type": "integer",
+        "description": "Region id if source has registered region."
+    },
+    "region": {
+        "type": "string",
+        "description": "Region title if source has custom region"
+    },
+    "city": {
+        "type": "string",
+        "description": "Source city"
+    },
+    "street": {
+        "type": "string",
+        "description": "Source street name"
+    },
+    "postcode": {
+        "type": "string",
+        "description": "Source post code"
+    },
+    "phone": {
+        "type": "string",
+        "description": "Source phone number"
+    },
+    "fax": {
+        "type": "string",
+        "description": "Source fax"
+    },
+    "use_default_carrier_config": {
+        "type": "boolean",
+        "description": "Is need to use default config"
+    },
+    "carrier_links": {
+        "type": "array",
+        "items": {
+            "$ref": "#/definitions/inventory-api-data-source-carrier-link-interface"
+        }
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/inventory-api-data-source-extension-interface"
+    }
+}</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

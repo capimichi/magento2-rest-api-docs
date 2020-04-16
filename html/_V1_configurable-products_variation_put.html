@@ -1,0 +1,136 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/configurable-products/variation</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/configurable-products/variation</p><p></p><p style='font-family: Arial; font-size: 14px;'>PUT</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Generate variation based on same product</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>configurableProductConfigurableProductManagementV1GenerateVariationPutBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>product</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "id": {
+        "type": "integer",
+        "description": "Id"
+    },
+    "sku": {
+        "type": "string",
+        "description": "Sku"
+    },
+    "name": {
+        "type": "string",
+        "description": "Name"
+    },
+    "attribute_set_id": {
+        "type": "integer",
+        "description": "Attribute set id"
+    },
+    "price": {
+        "type": "number",
+        "description": "Price"
+    },
+    "status": {
+        "type": "integer",
+        "description": "Status"
+    },
+    "visibility": {
+        "type": "integer",
+        "description": "Visibility"
+    },
+    "type_id": {
+        "type": "string",
+        "description": "Type id"
+    },
+    "created_at": {
+        "type": "string",
+        "description": "Created date"
+    },
+    "updated_at": {
+        "type": "string",
+        "description": "Updated date"
+    },
+    "weight": {
+        "type": "number",
+        "description": "Weight"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/catalog-data-product-extension-interface"
+    },
+    "product_links": {
+        "type": "array",
+        "description": "Product links info",
+        "items": {
+            "$ref": "#/definitions/catalog-data-product-link-interface"
+        }
+    },
+    "options": {
+        "type": "array",
+        "description": "List of product options",
+        "items": {
+            "$ref": "#/definitions/catalog-data-product-custom-option-interface"
+        }
+    },
+    "media_gallery_entries": {
+        "type": "array",
+        "description": "Media gallery entries",
+        "items": {
+            "$ref": "#/definitions/catalog-data-product-attribute-media-gallery-entry-interface"
+        }
+    },
+    "tier_prices": {
+        "type": "array",
+        "description": "List of product tier prices",
+        "items": {
+            "$ref": "#/definitions/catalog-data-product-tier-price-interface"
+        }
+    },
+    "custom_attributes": {
+        "type": "array",
+        "description": "Custom attributes values.",
+        "items": {
+            "$ref": "#/definitions/framework-attribute-interface"
+        }
+    }
+}</pre><p style='font-family: Arial; font-size: 11px;'>options</p><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

@@ -1,0 +1,98 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/taxRules/{ruleId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/taxRules/{ruleId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Get TaxRule</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>ruleId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: integer</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "id": {
+        "type": "integer",
+        "description": "Id"
+    },
+    "code": {
+        "type": "string",
+        "description": "Tax rule code"
+    },
+    "priority": {
+        "type": "integer",
+        "description": "Priority"
+    },
+    "position": {
+        "type": "integer",
+        "description": "Sort order."
+    },
+    "customer_tax_class_ids": {
+        "type": "array",
+        "description": "Customer tax class id",
+        "items": {
+            "type": "integer"
+        }
+    },
+    "product_tax_class_ids": {
+        "type": "array",
+        "description": "Product tax class id",
+        "items": {
+            "type": "integer"
+        }
+    },
+    "tax_rate_ids": {
+        "type": "array",
+        "description": "Tax rate ids",
+        "items": {
+            "type": "integer"
+        }
+    },
+    "calculate_subtotal": {
+        "type": "boolean",
+        "description": "Calculate subtotal."
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/tax-data-tax-rule-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

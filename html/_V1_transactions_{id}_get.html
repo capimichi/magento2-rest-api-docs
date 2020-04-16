@@ -1,0 +1,107 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/transactions/{id}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/transactions/{id}</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Loads a specified transaction.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>id</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: integer - Description: The transaction ID.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "transaction_id": {
+        "type": "integer",
+        "description": "Transaction ID."
+    },
+    "parent_id": {
+        "type": "integer",
+        "description": "The parent ID for the transaction. Otherwise, null."
+    },
+    "order_id": {
+        "type": "integer",
+        "description": "Order ID."
+    },
+    "payment_id": {
+        "type": "integer",
+        "description": "Payment ID."
+    },
+    "txn_id": {
+        "type": "string",
+        "description": "Transaction business ID."
+    },
+    "parent_txn_id": {
+        "type": "string",
+        "description": "Parent transaction business ID."
+    },
+    "txn_type": {
+        "type": "string",
+        "description": "Transaction type."
+    },
+    "is_closed": {
+        "type": "integer",
+        "description": "Is-closed flag value."
+    },
+    "additional_information": {
+        "type": "array",
+        "description": "Array of additional information. Otherwise, null.",
+        "items": {
+            "type": "string"
+        }
+    },
+    "created_at": {
+        "type": "string",
+        "description": "Created-at timestamp."
+    },
+    "child_transactions": {
+        "type": "array",
+        "description": "Array of child transactions.",
+        "items": {
+            "$ref": "#/definitions/sales-data-transaction-interface"
+        }
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/sales-data-transaction-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

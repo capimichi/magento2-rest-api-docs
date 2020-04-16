@@ -1,0 +1,108 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/companyCredits/{creditId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/companyCredits/{creditId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Returns data on the credit limit for a specified credit limit ID.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>creditId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: integer</p><p></p><p style='font-family: Arial; font-size: 11px;'>reload</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: boolean - Description: [optional]</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "id": {
+        "type": "integer",
+        "description": "ID."
+    },
+    "company_id": {
+        "type": "integer",
+        "description": "Company id."
+    },
+    "credit_limit": {
+        "type": "number",
+        "description": "Credit Limit."
+    },
+    "balance": {
+        "type": "number",
+        "description": "Balance."
+    },
+    "currency_code": {
+        "type": "string",
+        "description": "Currency Code."
+    },
+    "exceed_limit": {
+        "type": "boolean",
+        "description": "Exceed Limit."
+    },
+    "available_limit": {
+        "type": "number",
+        "description": "Available Limit."
+    },
+    "credit_comment": {
+        "type": "string",
+        "description": "Credit comment for company credit history."
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/company-credit-data-credit-limit-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

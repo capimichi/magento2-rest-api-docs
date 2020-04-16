@@ -1,0 +1,152 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/carts/{cartId}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/carts/{cartId}</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Enables an administrative user to return information for a specified cart.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>cartId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: integer</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "id": {
+        "type": "integer",
+        "description": "Cart/quote ID."
+    },
+    "created_at": {
+        "type": "string",
+        "description": "Cart creation date and time. Otherwise, null."
+    },
+    "updated_at": {
+        "type": "string",
+        "description": "Cart last update date and time. Otherwise, null."
+    },
+    "converted_at": {
+        "type": "string",
+        "description": "Cart conversion date and time. Otherwise, null."
+    },
+    "is_active": {
+        "type": "boolean",
+        "description": "Active status flag value. Otherwise, null."
+    },
+    "is_virtual": {
+        "type": "boolean",
+        "description": "Virtual flag value. Otherwise, null."
+    },
+    "items": {
+        "type": "array",
+        "description": "Array of items. Otherwise, null.",
+        "items": {
+            "$ref": "#/definitions/quote-data-cart-item-interface"
+        }
+    },
+    "items_count": {
+        "type": "integer",
+        "description": "Number of different items or products in the cart. Otherwise, null."
+    },
+    "items_qty": {
+        "type": "number",
+        "description": "Total quantity of all cart items. Otherwise, null."
+    },
+    "customer": {
+        "$ref": "#/definitions/customer-data-customer-interface"
+    },
+    "billing_address": {
+        "$ref": "#/definitions/quote-data-address-interface"
+    },
+    "reserved_order_id": {
+        "type": "string",
+        "description": "Reserved order ID. Otherwise, null."
+    },
+    "orig_order_id": {
+        "type": "integer",
+        "description": "Original order ID. Otherwise, null."
+    },
+    "currency": {
+        "$ref": "#/definitions/quote-data-currency-interface"
+    },
+    "customer_is_guest": {
+        "type": "boolean",
+        "description": "For guest customers, false for logged in customers"
+    },
+    "customer_note": {
+        "type": "string",
+        "description": "Notice text"
+    },
+    "customer_note_notify": {
+        "type": "boolean",
+        "description": "Customer notification flag"
+    },
+    "customer_tax_class_id": {
+        "type": "integer",
+        "description": "Customer tax class ID."
+    },
+    "store_id": {
+        "type": "integer",
+        "description": "Store identifier"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/quote-data-cart-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

@@ -1,0 +1,87 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/sharedCatalog/</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/sharedCatalog/</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Return the list of shared catalogs and basic properties for each catalog.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[filterGroups][0][filters][0][field]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: string - Description: Field</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[filterGroups][0][filters][0][value]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: string - Description: Value</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[filterGroups][0][filters][0][conditionType]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: string - Description: Condition type</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[sortOrders][0][field]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: string - Description: Sorting field.</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[sortOrders][0][direction]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: string - Description: Sorting direction.</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[pageSize]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: integer - Description: Page size.</p><p></p><p style='font-family: Arial; font-size: 11px;'>searchCriteria[currentPage]</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: integer - Description: Current page.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "items": {
+        "type": "array",
+        "description": "Shared Catalog list.",
+        "items": {
+            "$ref": "#/definitions/shared-catalog-data-shared-catalog-interface"
+        }
+    },
+    "search_criteria": {
+        "$ref": "#/definitions/framework-search-criteria-interface"
+    },
+    "total_count": {
+        "type": "integer",
+        "description": "Total count."
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>500</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Internal Server error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

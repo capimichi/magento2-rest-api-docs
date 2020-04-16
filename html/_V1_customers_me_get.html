@@ -1,0 +1,189 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/customers/me</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/customers/me</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Get customer by Customer ID.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "id": {
+        "type": "integer",
+        "description": "Customer id"
+    },
+    "group_id": {
+        "type": "integer",
+        "description": "Group id"
+    },
+    "default_billing": {
+        "type": "string",
+        "description": "Default billing address id"
+    },
+    "default_shipping": {
+        "type": "string",
+        "description": "Default shipping address id"
+    },
+    "confirmation": {
+        "type": "string",
+        "description": "Confirmation"
+    },
+    "created_at": {
+        "type": "string",
+        "description": "Created at time"
+    },
+    "updated_at": {
+        "type": "string",
+        "description": "Updated at time"
+    },
+    "created_in": {
+        "type": "string",
+        "description": "Created in area"
+    },
+    "dob": {
+        "type": "string",
+        "description": "Date of birth"
+    },
+    "email": {
+        "type": "string",
+        "description": "Email address"
+    },
+    "firstname": {
+        "type": "string",
+        "description": "First name"
+    },
+    "lastname": {
+        "type": "string",
+        "description": "Last name"
+    },
+    "middlename": {
+        "type": "string",
+        "description": "Middle name"
+    },
+    "prefix": {
+        "type": "string",
+        "description": "Prefix"
+    },
+    "suffix": {
+        "type": "string",
+        "description": "Suffix"
+    },
+    "gender": {
+        "type": "integer",
+        "description": "Gender"
+    },
+    "store_id": {
+        "type": "integer",
+        "description": "Store id"
+    },
+    "taxvat": {
+        "type": "string",
+        "description": "Tax Vat"
+    },
+    "website_id": {
+        "type": "integer",
+        "description": "Website id"
+    },
+    "addresses": {
+        "type": "array",
+        "description": "Customer addresses.",
+        "items": {
+            "$ref": "#/definitions/customer-data-address-interface"
+        }
+    },
+    "disable_auto_group_change": {
+        "type": "integer",
+        "description": "Disable auto group change flag."
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/customer-data-customer-extension-interface"
+    },
+    "custom_attributes": {
+        "type": "array",
+        "description": "Custom attributes values.",
+        "items": {
+            "$ref": "#/definitions/framework-attribute-interface"
+        }
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>500</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Internal Server error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

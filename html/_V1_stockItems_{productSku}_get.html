@@ -1,0 +1,164 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/stockItems/{productSku}</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/stockItems/{productSku}</p><p></p><p style='font-family: Arial; font-size: 14px;'>GET</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>productSku</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: path - Type: string</p><p></p><p style='font-family: Arial; font-size: 11px;'>scopeId</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: query - Type: integer</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "item_id": {
+        "type": "integer"
+    },
+    "product_id": {
+        "type": "integer"
+    },
+    "stock_id": {
+        "type": "integer",
+        "description": "Stock identifier"
+    },
+    "qty": {
+        "type": "number"
+    },
+    "is_in_stock": {
+        "type": "boolean",
+        "description": "Stock Availability"
+    },
+    "is_qty_decimal": {
+        "type": "boolean"
+    },
+    "show_default_notification_message": {
+        "type": "boolean"
+    },
+    "use_config_min_qty": {
+        "type": "boolean"
+    },
+    "min_qty": {
+        "type": "number",
+        "description": "Minimal quantity available for item status in stock"
+    },
+    "use_config_min_sale_qty": {
+        "type": "integer"
+    },
+    "min_sale_qty": {
+        "type": "number",
+        "description": "Minimum Qty Allowed in Shopping Cart or NULL when there is no limitation"
+    },
+    "use_config_max_sale_qty": {
+        "type": "boolean"
+    },
+    "max_sale_qty": {
+        "type": "number",
+        "description": "Maximum Qty Allowed in Shopping Cart data wrapper"
+    },
+    "use_config_backorders": {
+        "type": "boolean"
+    },
+    "backorders": {
+        "type": "integer",
+        "description": "Backorders status"
+    },
+    "use_config_notify_stock_qty": {
+        "type": "boolean"
+    },
+    "notify_stock_qty": {
+        "type": "number",
+        "description": "Notify for Quantity Below data wrapper"
+    },
+    "use_config_qty_increments": {
+        "type": "boolean"
+    },
+    "qty_increments": {
+        "type": "number",
+        "description": "Quantity Increments data wrapper"
+    },
+    "use_config_enable_qty_inc": {
+        "type": "boolean"
+    },
+    "enable_qty_increments": {
+        "type": "boolean",
+        "description": "Whether Quantity Increments is enabled"
+    },
+    "use_config_manage_stock": {
+        "type": "boolean"
+    },
+    "manage_stock": {
+        "type": "boolean",
+        "description": "Can Manage Stock"
+    },
+    "low_stock_date": {
+        "type": "string"
+    },
+    "is_decimal_divided": {
+        "type": "boolean"
+    },
+    "stock_status_changed_auto": {
+        "type": "integer"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/catalog-inventory-data-stock-item-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

@@ -1,0 +1,179 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/coupons</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/coupons</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Save a coupon.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>salesRuleCouponRepositoryV1SavePostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>coupon</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "coupon_id": {
+        "type": "integer",
+        "description": "Coupon id"
+    },
+    "rule_id": {
+        "type": "integer",
+        "description": "The id of the rule associated with the coupon"
+    },
+    "code": {
+        "type": "string",
+        "description": "Coupon code"
+    },
+    "usage_limit": {
+        "type": "integer",
+        "description": "Usage limit"
+    },
+    "usage_per_customer": {
+        "type": "integer",
+        "description": "Usage limit per customer"
+    },
+    "times_used": {
+        "type": "integer",
+        "description": "The number of times the coupon has been used"
+    },
+    "expiration_date": {
+        "type": "string",
+        "description": "Expiration date"
+    },
+    "is_primary": {
+        "type": "boolean",
+        "description": "The coupon is primary coupon for the rule that it's associated with"
+    },
+    "created_at": {
+        "type": "string",
+        "description": "When the coupon is created"
+    },
+    "type": {
+        "type": "integer",
+        "description": "Of coupon"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/sales-rule-data-coupon-extension-interface"
+    }
+}</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "coupon_id": {
+        "type": "integer",
+        "description": "Coupon id"
+    },
+    "rule_id": {
+        "type": "integer",
+        "description": "The id of the rule associated with the coupon"
+    },
+    "code": {
+        "type": "string",
+        "description": "Coupon code"
+    },
+    "usage_limit": {
+        "type": "integer",
+        "description": "Usage limit"
+    },
+    "usage_per_customer": {
+        "type": "integer",
+        "description": "Usage limit per customer"
+    },
+    "times_used": {
+        "type": "integer",
+        "description": "The number of times the coupon has been used"
+    },
+    "expiration_date": {
+        "type": "string",
+        "description": "Expiration date"
+    },
+    "is_primary": {
+        "type": "boolean",
+        "description": "The coupon is primary coupon for the rule that it's associated with"
+    },
+    "created_at": {
+        "type": "string",
+        "description": "When the coupon is created"
+    },
+    "type": {
+        "type": "integer",
+        "description": "Of coupon"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/sales-rule-data-coupon-extension-interface"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>500</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Internal Server error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>

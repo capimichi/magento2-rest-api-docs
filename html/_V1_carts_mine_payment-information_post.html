@@ -1,0 +1,193 @@
+<html><head><style>
+
+.content{
+max-width: 700px;
+width: 100%;
+margin: 20px auto;
+}
+
+pre{
+background-color: rgb(38, 50, 56);
+display: block;
+color: #ffffff;
+padding: 10px;
+}
+</style></head><body><div class='content'><p style='font-family: Arial; font-size: 20px;'>/V1/carts/mine/payment-information</p><p style='font-family: Arial; font-size: 11px;'>/rest/default/V1/carts/mine/payment-information</p><p></p><p style='font-family: Arial; font-size: 14px;'>POST</p><hr><p></p><p style='font-family: Arial; font-size: 12px;'>Set payment information and place order for a specified cart.</p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>PARAMETRI</p><p></p><p style='font-family: Arial; font-size: 11px;'>checkoutPaymentInformationManagementV1SavePaymentInformationAndPlaceOrderPostBody</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>In: body</p><p></p><p style='font-family: Arial; font-size: 11px;'>paymentMethod</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "po_number": {
+        "type": "string",
+        "description": "Purchase order number"
+    },
+    "method": {
+        "type": "string",
+        "description": "Payment method code"
+    },
+    "additional_data": {
+        "type": "array",
+        "description": "Payment additional details",
+        "items": {
+            "type": "string"
+        }
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/quote-data-payment-extension-interface"
+    }
+}</pre><p style='font-family: Arial; font-size: 11px;'>billingAddress</p><pre style='font-family: Arial; font-size: 10px;'>{
+    "id": {
+        "type": "integer",
+        "description": "Id"
+    },
+    "region": {
+        "type": "string",
+        "description": "Region name"
+    },
+    "region_id": {
+        "type": "integer",
+        "description": "Region id"
+    },
+    "region_code": {
+        "type": "string",
+        "description": "Region code"
+    },
+    "country_id": {
+        "type": "string",
+        "description": "Country id"
+    },
+    "street": {
+        "type": "array",
+        "description": "Street",
+        "items": {
+            "type": "string"
+        }
+    },
+    "company": {
+        "type": "string",
+        "description": "Company"
+    },
+    "telephone": {
+        "type": "string",
+        "description": "Telephone number"
+    },
+    "fax": {
+        "type": "string",
+        "description": "Fax number"
+    },
+    "postcode": {
+        "type": "string",
+        "description": "Postcode"
+    },
+    "city": {
+        "type": "string",
+        "description": "City name"
+    },
+    "firstname": {
+        "type": "string",
+        "description": "First name"
+    },
+    "lastname": {
+        "type": "string",
+        "description": "Last name"
+    },
+    "middlename": {
+        "type": "string",
+        "description": "Middle name"
+    },
+    "prefix": {
+        "type": "string",
+        "description": "Prefix"
+    },
+    "suffix": {
+        "type": "string",
+        "description": "Suffix"
+    },
+    "vat_id": {
+        "type": "string",
+        "description": "Vat id"
+    },
+    "customer_id": {
+        "type": "integer",
+        "description": "Customer id"
+    },
+    "email": {
+        "type": "string",
+        "description": "Billing/shipping email"
+    },
+    "same_as_billing": {
+        "type": "integer",
+        "description": "Same as billing flag"
+    },
+    "customer_address_id": {
+        "type": "integer",
+        "description": "Customer address id"
+    },
+    "save_in_address_book": {
+        "type": "integer",
+        "description": "Save in address book flag"
+    },
+    "extension_attributes": {
+        "$ref": "#/definitions/quote-data-address-extension-interface"
+    },
+    "custom_attributes": {
+        "type": "array",
+        "description": "Custom attributes values.",
+        "items": {
+            "$ref": "#/definitions/framework-attribute-interface"
+        }
+    }
+}</pre><p></p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 14px; color: #A9A9AD;'>RISPOSTA</p><p></p><p style='font-family: Arial; font-size: 11px;'>200</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>200 Success.</p><p></p><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>400</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>400 Bad Request</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>401</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>401 Unauthorized</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p><p style='font-family: Arial; font-size: 11px;'>default</p><p style='font-family: Arial; font-size: 10px; color: #4E4E51;'>Unexpected error</p><p></p><pre style='font-family: Arial; font-size: 10px;'>{
+    "message": {
+        "type": "string",
+        "description": "Error message"
+    },
+    "errors": {
+        "$ref": "#/definitions/error-errors"
+    },
+    "code": {
+        "type": "integer",
+        "description": "Error code"
+    },
+    "parameters": {
+        "$ref": "#/definitions/error-parameters"
+    },
+    "trace": {
+        "type": "string",
+        "description": "Stack trace"
+    }
+}</pre><p></p><p></p></div></body></html>
